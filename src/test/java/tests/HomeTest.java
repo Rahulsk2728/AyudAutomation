@@ -75,7 +75,7 @@ public class HomeTest extends BaseTest {
         }
 
         Assert.assertTrue(brokenLinks.isEmpty(),
-                "Broken links found:\n" + brokenLinks);
+                "Broken links found:" + brokenLinks);
         System.out.println("Total links found: " + links.size());
         System.out.println("Broken links count: " + brokenLinks.size());
 

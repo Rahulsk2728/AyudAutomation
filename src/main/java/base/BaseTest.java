@@ -16,7 +16,13 @@ public class BaseTest {
     protected Playwright playwright;
     protected Browser browser;
     protected BrowserContext context;
-    protected Page page;
+    protected static Page page;
+
+    public static Page getPage() {
+        return page;
+    }
+
+
 
     @BeforeMethod
     public void setUp() {
@@ -24,20 +30,18 @@ public class BaseTest {
         System.out.println("Step 1");
         playwright = Playwright.create();
 
-        System.out.println("Step 2");
+
         browser = BrowserFactory.launchBrowser(
                 playwright,
                 ConfigReader.getProperty("browser"),
                 Boolean.parseBoolean(ConfigReader.getProperty("headless"))
         );
 
-        System.out.println("Step 3");
+
         context = browser.newContext();
 
-        System.out.println("Step 4");
         page = context.newPage();
 
-        System.out.println("Step 5");
         page.navigate(ConfigReader.getProperty("url"));
 
         System.out.println("Step 6");
