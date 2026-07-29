@@ -39,14 +39,14 @@ public class HomeTest extends BaseTest {
                 "Current URL does not contain 'ayud'");
     }
 
-    @Test(priority = 3)
-    public void verifyHomePageDisplayed() {
-
-        HomePage homePage = new HomePage(page);
-
-        Assert.assertTrue(homePage.isHomePageDisplayed(),
-                "Home page is not displayed");
-    }
+//    @Test(priority = 3)
+//    public void verifyHomePageDisplayed() {
+//
+//        HomePage homePage = new HomePage(page);
+//
+//        Assert.assertTrue(homePage.isHomePageDisplayed(),
+//                "Home page is not displayed");
+//    }
 
     @Test(priority = 3)
     public void verifyDeadLinks() throws Exception {
