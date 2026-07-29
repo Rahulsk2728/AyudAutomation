@@ -2,6 +2,7 @@ package tests;
 
 import base.BaseTest;
 import com.microsoft.playwright.ElementHandle;
+import dataproviders.LoginDataProvider;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.HomePage;
@@ -14,7 +15,8 @@ import org.apache.logging.log4j.Logger;
 public class HomeTest extends BaseTest {
     private static final Logger logger = LogManager.getLogger(HomeTest.class);
 
-    @Test(priority = 1)
+    @Test(dataProvider = "loginData",
+            dataProviderClass = LoginDataProvider.class)
     public void verifyHomePageTitle() {
 
         HomePage homePage = new HomePage(page);
