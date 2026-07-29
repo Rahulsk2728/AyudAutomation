@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Ayud Automation Suite">
+
+<!--    <listeners>-->
+<!--        <listener class-name="listeners.TestListener"/>-->
+<!--    </listeners>-->
+
+    <test name="Regression Tests">
+        <classes>
+            <class name="tests.HomeTest"/>
+        </classes>
+    </test>
+
+</suite>
