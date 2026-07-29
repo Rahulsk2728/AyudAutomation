@@ -14,7 +14,10 @@ public class ScreenshotUtils {
         String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss")
                 .format(new Date());
 
-        String path = "screenshots/"
+        String path = System.getProperty("user.dir")
+                + File.separator
+                + "screenshots"
+                + File.separator
                 + testName
                 + "_"
                 + timestamp

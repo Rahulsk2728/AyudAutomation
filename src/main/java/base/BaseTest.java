@@ -4,6 +4,8 @@ import com.microsoft.playwright.Browser;
 import com.microsoft.playwright.BrowserContext;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import factory.BrowserFactory;
 import utils.ConfigReader;
@@ -22,12 +24,13 @@ public class BaseTest {
         return page;
     }
 
-
+    private static final Logger logger =
+            LogManager.getLogger(BaseTest.class);
 
     @BeforeMethod
     public void setUp() {
 
-        System.out.println("Step 1");
+        logger.info("Creating Playwright instance");
         playwright = Playwright.create();
 
 
@@ -44,7 +47,7 @@ public class BaseTest {
 
         page.navigate(ConfigReader.getProperty("url"));
 
-        System.out.println("Step 6");
+        logger.info("Launching browser");
     }
 
     @AfterMethod
@@ -66,6 +69,6 @@ public class BaseTest {
             playwright.close();
         }
 
-        System.out.println("Browser closed successfully.");
+        logger.info("Browser closed successfully.");
     }
 }

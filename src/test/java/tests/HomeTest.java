@@ -8,8 +8,11 @@ import pages.HomePage;
 import utils.LinkVerifier;
 import java.util.ArrayList;
 import java.util.List;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class HomeTest extends BaseTest {
+    private static final Logger logger = LogManager.getLogger(HomeTest.class);
 
     @Test(priority = 1)
     public void verifyHomePageTitle() {
@@ -18,7 +21,7 @@ public class HomeTest extends BaseTest {
 
         String actualTitle = homePage.getPageTitle();
 
-        System.out.println("Page Title: " + actualTitle);
+        logger.info("Page Title: " + actualTitle);
 
         Assert.assertFalse(actualTitle.isEmpty(), "Home page title is empty");
     }
@@ -30,7 +33,7 @@ public class HomeTest extends BaseTest {
 
         String currentUrl = homePage.getCurrentURL();
 
-        System.out.println("Current URL: " + currentUrl);
+        logger.info("Current URL: " + currentUrl);
 
         Assert.assertTrue(currentUrl.contains("ayud"),
                 "Current URL does not contain 'ayud'");
@@ -67,7 +70,7 @@ public class HomeTest extends BaseTest {
 
             int status = LinkVerifier.getStatusCode(href);
 
-            System.out.println(href + " --> " + status);
+            logger.info(href + " --> " + status);
 
             if (status >= 400) {
                 brokenLinks.add(href + " --> " + status);
@@ -76,13 +79,13 @@ public class HomeTest extends BaseTest {
 
         Assert.assertTrue(brokenLinks.isEmpty(),
                 "Broken links found:" + brokenLinks);
-        System.out.println("Total links found: " + links.size());
-        System.out.println("Broken links count: " + brokenLinks.size());
+        logger.info("Total links found: " + links.size());
+        logger.info("Broken links count: " + brokenLinks.size());
 
         if (brokenLinks.isEmpty()) {
-            System.out.println("✅ No broken links found.");
+            logger.info("✅ No broken links found.");
         } else {
-            System.out.println("❌ Broken links:");
+            logger.info("❌ Broken links:");
             brokenLinks.forEach(System.out::println);
         }
       }

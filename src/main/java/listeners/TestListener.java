@@ -8,6 +8,8 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 import reports.ExtentManager;
 import utils.ScreenshotUtils;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.awt.*;
 import java.io.File;
@@ -70,4 +72,6 @@ public class TestListener implements ITestListener {
         }
 
     }
+    private static final Logger logger =
+            LogManager.getLogger(TestListener.class);
 }
