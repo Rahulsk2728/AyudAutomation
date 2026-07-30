@@ -1,217 +1,288 @@
-# Ayud Software Automation Framework
+# Playwright Java Automation Framework
 
-## Overview
-
-This project is a UI automation framework developed using **Java**, **Playwright**, **TestNG**, and **Maven**. It automates functional test scenarios for the Ayud Software website and follows the **Page Object Model (POM)** design pattern for better maintainability and scalability.
+A scalable and enterprise-ready UI Automation Framework built using **Java, Playwright, TestNG, Maven, and Page Object Model (POM)**. The framework is designed with reusability, maintainability, parallel execution, reporting, and CI/CD integration in mind.
 
 ---
 
 ## Tech Stack
 
-- Java 17+
-- Playwright for Java
+- Java 21
+- Playwright
 - TestNG
 - Maven
-- SLF4J Logging
-- IntelliJ IDEA
+- Log4j2
+- Extent Reports
+- Allure Reports
+- Git & GitHub
+- GitHub Actions
+- Apache POI (Excel)
+- Page Object Model (POM)
+
+---
+
+## Framework Architecture
+
+```
+src
+├── main
+│   ├── java
+│   │   ├── base
+│   │   ├── factory
+│   │   ├── listeners
+│   │   ├── pages
+│   │   ├── reports
+│   │   └── utils
+│   │
+│   └── resources
+│       ├── config.properties
+│       └── log4j2.xml
+│
+└── test
+    └── java
+        └── tests
+```
+
+---
+
+## Framework Features
+
+### Browser Management
+
+- BrowserFactory implementation
+- Configurable browser selection
+- Chromium support
+- Firefox support
+- WebKit support
+- Headless execution support
+
+---
+
+### Test Framework
+
+- TestNG
+- Page Object Model (POM)
+- BaseTest implementation
+- Thread-safe execution using ThreadLocal
+- Cross-browser execution
+- Parallel execution support
+
+---
+
+### Reporting
+
+### Extent Reports
+
+- HTML Report generation
+- Screenshot on failure
+- Pass/Fail/Skip status
+- Automatic report opening
+
+### Allure Reports
+
+- Step annotations
+- Environment information
+- Categories
+- Screenshot attachments
+- Rich interactive reports
+
+---
+
+### Logging
+
+- Log4j2 integration
+- Console logging
+- File logging
+
+---
+
+### Utilities
+
+- ConfigReader
+- Screenshot Utility
+- WaitUtils
+- BasePage reusable methods
+- Excel Utility (Apache POI)
+
+---
+
+### Test Data
+
+- Data-driven testing support
+- Excel integration
+- TestNG DataProvider
+
+---
+
+### Parallel Execution
+
+Framework supports parallel execution using:
+
+- ThreadLocal Browser
+- ThreadLocal BrowserContext
+- ThreadLocal Page
+- Thread-safe Extent Reports
+
+---
+
+### Cross Browser Execution
+
+Supported browsers:
+
+- Chromium
+- Firefox
+- WebKit
+
+Configured through TestNG XML.
+
+---
+
+### CI/CD
+
+Integrated with GitHub Actions.
+
+Automatically executes tests on:
+
+- Push
+- Pull Request
+
+---
+
+### Logging & Debugging
+
+- Log4j2 logging
+- Screenshots on failure
+- Playwright tracing (In Progress)
+- Allure reporting
 
 ---
 
 ## Project Structure
 
 ```
-AyudAutomation
-│
-├── src
-│   ├── main
-│   │   └── java
-│   │       ├── base
-│   │       ├── pages
-│   │       └── utils
-│   │
-│   └── test
-│       └── java
-│           └── tests
-│
-├── test-output
-├── pom.xml
-├── testng.xml
-└── README.md
+base/
+    BaseTest
+    BasePage
+
+factory/
+    BrowserFactory
+
+listeners/
+    TestListener
+
+pages/
+    HomePage
+
+reports/
+    ExtentManager
+
+utils/
+    ConfigReader
+    ScreenshotUtils
+    WaitUtils
+    ExcelUtils
+    AllureUtils
+
+tests/
+    HomeTest
 ```
 
 ---
 
-## Features
+## Reporting
 
-- Cross-browser support
-- Page Object Model (POM)
-- Reusable utility classes
-- Explicit waits using Playwright
-- Functional UI automation
-- Broken link verification
-- Easy test execution using TestNG
-- Maven dependency management
+### Extent Report
 
----
-
-## Prerequisites
-
-Install the following before running the project:
-
-- Java JDK 17 or above
-- Maven 3.9+
-- Node.js (required by Playwright)
-- IntelliJ IDEA or Eclipse
-- Git
-
----
-
-## Installation
-
-### Clone the repository
-
-```bash
-git clone https://github.com/Rahulsk2728/AyudAutomation.git
+```
+reports/
+    ExtentReport.html
 ```
 
-Navigate to the project:
+### Allure Report
 
-```bash
-cd AyudAutomation
+Generate report
+
 ```
-
-Install Maven dependencies:
-
-```bash
-mvn clean install
-```
-
-Install Playwright browsers:
-
-```bash
-playwright install
-```
-
-or
-
-```bash
-mvn exec:java -e -Dexec.mainClass=com.microsoft.playwright.CLI -Dexec.args="install"
+allure serve allure-results
 ```
 
 ---
 
 ## Running Tests
 
-Run all tests:
+### Execute all tests
 
-```bash
+```
 mvn test
 ```
 
-Run a TestNG suite:
+### Execute specific TestNG XML
 
-```bash
+```
 mvn test -DsuiteXmlFile=testng.xml
 ```
 
-Run a specific test class:
+---
 
-```bash
-mvn -Dtest=HomeTest test
-```
+## Current Features
+
+- Playwright Java Framework
+- TestNG
+- Maven
+- POM Design Pattern
+- BaseTest
+- BasePage
+- BrowserFactory
+- ConfigReader
+- WaitUtils
+- Screenshot Utility
+- Broken Link Validation
+- Log4j2 Logging
+- Extent Reports
+- Allure Reports
+- Parallel Execution
+- Cross Browser Execution
+- GitHub Actions CI/CD
+- Excel Utility
+- Data Provider Support
 
 ---
 
-## Framework Components
+## Features Under Development
 
-### Base Layer
-
-- Browser initialization
-- Browser cleanup
-- Playwright configuration
-
-### Page Objects
-
-Contains all page locators and reusable page methods.
-
-Example:
-
-- HomePage
-- LoginPage
-
-### Test Classes
-
-Contains TestNG test cases.
-
-Example:
-
-- HomeTest
-
-### Utilities
-
-Reusable helper methods such as:
-
-- Link verification
-- Wait utilities
-- File handling
-- Screenshot capture
+- Retry Analyzer
+- REST Assured API Automation
+- Docker Support
+- Jenkins Pipeline
+- Database Validation
+- Playwright Trace Attachment
+- Video Recording
+- Trace Viewer Integration
+- Advanced Playwright Scenarios
+- Allure History & Trends
 
 ---
 
-## Implemented Test Scenarios
+## Design Patterns Used
 
-- Verify Home Page loads successfully
-- Verify page title
-- Verify navigation menu
-- Verify logo visibility
-- Verify broken/dead links
-- Verify page elements
-- Verify navigation functionality
-
----
-
-## Reporting
-
-TestNG generates reports after execution under:
-
-```
-test-output/
-```
-
----
-
-## Design Pattern
-
-The framework follows the **Page Object Model (POM)** to separate:
-
-- Page Locators
-- Page Actions
-- Test Logic
-
-This improves readability and maintainability.
-
----
-
-## Best Practices
-
-- Reusable page methods
-- No hardcoded waits
-- Clean code structure
-- Separate test data from test logic
-- Reusable utility classes
-- Assertions using TestNG
+- Page Object Model (POM)
+- Factory Pattern
+- Singleton Pattern (ExtentManager)
+- ThreadLocal Pattern
+- Utility Pattern
 
 ---
 
 ## Future Enhancements
 
-- Allure Reporting
-- Extent Reports
-- CI/CD with GitHub Actions
-- Parallel Execution
-- Data-driven testing
-- API automation integration
-- Docker support
+- REST Assured Integration
+- Docker Execution
+- Jenkins CI/CD
+- Database Validation
+- API + UI Integration
+- Visual Testing
+- Accessibility Testing
+- SonarQube Integration
+- JaCoCo Code Coverage
 
 ---
 
@@ -221,10 +292,16 @@ This improves readability and maintainability.
 
 Automation Test Engineer
 
-GitHub: https://github.com/Rahulsk2728
+### Skills
+
+- Java
+- Playwright
+- TestNG
+- Selenium
+- API Testing
+- Maven
+- GitHub Actions
+- SQL
+- CI/CD
 
 ---
-
-## License
-
-This project is created for learning and automation practice purposes.
