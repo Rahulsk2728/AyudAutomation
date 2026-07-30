@@ -1,72 +1,98 @@
 package base;
 
-import com.microsoft.playwright.Browser;
-import com.microsoft.playwright.BrowserContext;
-import com.microsoft.playwright.Page;
-import com.microsoft.playwright.Playwright;
+import com.microsoft.playwright.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import factory.BrowserFactory;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 import utils.ConfigReader;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
+import java.nio.file.Paths;
+import org.testng.ITestResult;
+
 public class BaseTest {
 
     protected Playwright playwright;
-    protected Browser browser;
-    protected BrowserContext context;
-    protected static Page page;
+    private static ThreadLocal<Browser> browser = new ThreadLocal<>();
+
+    private static ThreadLocal<BrowserContext> context = new ThreadLocal<>();
+
+    private static ThreadLocal<Page> page = new ThreadLocal<>();
+
 
     public static Page getPage() {
-        return page;
+        return page.get();
     }
 
     private static final Logger logger =
             LogManager.getLogger(BaseTest.class);
 
+
     @BeforeMethod
-    public void setUp() {
+    @Parameters("browser")
+    public void  setUp(@Optional("chromium") String browserName) {
 
         logger.info("Creating Playwright instance");
         playwright = Playwright.create();
 
 
-        browser = BrowserFactory.launchBrowser(
-                playwright,
-                ConfigReader.getProperty("browser"),
-                Boolean.parseBoolean(ConfigReader.getProperty("headless"))
+        browser.set(
+                BrowserFactory.launchBrowser(
+                        playwright,
+                        ConfigReader.getProperty("browser"),
+                        Boolean.parseBoolean(ConfigReader.getProperty("headless"))
+                )
         );
 
+        context.set(browser.get().newContext());
 
-        context = browser.newContext();
+        context.get().tracing().start(
+                new Tracing.StartOptions()
+                        .setScreenshots(true)
+                        .setSnapshots(true)
+                        .setSources(true)
+        );
 
-        page = context.newPage();
-
-        page.navigate(ConfigReader.getProperty("url"));
+        page.set(context.get().newPage());
+        page.get().navigate(ConfigReader.getProperty("url"));
 
         logger.info("Launching browser");
     }
 
     @AfterMethod
-    public void tearDown() {
+    public void tearDown(ITestResult result) {
 
-        if (page != null) {
-            page.close();
+        String testName = result.getMethod().getMethodName();
+
+        // 1. Stop tracing
+        if (context.get() != null) {
+            context.get().tracing().stop(
+                    new Tracing.StopOptions()
+                            .setPath(Paths.get("traces/" + testName + ".zip"))
+            );
         }
 
-        if (context != null) {
-            context.close();
+        // 2. Close page
+        if (page.get() != null) {
+            page.get().close();
+            page.remove();
         }
 
-        if (browser != null) {
-            browser.close();
+        // 3. Close context
+        if (context.get() != null) {
+            context.get().close();
+            context.remove();
         }
 
-        if (playwright != null) {
-            playwright.close();
+        // 4. Close browser
+        if (browser.get() != null) {
+            browser.get().close();
+            browser.remove();
         }
 
         logger.info("Browser closed successfully.");

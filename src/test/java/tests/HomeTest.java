@@ -15,11 +15,10 @@ import org.apache.logging.log4j.Logger;
 public class HomeTest extends BaseTest {
     private static final Logger logger = LogManager.getLogger(HomeTest.class);
 
-    @Test(dataProvider = "loginData",
-            dataProviderClass = LoginDataProvider.class)
+
     public void verifyHomePageTitle() {
 
-        HomePage homePage = new HomePage(page);
+        HomePage homePage = new HomePage(getPage());
 
         String actualTitle = homePage.getPageTitle();
 
@@ -31,7 +30,7 @@ public class HomeTest extends BaseTest {
     @Test(priority = 2)
     public void verifyCurrentURL() {
 
-        HomePage homePage = new HomePage(page);
+        HomePage homePage = new HomePage(getPage());
 
         String currentUrl = homePage.getCurrentURL();
 
@@ -41,19 +40,19 @@ public class HomeTest extends BaseTest {
                 "Current URL does not contain 'ayud'");
     }
 
-//    @Test(priority = 3)
-//    public void verifyHomePageDisplayed() {
-//
-//        HomePage homePage = new HomePage(page);
-//
-//        Assert.assertTrue(homePage.isHomePageDisplayed(),
-//                "Home page is not displayed");
-//    }
+    @Test(priority = 3)
+    public void verifyHomePageDisplayed() {
+
+        HomePage homePage = new HomePage(getPage());
+
+        Assert.assertTrue(homePage.isHomePageDisplayed(),
+                "Home page is not displayed");
+    }
 
     @Test(priority = 3)
     public void verifyDeadLinks() throws Exception {
 
-        HomePage homePage = new HomePage(page);
+        HomePage homePage = new HomePage(getPage());
 
         List<ElementHandle> links = homePage.getAllLinks();
         List<String> brokenLinks = new ArrayList<>();

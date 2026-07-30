@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Assertion Failure",
+    "matchedStatuses": ["failed"],
+    "messageRegex": ".*Assertion.*"
+  },
+  {
+    "name": "Timeout",
+    "matchedStatuses": ["failed"],
+    "messageRegex": ".*Timeout.*"
+  },
+  {
+    "name": "Locator Failure",
+    "matchedStatuses": ["failed"],
+    "messageRegex": ".*locator.*"
+  }
+]

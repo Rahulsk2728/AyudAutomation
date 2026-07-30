@@ -7,6 +7,7 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 import reports.ExtentManager;
+import utils.AllureUtils;
 import utils.ScreenshotUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -17,31 +18,31 @@ import java.io.File;
 public class TestListener implements ITestListener {
 
     private ExtentReports extent = ExtentManager.getExtentReports();
-    private ExtentTest test;
+    private static ThreadLocal<ExtentTest> test = new ThreadLocal<>();
 
     @Override
     public void onTestStart(ITestResult result) {
-        test = extent.createTest(result.getMethod().getMethodName());
+        test.set(extent.createTest(result.getMethod().getMethodName()));
     }
 
     @Override
     public void onTestSuccess(ITestResult result) {
-        test.pass("Test Passed");
+        test.get().pass("Test Passed");
     }
 
 
     @Override
     public void onTestSkipped(ITestResult result) {
-        test.skip("Test Skipped");
+        test.get().skip("Test Skipped");
     }
 
     @Override
     public void onFinish(ITestContext context) {
 
-        // Generate the report
         extent.flush();
 
-        // Automatically open the report
+        test.remove();
+
         try {
             File report = new File(System.getProperty("user.dir")
                     + "/reports/ExtentReport.html");
@@ -55,7 +56,11 @@ public class TestListener implements ITestListener {
     @Override
     public void onTestFailure(ITestResult result) {
 
-        test.fail(result.getThrowable());
+        if (test.get() == null) {
+            test.set(extent.createTest(result.getMethod().getMethodName()));
+        }
+
+        test.get().fail(result.getThrowable());
 
         try {
 
@@ -63,15 +68,14 @@ public class TestListener implements ITestListener {
                     BaseTest.getPage(),
                     result.getMethod().getMethodName());
 
-            test.addScreenCaptureFromPath(path);
+            test.get().addScreenCaptureFromPath(path);
 
         } catch (Exception e) {
 
-            test.fail("Unable to capture screenshot");
+            test.get().fail("Unable to capture screenshot");
+            AllureUtils.attachScreenshot(BaseTest.getPage());
 
         }
-
     }
-    private static final Logger logger =
-            LogManager.getLogger(TestListener.class);
+
 }

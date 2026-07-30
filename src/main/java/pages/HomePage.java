@@ -1,14 +1,19 @@
 package pages;
 
+import base.BasePage;
 import com.microsoft.playwright.ElementHandle;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 
 import java.util.List;
 
-public class HomePage {
+import io.qameta.allure.Step;
+import utils.WaitUtils;
 
-    private Page page;
+public class HomePage extends BasePage {
+
+
+    private WaitUtils waitUtils;
 
     // Example Locators
     private Locator homeLogo;
@@ -16,28 +21,34 @@ public class HomePage {
     private Locator logoutButton;
 
     public HomePage(Page page) {
-        this.page = page;
+        super(page);
 
-        // Replace these with actual locators from ayud.com
+        this.page = page;
+        this.waitUtils = new WaitUtils(page);
+
+        // Initialize locators
         homeLogo = page.locator("(//img[@alt='Ayud Software'])[1]");
+        profileIcon = page.locator("YOUR_PROFILE_LOCATOR");
+        logoutButton = page.locator("YOUR_LOGOUT_LOCATOR");
 
     }
 
+
     // Verify Home Page
+    @Step("Wait for Home Page to load")
     public boolean isHomePageDisplayed() {
-        return homeLogo.isVisible();
+        return isVisible(homeLogo);
+    }
+
+    @Step("Verify Home Page logo is visible")
+    public void waitForHomePageToLoad() {
+        waitUtils.waitForVisible(homeLogo);
     }
 
     //Verify deadlinks
     public List<ElementHandle> getAllLinks() {
         return page.querySelectorAll("a");
     }
-
-    // Click Profile
-    public void clickProfile() {
-        profileIcon.click();
-    }
-
 
 
     // Get Page Title
