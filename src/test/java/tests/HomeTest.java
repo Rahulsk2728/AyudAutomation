@@ -2,10 +2,13 @@ package tests;
 
 import base.BaseTest;
 import com.microsoft.playwright.ElementHandle;
+import com.microsoft.playwright.Page;
+import constants.URLs;
 import dataproviders.LoginDataProvider;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.HomePage;
+import pages.JanexaPage;
 import utils.LinkVerifier;
 import java.util.ArrayList;
 import java.util.List;
@@ -15,7 +18,7 @@ import org.apache.logging.log4j.Logger;
 public class HomeTest extends BaseTest {
     private static final Logger logger = LogManager.getLogger(HomeTest.class);
 
-
+    @Test(priority = 1)
     public void verifyHomePageTitle() {
 
         HomePage homePage = new HomePage(getPage());
@@ -49,7 +52,7 @@ public class HomeTest extends BaseTest {
                 "Home page is not displayed");
     }
 
-    @Test(priority = 3)
+    @Test(priority = 4)
     public void verifyDeadLinks() throws Exception {
 
         HomePage homePage = new HomePage(getPage());
@@ -90,4 +93,44 @@ public class HomeTest extends BaseTest {
             brokenLinks.forEach(System.out::println);
         }
       }
+
+
+    @Test(priority = 5)
+    public void verifyJanexaPage() {
+
+        HomePage homePage = new HomePage(getPage());
+
+        homePage.productClick();
+
+
+        // Capture the new tab
+        Page janexaPage = getPage().waitForPopup(() -> {
+            homePage.clickJanexa();
+        });
+
+
+        JanexaPage janexa = new JanexaPage(janexaPage);
+
+        Assert.assertEquals(janexa.getCurrentURL(), URLs.JANEXA);
+    }
+
+    @Test(priority = 5)
+    public void verifyCareerclaritypage() {
+
+        HomePage homePage = new HomePage(getPage());
+
+        homePage.productClick();
+
+        // Capture the new tab
+        Page careerPage = getPage().waitForPopup(() -> {
+            homePage.clickJanexa();
+        });
+
+        JanexaPage janexa = new JanexaPage(careerPage);
+
+        Assert.assertEquals(janexa.getCurrentURL(), URLs.CAREER_CLARITY);
+    }
+
+
+
     }

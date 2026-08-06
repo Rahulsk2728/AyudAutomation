@@ -20,6 +20,16 @@ public class HomePage extends BasePage {
     private Locator profileIcon;
     private Locator logoutButton;
 
+    //Products
+    private Locator products;
+    private Locator ayudJobs;
+
+    //Janexa
+    private Locator janexa;
+
+    //career clarity
+    private Locator careerClarity;
+
     public HomePage(Page page) {
         super(page);
 
@@ -30,6 +40,10 @@ public class HomePage extends BasePage {
         homeLogo = page.locator("(//img[@alt='Ayud Software'])[1]");
         profileIcon = page.locator("YOUR_PROFILE_LOCATOR");
         logoutButton = page.locator("YOUR_LOGOUT_LOCATOR");
+        products = page.locator("//a[text()='Products']");
+        ayudJobs = page.locator("a[href='https://www.ayudjobs.com']");
+        janexa= page.locator("a[href='https://www.janexa.in']");
+        careerClarity = page.locator("a[href='https://book.ayudsoftware.com/']");
 
     }
 
@@ -49,6 +63,42 @@ public class HomePage extends BasePage {
     public List<ElementHandle> getAllLinks() {
         return page.querySelectorAll("a");
     }
+
+
+    //Ayud jobs products
+    public void productClick() {
+        products.click();
+    }
+     public void clickAyudJobs() {
+        ayudJobs.click();
+     }
+
+     //Janexa
+     public void clickJanexa() {
+         janexa.click();
+     }
+
+     //Get janexa URL
+     public String getJanexaURL() {
+         return page.url();
+     }
+
+     //Career clarity
+    public void clickCareer() {
+         careerClarity.click();
+    }
+
+    //Get career calirty url
+    public String getcareerURL() {
+        return page.url();
+    }
+
+
+
+
+
+
+
 
 
     // Get Page Title
