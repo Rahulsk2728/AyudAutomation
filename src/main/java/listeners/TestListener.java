@@ -37,28 +37,15 @@ public class TestListener implements ITestListener {
     }
 
     @Override
-    public void onFinish(ITestContext context) {
-
-        extent.flush();
-
-        test.remove();
-
-        try {
-            File report = new File(System.getProperty("user.dir")
-                    + "/reports/ExtentReport.html");
-
-            Desktop.getDesktop().browse(report.toURI());
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-    @Override
     public void onTestFailure(ITestResult result) {
 
         if (test.get() == null) {
             test.set(extent.createTest(result.getMethod().getMethodName()));
         }
+
+        int retryCount = result.getMethod().getCurrentInvocationCount();
+
+        test.get().info("Retry Attempt : " + retryCount + " of 3");
 
         test.get().fail(result.getThrowable());
 
@@ -75,6 +62,34 @@ public class TestListener implements ITestListener {
             test.get().fail("Unable to capture screenshot");
             AllureUtils.attachScreenshot(BaseTest.getPage());
 
+        }
+    }
+    @Override
+    public void onFinish(ITestContext context) {
+
+        extent.flush();
+
+        try {
+
+            File report = new File(
+                    System.getProperty("user.dir")
+                            + "\\reports\\ExtentReport.html");
+
+            if (report.exists()) {
+
+                Runtime.getRuntime().exec(
+                        new String[]{
+                                "cmd",
+                                "/c",
+                                "start",
+                                "",
+                                report.getAbsolutePath()
+                        });
+
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 

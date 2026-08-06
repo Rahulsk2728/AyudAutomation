@@ -27,25 +27,29 @@ pipeline {
                 bat "mvn test -Dbrowser=${params.BROWSER}"
             }
         }
-        stage('Allure Report') {
-            steps {
-                bat 'allure --version'
-                bat 'allure generate allure-results --clean -o allure-report'
-                bat 'dir allure-report'
-            }
-        }
+
     }
 
     post {
         always {
             junit 'target/surefire-reports/*.xml'
-            archiveArtifacts artifacts: 'reports/**', allowEmptyArchive: true
 
             allure(
+                commandline: 'Allure',
                 includeProperties: false,
                 jdk: '',
                 results: [[path: 'allure-results']]
             )
+            publishHTML(target: [
+                    allowMissing: false,
+                    alwaysLinkToLastBuild: true,
+                    keepAll: true,
+                    reportDir: 'reports',
+                    reportFiles: 'ExtentReport.html',
+                    reportName: 'Extent Report'
+                ])
+
+            archiveArtifacts artifacts: 'reports/**', allowEmptyArchive: true
         }
     }
 }
