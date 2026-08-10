@@ -16,19 +16,24 @@ public class HomePage extends BasePage {
     private WaitUtils waitUtils;
 
     // Example Locators
-    private Locator homeLogo;
-    private Locator profileIcon;
-    private Locator logoutButton;
+    private final Locator homeLogo;
 
-    //Products
-    private Locator products;
-    private Locator ayudJobs;
+    //Headers
+    private final Locator products;
+    private final Locator service;
+    private final Locator servicesHeading;
+
+    //Ayudjobs
+    private final Locator ayudJobs;
 
     //Janexa
-    private Locator janexa;
+    private final Locator janexa;
 
-    //career clarity
-    private Locator careerClarity;
+    //Career clarity
+    private final Locator careerClarity;
+
+    //Ayud Blog
+    private final Locator ayudBlog;
 
     public HomePage(Page page) {
         super(page);
@@ -38,12 +43,13 @@ public class HomePage extends BasePage {
 
         // Initialize locators
         homeLogo = page.locator("(//img[@alt='Ayud Software'])[1]");
-        profileIcon = page.locator("YOUR_PROFILE_LOCATOR");
-        logoutButton = page.locator("YOUR_LOGOUT_LOCATOR");
         products = page.locator("//a[text()='Products']");
+        service = page.locator("//a[text()='Services']");
         ayudJobs = page.locator("a[href='https://www.ayudjobs.com']");
         janexa= page.locator("a[href='https://www.janexa.in']");
-        careerClarity = page.locator("a[href='https://book.ayudsoftware.com/']");
+        careerClarity = page.locator("a[href='https://book.ayudsoftware.com']");
+        ayudBlog = page.locator("a[href='https://blog.ayudjobs.com']");
+        servicesHeading = page.locator("//h2[text()='Services built to move a business forward.']");
 
     }
 
@@ -65,10 +71,22 @@ public class HomePage extends BasePage {
     }
 
 
-    //Ayud jobs products
+    //Product
     public void productClick() {
         products.click();
     }
+
+    //Services
+    public void serviceClick() {
+        service.click();
+    }
+
+    //Check service heading
+    public boolean isServicesSectionDisplayed() {
+        return servicesHeading.isVisible();
+    }
+
+    //Ayudjob
      public void clickAyudJobs() {
         ayudJobs.click();
      }
@@ -93,11 +111,10 @@ public class HomePage extends BasePage {
         return page.url();
     }
 
-
-
-
-
-
+    //Ayud Blog
+    public void clickAyudBlog() {
+        ayudBlog.click();
+    }
 
 
 

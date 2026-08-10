@@ -7,6 +7,7 @@ import constants.URLs;
 import dataproviders.LoginDataProvider;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import pages.CareerClarityPage;
 import pages.HomePage;
 import pages.JanexaPage;
 import utils.LinkVerifier;
@@ -108,13 +109,14 @@ public class HomeTest extends BaseTest {
             homePage.clickJanexa();
         });
 
+        logger.info("Verified janexa page" );
 
         JanexaPage janexa = new JanexaPage(janexaPage);
 
         Assert.assertEquals(janexa.getCurrentURL(), URLs.JANEXA);
     }
 
-    @Test(priority = 5)
+    @Test(priority = 6)
     public void verifyCareerclaritypage() {
 
         HomePage homePage = new HomePage(getPage());
@@ -123,14 +125,51 @@ public class HomeTest extends BaseTest {
 
         // Capture the new tab
         Page careerPage = getPage().waitForPopup(() -> {
-            homePage.clickJanexa();
+            homePage.clickCareer();
         });
 
-        JanexaPage janexa = new JanexaPage(careerPage);
+        logger.info("Verified career clarity page" );
 
-        Assert.assertEquals(janexa.getCurrentURL(), URLs.CAREER_CLARITY);
+        CareerClarityPage career = new CareerClarityPage(careerPage);
+
+        Assert.assertEquals(career.getCurrentURL(), URLs.CAREER_CLARITY);
+    }
+
+    @Test(priority = 7)
+    public void verifyAyudBlog() {
+
+        HomePage homePage = new HomePage(getPage());
+
+        homePage.productClick();
+
+        // Capture the new tab
+        Page careerPage = getPage().waitForPopup(() -> {
+            homePage.clickAyudBlog();
+        });
+
+        logger.info("Verified Ayud blog page" );
+
+        CareerClarityPage career = new CareerClarityPage(careerPage);
+
+        Assert.assertEquals(career.getCurrentURL(), URLs.BLOG);
+    }
+
+    @Test(priority = 7)
+    public void verifyServices() {
+
+        HomePage homePage = new HomePage(getPage());
+
+        homePage.serviceClick();
+
+        logger.info("Verified Services page" );
+
+
+        Assert.assertEquals(homePage.isServicesSectionDisplayed(),"Services section is not displayed");
     }
 
 
 
-    }
+
+
+
+}
