@@ -15,6 +15,9 @@ import org.testng.annotations.BeforeMethod;
 import java.nio.file.Paths;
 import org.testng.ITestResult;
 
+import java.nio.file.Files;
+import java.nio.file.Path;
+
 public class BaseTest {
 
     protected Playwright playwright;
@@ -68,6 +71,32 @@ public class BaseTest {
     public void tearDown(ITestResult result) {
 
         String testName = result.getMethod().getMethodName();
+
+        // 1. Capture screenshot if test failed
+        if (result.getStatus() == ITestResult.FAILURE && page.get() != null) {
+
+
+
+            try {
+                Path screenshotDir = Paths.get("screenshots");
+
+                Files.createDirectories(screenshotDir);
+
+                Path screenshotPath =
+                        screenshotDir.resolve(testName + ".png");
+
+                page.get().screenshot(
+                        new Page.ScreenshotOptions()
+                                .setPath(screenshotPath)
+                                .setFullPage(true)
+                );
+
+                logger.info("Screenshot captured: {}", screenshotPath);
+
+            } catch (Exception e) {
+                logger.error("Failed to capture screenshot", e);
+            }
+        }
 
         // 1. Stop tracing
         if (context.get() != null) {

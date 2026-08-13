@@ -40,3 +40,8 @@
 2026-08-13 12:19:53 [main] INFO  base.BaseTest - Launching browser
 2026-08-13 12:19:56 [main] INFO  tests.HomeTest - Verified Services page
 2026-08-13 12:19:56 [main] INFO  base.BaseTest - Browser closed successfully.
+2026-08-13 18:16:16 [main] INFO  base.BaseTest - Creating Playwright instance
+2026-08-13 18:16:22 [main] INFO  base.BaseTest - Launching browser
+2026-08-13 18:16:32 [main] INFO  tests.HomeTest - Verified Advisory
+2026-08-13 18:16:33 [main] INFO  base.BaseTest - Screenshot captured: screenshots\verifyAdvisory.png
+2026-08-13 18:16:34 [main] INFO  base.BaseTest - Browser closed successfully.
