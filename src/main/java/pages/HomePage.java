@@ -22,6 +22,9 @@ public class HomePage extends BasePage {
     private final Locator products;
     private final Locator service;
     private final Locator servicesHeading;
+    private final Locator workHeading;
+    private final Locator advisoryHeading;
+
 
     //Ayudjobs
     private final Locator ayudJobs;
@@ -35,6 +38,12 @@ public class HomePage extends BasePage {
     //Ayud Blog
     private final Locator ayudBlog;
 
+    //Work
+    private final Locator work;
+
+    //Advisory
+    private final Locator advisory;
+
     public HomePage(Page page) {
         super(page);
 
@@ -45,11 +54,15 @@ public class HomePage extends BasePage {
         homeLogo = page.locator("(//img[@alt='Ayud Software'])[1]");
         products = page.locator("//a[text()='Products']");
         service = page.locator("//a[text()='Services']");
+        work = page.locator("//a[text()='Work']");
         ayudJobs = page.locator("a[href='https://www.ayudjobs.com']");
         janexa= page.locator("a[href='https://www.janexa.in']");
         careerClarity = page.locator("a[href='https://book.ayudsoftware.com']");
         ayudBlog = page.locator("a[href='https://blog.ayudjobs.com']");
         servicesHeading = page.locator("//h2[text()='Services built to move a business forward.']");
+        workHeading = page.locator("//h2[text()='Proof, not adjectives.']");
+        advisory = page.locator("//a[text()='Advisory']");
+        advisoryHeading = page.locator("//h2[text()='Companies I mentor and guide.']");
 
     }
 
@@ -86,6 +99,17 @@ public class HomePage extends BasePage {
         return servicesHeading.isVisible();
     }
 
+    //Check work heading
+    public boolean isWorkSectionDisplayed() {
+        return workHeading.isVisible();
+    }
+
+    //Check advisory heading
+    public boolean isAdvisorySectionDisplayed() {
+        return advisoryHeading.isVisible();
+    }
+
+
     //Ayudjob
      public void clickAyudJobs() {
         ayudJobs.click();
@@ -115,6 +139,14 @@ public class HomePage extends BasePage {
     public void clickAyudBlog() {
         ayudBlog.click();
     }
+
+    //Work
+    public void clickWork() {
+        work.click();
+    }
+
+    //Advisory
+    public void clickAdvisory(){ advisory.click();}
 
 
 

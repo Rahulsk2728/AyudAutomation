@@ -8,7 +8,7 @@ public class URLs {
             "https://www.ayudsoftware.com/";
 
     public static final String AYUD_JOBS =
-            "https://ayudjobs.com/";
+            "https://www.ayudjobs.com/";
 
     public static final String JANEXA =
             "https://www.janexa.in/";

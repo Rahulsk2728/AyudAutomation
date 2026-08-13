@@ -1,0 +1,42 @@
+2026-08-13 12:18:23 [main] INFO  base.BaseTest - Creating Playwright instance
+2026-08-13 12:18:28 [main] INFO  base.BaseTest - Launching browser
+2026-08-13 12:18:28 [main] INFO  tests.HomeTest - ========== Starting Ayud Jobs Navigation Test ==========
+2026-08-13 12:18:28 [main] INFO  tests.HomeTest - Clicking on Products section.
+2026-08-13 12:18:31 [main] INFO  tests.HomeTest - Clicking on Ayud Jobs card and waiting for new tab.
+2026-08-13 12:18:39 [main] INFO  tests.HomeTest - Verifying Ayud Jobs page is displayed.
+2026-08-13 12:18:39 [main] INFO  tests.HomeTest - Verified URL: https://www.ayudjobs.com/
+2026-08-13 12:18:39 [main] INFO  tests.HomeTest - Verifying Ayud Jobs page title.
+2026-08-13 12:18:40 [main] INFO  base.BaseTest - Browser closed successfully.
+2026-08-13 12:19:09 [main] INFO  base.BaseTest - Creating Playwright instance
+2026-08-13 12:19:14 [main] INFO  base.BaseTest - Launching browser
+2026-08-13 12:19:14 [main] INFO  tests.HomeTest - Page Title: Checking your browser before accessing. Just a moment...
+2026-08-13 12:19:14 [main] INFO  base.BaseTest - Browser closed successfully.
+2026-08-13 12:19:14 [main] INFO  base.BaseTest - Creating Playwright instance
+2026-08-13 12:19:17 [main] INFO  base.BaseTest - Launching browser
+2026-08-13 12:19:17 [main] INFO  tests.HomeTest - Current URL: https://www.ayudsoftware.com/
+2026-08-13 12:19:17 [main] INFO  base.BaseTest - Browser closed successfully.
+2026-08-13 12:19:17 [main] INFO  base.BaseTest - Creating Playwright instance
+2026-08-13 12:19:20 [main] INFO  base.BaseTest - Launching browser
+2026-08-13 12:19:20 [main] INFO  base.BaseTest - Browser closed successfully.
+2026-08-13 12:19:20 [main] INFO  base.BaseTest - Creating Playwright instance
+2026-08-13 12:19:22 [main] INFO  base.BaseTest - Launching browser
+2026-08-13 12:19:22 [main] INFO  tests.HomeTest - Total links found: 0
+2026-08-13 12:19:22 [main] INFO  tests.HomeTest - Broken links count: 0
+2026-08-13 12:19:22 [main] INFO  tests.HomeTest - ✅ No broken links found.
+2026-08-13 12:19:22 [main] INFO  base.BaseTest - Browser closed successfully.
+2026-08-13 12:19:22 [main] INFO  base.BaseTest - Creating Playwright instance
+2026-08-13 12:19:25 [main] INFO  base.BaseTest - Launching browser
+2026-08-13 12:19:30 [main] INFO  tests.HomeTest - Verified janexa page
+2026-08-13 12:19:30 [main] INFO  base.BaseTest - Browser closed successfully.
+2026-08-13 12:19:30 [main] INFO  base.BaseTest - Creating Playwright instance
+2026-08-13 12:19:32 [main] INFO  base.BaseTest - Launching browser
+2026-08-13 12:19:36 [main] INFO  tests.HomeTest - Verified career clarity page
+2026-08-13 12:19:37 [main] INFO  base.BaseTest - Browser closed successfully.
+2026-08-13 12:19:37 [main] INFO  base.BaseTest - Creating Playwright instance
+2026-08-13 12:19:39 [main] INFO  base.BaseTest - Launching browser
+2026-08-13 12:19:48 [main] INFO  tests.HomeTest - Verified Ayud blog page
+2026-08-13 12:19:48 [main] INFO  base.BaseTest - Browser closed successfully.
+2026-08-13 12:19:48 [main] INFO  base.BaseTest - Creating Playwright instance
+2026-08-13 12:19:53 [main] INFO  base.BaseTest - Launching browser
+2026-08-13 12:19:56 [main] INFO  tests.HomeTest - Verified Services page
+2026-08-13 12:19:56 [main] INFO  base.BaseTest - Browser closed successfully.

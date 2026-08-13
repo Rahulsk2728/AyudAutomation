@@ -22,10 +22,16 @@ public class AyudJobsTest extends BaseTest {
     @Test(priority = 1)
     public void verifyAyudJobsNavigation() {
 
+        logger.info("========== Starting Ayud Jobs Navigation Test ==========");
+
         HomePage homePage = new HomePage(getPage());
+
+        logger.info("Clicking on Products section.");
 
         // Scroll to Products section
         homePage.productClick();
+
+        logger.info("Clicking on Ayud Jobs card and waiting for new tab.");
 
         // Capture the new tab
         Page jobsPage = getPage().waitForPopup(() -> {
@@ -35,12 +41,16 @@ public class AyudJobsTest extends BaseTest {
         jobsPage.waitForLoadState();
 
         AyudJobsPage ayudJobsPage = new AyudJobsPage(jobsPage);
+        logger.info("Verifying Ayud Jobs page is displayed.");
 
         Assert.assertTrue(ayudJobsPage.isAyudJobsPageDisplayed());
 
         Assert.assertEquals(
                 ayudJobsPage.getCurrentURL(),
-                URLs.AYUD_JOBS);
+                URLs.AYUD_JOBS,"Page title doesnt match");
+        logger.info("Verified URL: {}", ayudJobsPage.getCurrentURL());
+
+        logger.info("Verifying Ayud Jobs page title.");
 
         Assert.assertEquals(
                 ayudJobsPage.getPageTitle(),
