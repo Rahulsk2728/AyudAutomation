@@ -50,6 +50,9 @@ pipeline {
                 ])
 
             archiveArtifacts artifacts: 'reports/**', allowEmptyArchive: true
+
+            archiveArtifacts artifacts: 'screenshots/**',
+            allowEmptyArchive: true
         }
     }
 }
