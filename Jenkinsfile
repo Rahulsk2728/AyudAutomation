@@ -1,59 +1,89 @@
 pipeline {
     agent any
 
-    parameters {
-        choice(
-            name: 'BROWSER',
-            choices: ['chrome', 'edge'],
-            description: 'Select browser'
-        )
-    }
     stages {
 
-        stage('Checkout') {
-            steps {
-                checkout scm
+        stage('Parallel Cross Browser Tests') {
+
+            parallel {
+
+                stage('Chrome Tests') {
+
+                    steps {
+
+                        dir('chrome') {
+
+                            checkout scm
+
+                            bat 'mvn clean test "-Dbrowser=chrome" "-Dsurefire.suiteXmlFiles=testng.xml"'
+                        }
+                    }
+                }
+
+                stage('Edge Tests') {
+
+                    steps {
+
+                        dir('edge') {
+
+                            checkout scm
+
+                            bat 'mvn clean test "-Dbrowser=edge" "-Dsurefire.suiteXmlFiles=testng.xml"'
+                        }
+                    }
+                }
             }
         }
-
-        stage('Compile') {
-            steps {
-                bat 'mvn clean compile'
-            }
-        }
-
-        stage('Run Tests') {
-            steps {
-                bat "mvn test -Dbrowser=${params.BROWSER}"
-            }
-        }
-
     }
 
     post {
+
         always {
-            junit 'target/surefire-reports/*.xml'
+
+            echo 'Publishing test results...'
+
+            junit(
+                testResults: '**/target/surefire-reports/*.xml',
+                allowEmptyResults: true
+            )
 
             allure(
                 commandline: 'Allure',
                 includeProperties: false,
                 jdk: '',
-                results: [[path: 'allure-results']]
+                results: [
+                    [path: 'chrome/allure-results'],
+                    [path: 'edge/allure-results']
+                ]
             )
+
             publishHTML(target: [
-                    allowMissing: false,
+                    allowMissing: true,
                     alwaysLinkToLastBuild: true,
                     keepAll: true,
-                    reportDir: 'reports',
+                    reportDir: 'chrome/reports',
                     reportFiles: 'ExtentReport.html',
-                    reportName: 'Extent Report'
+                    reportName: 'Chrome Extent Report'
                 ])
 
-            archiveArtifacts artifacts: 'reports/**', allowEmptyArchive: true
+            publishHTML(target: [
+                    allowMissing: true,
+                    alwaysLinkToLastBuild: true,
+                    keepAll: true,
+                    reportDir: 'edge/reports',
+                    reportFiles: 'ExtentReport.html',
+                    reportName: 'Edge Extent Report'
+                ])
 
-            archiveArtifacts artifacts: 'screenshots/**',allowEmptyArchive: true
+            archiveArtifacts(
+                artifacts: '**/screenshots/**, **/traces/**',
+                allowEmptyArchive: true
+            )
 
-            archiveArtifacts artifacts: 'traces/**',allowEmptyArchive: true
+            archiveArtifacts(
+                artifacts: '**/reports/**',
+                allowEmptyArchive: true
+            )
         }
     }
 }

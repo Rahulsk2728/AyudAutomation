@@ -5,8 +5,6 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import factory.BrowserFactory;
-import org.testng.annotations.Optional;
-import org.testng.annotations.Parameters;
 import utils.ConfigReader;
 
 import org.testng.annotations.AfterMethod;
@@ -37,18 +35,28 @@ public class BaseTest {
 
 
     @BeforeMethod
-    @Parameters("browser")
-    public void  setUp(@Optional("chromium") String browserName) {
+    public void setUp() {
+
+        String browserName =
+                System.getProperty("browser", "chromium");
+        logger.info(
+                "Test started | Thread: {} | Browser: {}",
+                Thread.currentThread().getName(),
+                browserName
+        );
 
         logger.info("Creating Playwright instance");
-        playwright = Playwright.create();
+        logger.info("Browser selected: {}", browserName);
 
+        playwright = Playwright.create();
 
         browser.set(
                 BrowserFactory.launchBrowser(
                         playwright,
-                        ConfigReader.getProperty("browser"),
-                        Boolean.parseBoolean(ConfigReader.getProperty("headless"))
+                        browserName,
+                        Boolean.parseBoolean(
+                                ConfigReader.getProperty("headless")
+                        )
                 )
         );
 
@@ -62,9 +70,12 @@ public class BaseTest {
         );
 
         page.set(context.get().newPage());
-        page.get().navigate(ConfigReader.getProperty("url"));
 
-        logger.info("Launching browser");
+        page.get().navigate(
+                ConfigReader.getProperty("url")
+        );
+
+        logger.info("Launching browser: {}", browserName);
     }
 
     @AfterMethod
@@ -72,13 +83,25 @@ public class BaseTest {
 
         String testName = result.getMethod().getMethodName();
 
+        String browserName =
+                System.getProperty("browser", "chromium")
+                        .trim()
+                        .toLowerCase();
+
+        logger.info(
+                "Test finished | Thread: {} | Browser: {}",
+                Thread.currentThread().getName(),
+                browserName
+        );
+
         // 1. Capture screenshot if test failed
-        if (result.getStatus() == ITestResult.FAILURE && page.get() != null) {
-
-
+        if (result.getStatus() == ITestResult.FAILURE
+                && page.get() != null) {
 
             try {
-                Path screenshotDir = Paths.get("screenshots");
+
+                Path screenshotDir =
+                        Paths.get("screenshots", browserName);
 
                 Files.createDirectories(screenshotDir);
 
@@ -91,35 +114,69 @@ public class BaseTest {
                                 .setFullPage(true)
                 );
 
-                logger.info("Screenshot captured: {}", screenshotPath);
+                logger.info(
+                        "Screenshot captured: {}",
+                        screenshotPath
+                );
 
             } catch (Exception e) {
-                logger.error("Failed to capture screenshot", e);
+
+                logger.error(
+                        "Failed to capture screenshot",
+                        e
+                );
             }
         }
 
-        // 1. Stop tracing
+        // 2. Stop tracing
         if (context.get() != null) {
-            context.get().tracing().stop(
-                    new Tracing.StopOptions()
-                            .setPath(Paths.get("traces/" + testName + ".zip"))
-            );
+
+            try {
+
+                Path traceDir =
+                        Paths.get("traces", browserName);
+
+                Files.createDirectories(traceDir);
+
+                Path tracePath =
+                        traceDir.resolve(testName + ".zip");
+
+                context.get().tracing().stop(
+                        new Tracing.StopOptions()
+                                .setPath(tracePath)
+                );
+
+                logger.info(
+                        "Trace saved: {}",
+                        tracePath
+                );
+
+            } catch (Exception e) {
+
+                logger.error(
+                        "Failed to save trace",
+                        e
+                );
+            }
         }
 
-        // 2. Close page
+        // 3. Close page
         if (page.get() != null) {
+
             page.get().close();
             page.remove();
         }
 
-        // 3. Close context
+        // 4. Close context
         if (context.get() != null) {
+
             context.get().close();
             context.remove();
         }
 
-        // 4. Close browser
+        // 5. Close browser
         if (browser.get() != null) {
+
             browser.get().close();
             browser.remove();
         }

@@ -13,17 +13,26 @@ public class BrowserFactory {
 
         switch (browserName.trim().toLowerCase()) {
 
-            case "firefox":
-                return playwright.firefox().launch(options);
+            case "chrome":
+                return playwright.chromium().launch(
+                        options.setChannel("chrome")
+                );
 
-            case "webkit":
-                return playwright.webkit().launch(options);
+            case "edge":
+                return playwright.chromium().launch(
+                        options.setChannel("msedge")
+                );
 
             case "chromium":
                 return playwright.chromium().launch(options);
 
+            case "firefox":
+                return playwright.firefox().launch(options);
+
             default:
-                throw new IllegalArgumentException("Unsupported browser: " + browserName);
+                throw new IllegalArgumentException(
+                        "Unsupported browser: " + browserName
+                );
         }
     }
 }

@@ -45,3 +45,557 @@
 2026-08-13 18:16:32 [main] INFO  tests.HomeTest - Verified Advisory
 2026-08-13 18:16:33 [main] INFO  base.BaseTest - Screenshot captured: screenshots\verifyAdvisory.png
 2026-08-13 18:16:34 [main] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:13:25 [main] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:13:25 [main] INFO  base.BaseTest - Browser selected: edge
+2026-08-31 13:13:53 [main] INFO  base.BaseTest - Launching browser: edge
+2026-08-31 13:13:53 [main] INFO  tests.HomeTest - ========== Starting Ayud Jobs Navigation Test ==========
+2026-08-31 13:13:53 [main] INFO  tests.HomeTest - Clicking on Products section.
+2026-08-31 13:13:56 [main] INFO  tests.HomeTest - Clicking on Ayud Jobs card and waiting for new tab.
+2026-08-31 13:14:00 [main] INFO  tests.HomeTest - Verifying Ayud Jobs page is displayed.
+2026-08-31 13:14:00 [main] INFO  tests.HomeTest - Verified URL: https://www.ayudjobs.com/
+2026-08-31 13:14:00 [main] INFO  tests.HomeTest - Verifying Ayud Jobs page title.
+2026-08-31 13:14:01 [main] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:14:01 [main] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:14:01 [main] INFO  base.BaseTest - Browser selected: edge
+2026-08-31 13:14:05 [main] INFO  base.BaseTest - Launching browser: edge
+2026-08-31 13:14:05 [main] INFO  tests.HomeTest - Page Title: Checking your browser before accessing. Just a moment...
+2026-08-31 13:14:12 [main] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:14:12 [main] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:14:12 [main] INFO  base.BaseTest - Browser selected: edge
+2026-08-31 13:14:15 [main] INFO  base.BaseTest - Launching browser: edge
+2026-08-31 13:14:15 [main] INFO  tests.HomeTest - Current URL: https://www.ayudsoftware.com/
+2026-08-31 13:14:21 [main] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:14:21 [main] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:14:21 [main] INFO  base.BaseTest - Browser selected: edge
+2026-08-31 13:14:25 [main] INFO  base.BaseTest - Launching browser: edge
+2026-08-31 13:14:25 [main] INFO  base.BaseTest - Screenshot captured: screenshots\verifyHomePageDisplayed.png
+2026-08-31 13:14:32 [main] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:14:32 [main] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:14:32 [main] INFO  base.BaseTest - Browser selected: edge
+2026-08-31 13:14:34 [main] INFO  base.BaseTest - Launching browser: edge
+2026-08-31 13:14:34 [main] INFO  tests.HomeTest - Total links found: 0
+2026-08-31 13:14:34 [main] INFO  tests.HomeTest - Broken links count: 0
+2026-08-31 13:14:34 [main] INFO  tests.HomeTest - ✅ No broken links found.
+2026-08-31 13:14:41 [main] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:14:41 [main] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:14:41 [main] INFO  base.BaseTest - Browser selected: edge
+2026-08-31 13:14:44 [main] INFO  base.BaseTest - Launching browser: edge
+2026-08-31 13:14:49 [main] INFO  tests.HomeTest - Verified janexa page
+2026-08-31 13:14:50 [main] INFO  base.BaseTest - Screenshot captured: screenshots\verifyJanexaPage.png
+2026-08-31 13:14:51 [main] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:14:51 [main] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:14:51 [main] INFO  base.BaseTest - Browser selected: edge
+2026-08-31 13:14:53 [main] INFO  base.BaseTest - Launching browser: edge
+2026-08-31 13:14:58 [main] INFO  tests.HomeTest - Verified career clarity page
+2026-08-31 13:14:59 [main] INFO  base.BaseTest - Screenshot captured: screenshots\verifyCareerclaritypage.png
+2026-08-31 13:14:59 [main] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:14:59 [main] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:14:59 [main] INFO  base.BaseTest - Browser selected: edge
+2026-08-31 13:15:02 [main] INFO  base.BaseTest - Launching browser: edge
+2026-08-31 13:15:06 [main] INFO  tests.HomeTest - Verified Ayud blog page
+2026-08-31 13:15:07 [main] INFO  base.BaseTest - Screenshot captured: screenshots\verifyAyudBlog.png
+2026-08-31 13:15:08 [main] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:15:08 [main] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:15:08 [main] INFO  base.BaseTest - Browser selected: edge
+2026-08-31 13:15:11 [main] INFO  base.BaseTest - Launching browser: edge
+2026-08-31 13:15:14 [main] INFO  tests.HomeTest - Verified Services page
+2026-08-31 13:15:15 [main] INFO  base.BaseTest - Screenshot captured: screenshots\verifyServices.png
+2026-08-31 13:15:15 [main] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:15:15 [main] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:15:15 [main] INFO  base.BaseTest - Browser selected: edge
+2026-08-31 13:15:20 [main] INFO  base.BaseTest - Launching browser: edge
+2026-08-31 13:15:22 [main] INFO  tests.HomeTest - Verified Workpage
+2026-08-31 13:15:23 [main] INFO  base.BaseTest - Screenshot captured: screenshots\verifyWork.png
+2026-08-31 13:15:24 [main] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:15:24 [main] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:15:24 [main] INFO  base.BaseTest - Browser selected: edge
+2026-08-31 13:15:27 [main] INFO  base.BaseTest - Launching browser: edge
+2026-08-31 13:15:30 [main] INFO  tests.HomeTest - Verified Advisory
+2026-08-31 13:15:30 [main] INFO  base.BaseTest - Screenshot captured: screenshots\verifyAdvisory.png
+2026-08-31 13:15:31 [main] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:18:02 [main] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:18:02 [main] INFO  base.BaseTest - Browser selected: chromium
+2026-08-31 13:18:08 [main] INFO  base.BaseTest - Launching browser: chromium
+2026-08-31 13:18:08 [main] INFO  tests.HomeTest - ========== Starting Ayud Jobs Navigation Test ==========
+2026-08-31 13:18:08 [main] INFO  tests.HomeTest - Clicking on Products section.
+2026-08-31 13:18:11 [main] INFO  tests.HomeTest - Clicking on Ayud Jobs card and waiting for new tab.
+2026-08-31 13:18:14 [main] INFO  tests.HomeTest - Verifying Ayud Jobs page is displayed.
+2026-08-31 13:18:14 [main] INFO  tests.HomeTest - Verified URL: https://www.ayudjobs.com/
+2026-08-31 13:18:14 [main] INFO  tests.HomeTest - Verifying Ayud Jobs page title.
+2026-08-31 13:18:15 [main] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:18:15 [main] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:18:15 [main] INFO  base.BaseTest - Browser selected: chromium
+2026-08-31 13:18:18 [main] INFO  base.BaseTest - Launching browser: chromium
+2026-08-31 13:18:18 [main] INFO  tests.HomeTest - Page Title: Checking your browser before accessing. Just a moment...
+2026-08-31 13:18:18 [main] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:18:18 [main] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:18:18 [main] INFO  base.BaseTest - Browser selected: chromium
+2026-08-31 13:18:21 [main] INFO  base.BaseTest - Launching browser: chromium
+2026-08-31 13:18:21 [main] INFO  tests.HomeTest - Current URL: https://www.ayudsoftware.com/
+2026-08-31 13:18:22 [main] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:18:22 [main] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:18:22 [main] INFO  base.BaseTest - Browser selected: chromium
+2026-08-31 13:18:24 [main] INFO  base.BaseTest - Launching browser: chromium
+2026-08-31 13:18:24 [main] INFO  base.BaseTest - Screenshot captured: screenshots\verifyHomePageDisplayed.png
+2026-08-31 13:18:25 [main] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:18:25 [main] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:18:25 [main] INFO  base.BaseTest - Browser selected: chromium
+2026-08-31 13:18:27 [main] INFO  base.BaseTest - Launching browser: chromium
+2026-08-31 13:18:27 [main] INFO  tests.HomeTest - Total links found: 0
+2026-08-31 13:18:27 [main] INFO  tests.HomeTest - Broken links count: 0
+2026-08-31 13:18:27 [main] INFO  tests.HomeTest - ✅ No broken links found.
+2026-08-31 13:18:27 [main] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:18:27 [main] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:18:27 [main] INFO  base.BaseTest - Browser selected: chromium
+2026-08-31 13:18:30 [main] INFO  base.BaseTest - Launching browser: chromium
+2026-08-31 13:18:35 [main] INFO  tests.HomeTest - Verified janexa page
+2026-08-31 13:18:36 [main] INFO  base.BaseTest - Screenshot captured: screenshots\verifyJanexaPage.png
+2026-08-31 13:18:37 [main] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:18:37 [main] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:18:37 [main] INFO  base.BaseTest - Browser selected: chromium
+2026-08-31 13:18:40 [main] INFO  base.BaseTest - Launching browser: chromium
+2026-08-31 13:18:45 [main] INFO  tests.HomeTest - Verified career clarity page
+2026-08-31 13:18:46 [main] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:18:46 [main] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:18:46 [main] INFO  base.BaseTest - Browser selected: chromium
+2026-08-31 13:18:49 [main] INFO  base.BaseTest - Launching browser: chromium
+2026-08-31 13:18:54 [main] INFO  tests.HomeTest - Verified Ayud blog page
+2026-08-31 13:18:55 [main] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:18:55 [main] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:18:55 [main] INFO  base.BaseTest - Browser selected: chromium
+2026-08-31 13:18:57 [main] INFO  base.BaseTest - Launching browser: chromium
+2026-08-31 13:19:00 [main] INFO  tests.HomeTest - Verified Services page
+2026-08-31 13:19:01 [main] INFO  base.BaseTest - Screenshot captured: screenshots\verifyServices.png
+2026-08-31 13:19:01 [main] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:19:01 [main] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:19:01 [main] INFO  base.BaseTest - Browser selected: chromium
+2026-08-31 13:19:05 [main] INFO  base.BaseTest - Launching browser: chromium
+2026-08-31 13:19:08 [main] INFO  tests.HomeTest - Verified Workpage
+2026-08-31 13:19:08 [main] INFO  base.BaseTest - Screenshot captured: screenshots\verifyWork.png
+2026-08-31 13:19:09 [main] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:19:09 [main] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:19:09 [main] INFO  base.BaseTest - Browser selected: chromium
+2026-08-31 13:19:12 [main] INFO  base.BaseTest - Launching browser: chromium
+2026-08-31 13:19:15 [main] INFO  tests.HomeTest - Verified Advisory
+2026-08-31 13:19:16 [main] INFO  base.BaseTest - Screenshot captured: screenshots\verifyAdvisory.png
+2026-08-31 13:19:16 [main] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:26:27 [main] INFO  base.BaseTest - Test started | Thread: main | Browser: chrome
+2026-08-31 13:26:27 [main] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:26:27 [main] INFO  base.BaseTest - Browser selected: chrome
+2026-08-31 13:26:40 [main] INFO  base.BaseTest - Launching browser: chrome
+2026-08-31 13:26:40 [main] INFO  tests.HomeTest - ========== Starting Ayud Jobs Navigation Test ==========
+2026-08-31 13:26:40 [main] INFO  tests.HomeTest - Clicking on Products section.
+2026-08-31 13:26:42 [main] INFO  tests.HomeTest - Clicking on Ayud Jobs card and waiting for new tab.
+2026-08-31 13:27:15 [main] INFO  base.BaseTest - Screenshot captured: screenshots\verifyAyudJobsNavigation.png
+2026-08-31 13:27:16 [main] INFO  base.BaseTest - Test finished | Thread: main
+2026-08-31 13:27:16 [main] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:27:16 [main] INFO  base.BaseTest - Test started | Thread: main | Browser: chrome
+2026-08-31 13:27:16 [main] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:27:16 [main] INFO  base.BaseTest - Browser selected: chrome
+2026-08-31 13:27:21 [main] INFO  base.BaseTest - Launching browser: chrome
+2026-08-31 13:27:21 [main] INFO  tests.HomeTest - Page Title: Checking your browser before accessing. Just a moment...
+2026-08-31 13:27:21 [main] INFO  base.BaseTest - Test finished | Thread: main
+2026-08-31 13:27:21 [main] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:27:21 [main] INFO  base.BaseTest - Test started | Thread: main | Browser: chrome
+2026-08-31 13:27:21 [main] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:27:21 [main] INFO  base.BaseTest - Browser selected: chrome
+2026-08-31 13:27:25 [main] INFO  base.BaseTest - Launching browser: chrome
+2026-08-31 13:27:25 [main] INFO  tests.HomeTest - Current URL: https://www.ayudsoftware.com/
+2026-08-31 13:27:25 [main] INFO  base.BaseTest - Test finished | Thread: main
+2026-08-31 13:27:25 [main] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:27:25 [main] INFO  base.BaseTest - Test started | Thread: main | Browser: chrome
+2026-08-31 13:27:25 [main] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:27:25 [main] INFO  base.BaseTest - Browser selected: chrome
+2026-08-31 13:27:29 [main] INFO  base.BaseTest - Launching browser: chrome
+2026-08-31 13:27:29 [main] INFO  base.BaseTest - Screenshot captured: screenshots\verifyHomePageDisplayed.png
+2026-08-31 13:27:29 [main] INFO  base.BaseTest - Test finished | Thread: main
+2026-08-31 13:27:29 [main] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:27:29 [main] INFO  base.BaseTest - Test started | Thread: main | Browser: chrome
+2026-08-31 13:27:29 [main] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:27:29 [main] INFO  base.BaseTest - Browser selected: chrome
+2026-08-31 13:27:35 [main] INFO  base.BaseTest - Launching browser: chrome
+2026-08-31 13:27:35 [main] INFO  tests.HomeTest - Total links found: 0
+2026-08-31 13:27:35 [main] INFO  tests.HomeTest - Broken links count: 0
+2026-08-31 13:27:35 [main] INFO  tests.HomeTest - ✅ No broken links found.
+2026-08-31 13:27:36 [main] INFO  base.BaseTest - Test finished | Thread: main
+2026-08-31 13:27:36 [main] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:27:36 [main] INFO  base.BaseTest - Test started | Thread: main | Browser: chrome
+2026-08-31 13:27:36 [main] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:27:36 [main] INFO  base.BaseTest - Browser selected: chrome
+2026-08-31 13:27:39 [main] INFO  base.BaseTest - Launching browser: chrome
+2026-08-31 13:27:44 [main] INFO  tests.HomeTest - Verified janexa page
+2026-08-31 13:27:45 [main] INFO  base.BaseTest - Screenshot captured: screenshots\verifyJanexaPage.png
+2026-08-31 13:27:45 [main] INFO  base.BaseTest - Test finished | Thread: main
+2026-08-31 13:27:45 [main] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:27:45 [main] INFO  base.BaseTest - Test started | Thread: main | Browser: chrome
+2026-08-31 13:27:45 [main] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:27:45 [main] INFO  base.BaseTest - Browser selected: chrome
+2026-08-31 13:27:48 [main] INFO  base.BaseTest - Launching browser: chrome
+2026-08-31 13:28:04 [main] INFO  tests.HomeTest - Verified career clarity page
+2026-08-31 13:28:05 [main] INFO  base.BaseTest - Screenshot captured: screenshots\verifyCareerclaritypage.png
+2026-08-31 13:28:05 [main] INFO  base.BaseTest - Test finished | Thread: main
+2026-08-31 13:28:05 [main] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:28:05 [main] INFO  base.BaseTest - Test started | Thread: main | Browser: chrome
+2026-08-31 13:28:05 [main] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:28:05 [main] INFO  base.BaseTest - Browser selected: chrome
+2026-08-31 13:28:08 [main] INFO  base.BaseTest - Launching browser: chrome
+2026-08-31 13:28:15 [main] INFO  tests.HomeTest - Verified Ayud blog page
+2026-08-31 13:28:15 [main] INFO  base.BaseTest - Screenshot captured: screenshots\verifyAyudBlog.png
+2026-08-31 13:28:16 [main] INFO  base.BaseTest - Test finished | Thread: main
+2026-08-31 13:28:16 [main] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:28:16 [main] INFO  base.BaseTest - Test started | Thread: main | Browser: chrome
+2026-08-31 13:28:16 [main] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:28:16 [main] INFO  base.BaseTest - Browser selected: chrome
+2026-08-31 13:28:20 [main] INFO  base.BaseTest - Launching browser: chrome
+2026-08-31 13:29:20 [main] ERROR base.BaseTest - Failed to capture screenshot
+com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\RAHULS~1\AppData\Local\Temp\playwright-java-4039332238700397288\package\lib\server\progress.js:65:26)
+    at PageDispatcher._runCommand (C:\Users\RAHULS~1\AppData\Local\Temp\playwright-java-4039332238700397288\package\lib\server\dispatchers\dispatcher.js:91:31)
+    at DispatcherConnection.dispatch (C:\Users\RAHULS~1\AppData\Local\Temp\playwright-java-4039332238700397288\package\lib\server\dispatchers\dispatcher.js:322:39)
+}
+Call log:
+-   - taking page screenshot
+-   - waiting for fonts to load...
+-   - fonts loaded
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.PageImpl.screenshotImpl(PageImpl.java:1181)
+	at com.microsoft.playwright.impl.PageImpl.screenshot(PageImpl.java:1126)
+	at base.BaseTest.tearDown(BaseTest.java:99)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:846)
+	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:815)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:791)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\RAHULS~1\AppData\Local\Temp\playwright-java-4039332238700397288\package\lib\server\progress.js:65:26)
+    at PageDispatcher._runCommand (C:\Users\RAHULS~1\AppData\Local\Temp\playwright-java-4039332238700397288\package\lib\server\dispatchers\dispatcher.js:91:31)
+    at DispatcherConnection.dispatch (C:\Users\RAHULS~1\AppData\Local\Temp\playwright-java-4039332238700397288\package\lib\server\dispatchers\dispatcher.js:322:39)
+}
+Call log:
+-   - taking page screenshot
+-   - waiting for fonts to load...
+-   - fonts loaded
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+	... 41 more
+2026-08-31 13:29:21 [main] INFO  base.BaseTest - Test finished | Thread: main
+2026-08-31 13:29:21 [main] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:29:21 [main] INFO  base.BaseTest - Test started | Thread: main | Browser: chrome
+2026-08-31 13:29:21 [main] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:29:21 [main] INFO  base.BaseTest - Browser selected: chrome
+2026-08-31 13:29:40 [main] INFO  base.BaseTest - Launching browser: chrome
+2026-08-31 13:29:46 [main] INFO  tests.HomeTest - Verified Workpage
+2026-08-31 13:29:47 [main] INFO  base.BaseTest - Screenshot captured: screenshots\verifyWork.png
+2026-08-31 13:29:47 [main] INFO  base.BaseTest - Test finished | Thread: main
+2026-08-31 13:29:47 [main] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:29:47 [main] INFO  base.BaseTest - Test started | Thread: main | Browser: chrome
+2026-08-31 13:29:47 [main] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:29:47 [main] INFO  base.BaseTest - Browser selected: chrome
+2026-08-31 13:29:54 [main] INFO  base.BaseTest - Launching browser: chrome
+2026-08-31 13:29:57 [main] INFO  tests.HomeTest - Verified Advisory
+2026-08-31 13:29:58 [main] INFO  base.BaseTest - Screenshot captured: screenshots\verifyAdvisory.png
+2026-08-31 13:29:59 [main] INFO  base.BaseTest - Test finished | Thread: main
+2026-08-31 13:29:59 [main] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:31:35 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Test started | Thread: TestNG-test-Regression Tests-1 | Browser: chrome
+2026-08-31 13:31:35 [TestNG-test-Regression Tests-2] INFO  base.BaseTest - Test started | Thread: TestNG-test-Regression Tests-2 | Browser: chrome
+2026-08-31 13:31:35 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Test started | Thread: TestNG-test-Regression Tests-3 | Browser: chrome
+2026-08-31 13:31:35 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:31:35 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:31:35 [TestNG-test-Regression Tests-2] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:31:35 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Browser selected: chrome
+2026-08-31 13:31:35 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Browser selected: chrome
+2026-08-31 13:31:35 [TestNG-test-Regression Tests-2] INFO  base.BaseTest - Browser selected: chrome
+2026-08-31 13:31:45 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Launching browser: chrome
+2026-08-31 13:31:45 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Launching browser: chrome
+2026-08-31 13:31:46 [TestNG-test-Regression Tests-3] INFO  tests.HomeTest - Current URL: https://www.ayudsoftware.com/
+2026-08-31 13:31:46 [TestNG-test-Regression Tests-1] INFO  tests.HomeTest - Page Title: Checking your browser before accessing. Just a moment...
+2026-08-31 13:31:46 [TestNG-test-Regression Tests-2] INFO  base.BaseTest - Launching browser: chrome
+2026-08-31 13:31:46 [TestNG-test-Regression Tests-2] INFO  tests.HomeTest - ========== Starting Ayud Jobs Navigation Test ==========
+2026-08-31 13:31:46 [TestNG-test-Regression Tests-2] INFO  tests.HomeTest - Clicking on Products section.
+2026-08-31 13:31:46 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Test finished | Thread: TestNG-test-Regression Tests-1
+2026-08-31 13:31:46 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:31:46 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Test started | Thread: TestNG-test-Regression Tests-1 | Browser: chrome
+2026-08-31 13:31:46 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:31:46 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Browser selected: chrome
+2026-08-31 13:31:46 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Test finished | Thread: TestNG-test-Regression Tests-3
+2026-08-31 13:31:46 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:31:46 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Test started | Thread: TestNG-test-Regression Tests-3 | Browser: chrome
+2026-08-31 13:31:46 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:31:46 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Browser selected: chrome
+2026-08-31 13:31:52 [TestNG-test-Regression Tests-2] INFO  tests.HomeTest - Clicking on Ayud Jobs card and waiting for new tab.
+2026-08-31 13:31:59 [TestNG-test-Regression Tests-2] INFO  tests.HomeTest - Verifying Ayud Jobs page is displayed.
+2026-08-31 13:31:59 [TestNG-test-Regression Tests-2] INFO  tests.HomeTest - Verified URL: https://www.ayudjobs.com/
+2026-08-31 13:31:59 [TestNG-test-Regression Tests-2] INFO  tests.HomeTest - Verifying Ayud Jobs page title.
+2026-08-31 13:32:01 [TestNG-test-Regression Tests-2] INFO  base.BaseTest - Test finished | Thread: TestNG-test-Regression Tests-2
+2026-08-31 13:32:01 [TestNG-test-Regression Tests-2] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:38:04 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Test started | Thread: TestNG-test-Regression Tests-3 | Browser: chrome
+2026-08-31 13:38:04 [TestNG-test-Regression Tests-2] INFO  base.BaseTest - Test started | Thread: TestNG-test-Regression Tests-2 | Browser: chrome
+2026-08-31 13:38:04 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Test started | Thread: TestNG-test-Regression Tests-1 | Browser: chrome
+2026-08-31 13:38:04 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:38:04 [TestNG-test-Regression Tests-2] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:38:04 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:38:04 [TestNG-test-Regression Tests-2] INFO  base.BaseTest - Browser selected: chrome
+2026-08-31 13:38:04 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Browser selected: chrome
+2026-08-31 13:38:04 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Browser selected: chrome
+2026-08-31 13:38:10 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Launching browser: chrome
+2026-08-31 13:38:10 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Launching browser: chrome
+2026-08-31 13:38:10 [TestNG-test-Regression Tests-3] INFO  tests.HomeTest - Current URL: https://www.ayudsoftware.com/
+2026-08-31 13:38:10 [TestNG-test-Regression Tests-1] INFO  tests.HomeTest - Page Title: Checking your browser before accessing. Just a moment...
+2026-08-31 13:38:10 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Test finished | Thread: TestNG-test-Regression Tests-1 | Browser: chrome
+2026-08-31 13:38:10 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Test finished | Thread: TestNG-test-Regression Tests-3 | Browser: chrome
+2026-08-31 13:38:10 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Trace saved: traces\chrome\verifyHomePageTitle.zip
+2026-08-31 13:38:10 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Trace saved: traces\chrome\verifyCurrentURL.zip
+2026-08-31 13:38:11 [TestNG-test-Regression Tests-2] INFO  base.BaseTest - Launching browser: chrome
+2026-08-31 13:38:11 [TestNG-test-Regression Tests-2] INFO  tests.HomeTest - ========== Starting Ayud Jobs Navigation Test ==========
+2026-08-31 13:38:11 [TestNG-test-Regression Tests-2] INFO  tests.HomeTest - Clicking on Products section.
+2026-08-31 13:38:11 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:38:11 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Test started | Thread: TestNG-test-Regression Tests-1 | Browser: chrome
+2026-08-31 13:38:11 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:38:11 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Browser selected: chrome
+2026-08-31 13:38:11 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:38:11 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Test started | Thread: TestNG-test-Regression Tests-3 | Browser: chrome
+2026-08-31 13:38:11 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:38:11 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Browser selected: chrome
+2026-08-31 13:38:14 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Launching browser: chrome
+2026-08-31 13:38:14 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Test finished | Thread: TestNG-test-Regression Tests-1 | Browser: chrome
+2026-08-31 13:38:14 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Trace saved: traces\chrome\verifyHomePageDisplayed.zip
+2026-08-31 13:38:14 [TestNG-test-Regression Tests-2] INFO  tests.HomeTest - Clicking on Ayud Jobs card and waiting for new tab.
+2026-08-31 13:38:14 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Launching browser: chrome
+2026-08-31 13:38:14 [TestNG-test-Regression Tests-3] INFO  tests.HomeTest - Total links found: 0
+2026-08-31 13:38:14 [TestNG-test-Regression Tests-3] INFO  tests.HomeTest - Broken links count: 0
+2026-08-31 13:38:14 [TestNG-test-Regression Tests-3] INFO  tests.HomeTest - ✅ No broken links found.
+2026-08-31 13:38:14 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Test finished | Thread: TestNG-test-Regression Tests-3 | Browser: chrome
+2026-08-31 13:38:15 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Trace saved: traces\chrome\verifyDeadLinks.zip
+2026-08-31 13:38:15 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:38:15 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Test started | Thread: TestNG-test-Regression Tests-1 | Browser: chrome
+2026-08-31 13:38:15 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:38:15 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Browser selected: chrome
+2026-08-31 13:38:15 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:38:15 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Test started | Thread: TestNG-test-Regression Tests-3 | Browser: chrome
+2026-08-31 13:38:15 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:38:15 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Browser selected: chrome
+2026-08-31 13:38:19 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Launching browser: chrome
+2026-08-31 13:38:19 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Launching browser: chrome
+2026-08-31 13:38:19 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Test finished | Thread: TestNG-test-Regression Tests-1 | Browser: chrome
+2026-08-31 13:38:19 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Trace saved: traces\chrome\verifyHomePageDisplayed.zip
+2026-08-31 13:38:20 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:38:20 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Test started | Thread: TestNG-test-Regression Tests-1 | Browser: chrome
+2026-08-31 13:38:20 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:38:20 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Browser selected: chrome
+2026-08-31 13:38:30 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Launching browser: chrome
+2026-08-31 13:38:31 [TestNG-test-Regression Tests-3] INFO  tests.HomeTest - Verified janexa page
+2026-08-31 13:38:31 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Test finished | Thread: TestNG-test-Regression Tests-3 | Browser: chrome
+2026-08-31 13:38:31 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Test finished | Thread: TestNG-test-Regression Tests-1 | Browser: chrome
+2026-08-31 13:38:31 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Screenshot captured: screenshots\chrome\verifyHomePageDisplayed.png
+2026-08-31 13:38:31 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Trace saved: traces\chrome\verifyHomePageDisplayed.zip
+2026-08-31 13:38:31 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Trace saved: traces\chrome\verifyJanexaPage.zip
+2026-08-31 13:38:32 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:38:32 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Test started | Thread: TestNG-test-Regression Tests-1 | Browser: chrome
+2026-08-31 13:38:32 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:38:32 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Browser selected: chrome
+2026-08-31 13:38:32 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:38:32 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Test started | Thread: TestNG-test-Regression Tests-3 | Browser: chrome
+2026-08-31 13:38:32 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:38:32 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Browser selected: chrome
+2026-08-31 13:38:44 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Launching browser: chrome
+2026-08-31 13:38:44 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Launching browser: chrome
+2026-08-31 13:38:48 [TestNG-test-Regression Tests-2] INFO  base.BaseTest - Test finished | Thread: TestNG-test-Regression Tests-2 | Browser: chrome
+2026-08-31 13:38:48 [TestNG-test-Regression Tests-2] INFO  base.BaseTest - Trace saved: traces\chrome\verifyAyudJobsNavigation.zip
+2026-08-31 13:38:49 [TestNG-test-Regression Tests-2] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:38:49 [TestNG-test-Regression Tests-2] INFO  base.BaseTest - Test started | Thread: TestNG-test-Regression Tests-2 | Browser: chrome
+2026-08-31 13:38:49 [TestNG-test-Regression Tests-2] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:38:49 [TestNG-test-Regression Tests-2] INFO  base.BaseTest - Browser selected: chrome
+2026-08-31 13:38:53 [TestNG-test-Regression Tests-2] INFO  base.BaseTest - Launching browser: chrome
+2026-08-31 13:38:53 [TestNG-test-Regression Tests-2] INFO  tests.HomeTest - ========== Starting Ayud Jobs Navigation Test ==========
+2026-08-31 13:38:53 [TestNG-test-Regression Tests-2] INFO  tests.HomeTest - Clicking on Products section.
+2026-08-31 13:38:58 [TestNG-test-Regression Tests-1] INFO  tests.HomeTest - Verified career clarity page
+2026-08-31 13:38:58 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Test finished | Thread: TestNG-test-Regression Tests-1 | Browser: chrome
+2026-08-31 13:38:59 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Trace saved: traces\chrome\verifyCareerclaritypage.zip
+2026-08-31 13:39:00 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:39:00 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Test started | Thread: TestNG-test-Regression Tests-1 | Browser: chrome
+2026-08-31 13:39:00 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:39:00 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Browser selected: chrome
+2026-08-31 13:39:04 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Launching browser: chrome
+2026-08-31 13:39:10 [TestNG-test-Regression Tests-1] INFO  tests.HomeTest - Verified career clarity page
+2026-08-31 13:39:10 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Test finished | Thread: TestNG-test-Regression Tests-1 | Browser: chrome
+2026-08-31 13:39:11 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Trace saved: traces\chrome\verifyCareerclaritypage.zip
+2026-08-31 13:39:11 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:39:11 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Test started | Thread: TestNG-test-Regression Tests-1 | Browser: chrome
+2026-08-31 13:39:11 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:39:11 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Browser selected: chrome
+2026-08-31 13:39:14 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Test finished | Thread: TestNG-test-Regression Tests-3 | Browser: chrome
+2026-08-31 13:39:14 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Trace saved: traces\chrome\verifyJanexaPage.zip
+2026-08-31 13:39:15 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:39:15 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Test started | Thread: TestNG-test-Regression Tests-3 | Browser: chrome
+2026-08-31 13:39:15 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:39:15 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Browser selected: chrome
+2026-08-31 13:39:16 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Launching browser: chrome
+2026-08-31 13:39:19 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Launching browser: chrome
+2026-08-31 13:39:23 [TestNG-test-Regression Tests-2] INFO  base.BaseTest - Test finished | Thread: TestNG-test-Regression Tests-2 | Browser: chrome
+2026-08-31 13:39:24 [TestNG-test-Regression Tests-2] INFO  base.BaseTest - Trace saved: traces\chrome\verifyAyudJobsNavigation.zip
+2026-08-31 13:39:24 [TestNG-test-Regression Tests-2] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:39:24 [TestNG-test-Regression Tests-2] INFO  base.BaseTest - Test started | Thread: TestNG-test-Regression Tests-2 | Browser: chrome
+2026-08-31 13:39:24 [TestNG-test-Regression Tests-2] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:39:24 [TestNG-test-Regression Tests-2] INFO  base.BaseTest - Browser selected: chrome
+2026-08-31 13:39:27 [TestNG-test-Regression Tests-2] INFO  base.BaseTest - Launching browser: chrome
+2026-08-31 13:39:27 [TestNG-test-Regression Tests-2] INFO  tests.HomeTest - ========== Starting Ayud Jobs Navigation Test ==========
+2026-08-31 13:39:27 [TestNG-test-Regression Tests-2] INFO  tests.HomeTest - Clicking on Products section.
+2026-08-31 13:39:30 [TestNG-test-Regression Tests-2] INFO  tests.HomeTest - Clicking on Ayud Jobs card and waiting for new tab.
+2026-08-31 13:39:31 [TestNG-test-Regression Tests-3] INFO  tests.HomeTest - Verified janexa page
+2026-08-31 13:39:33 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Test finished | Thread: TestNG-test-Regression Tests-3 | Browser: chrome
+2026-08-31 13:39:34 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Screenshot captured: screenshots\chrome\verifyJanexaPage.png
+2026-08-31 13:39:35 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Trace saved: traces\chrome\verifyJanexaPage.zip
+2026-08-31 13:39:35 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:39:35 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Test started | Thread: TestNG-test-Regression Tests-3 | Browser: chrome
+2026-08-31 13:39:35 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:39:35 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Browser selected: chrome
+2026-08-31 13:39:38 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Launching browser: chrome
+2026-08-31 13:39:40 [TestNG-test-Regression Tests-2] INFO  tests.HomeTest - Verifying Ayud Jobs page is displayed.
+2026-08-31 13:39:40 [TestNG-test-Regression Tests-2] INFO  tests.HomeTest - Verified URL: https://www.ayudjobs.com/
+2026-08-31 13:39:40 [TestNG-test-Regression Tests-2] INFO  tests.HomeTest - Verifying Ayud Jobs page title.
+2026-08-31 13:39:40 [TestNG-test-Regression Tests-2] INFO  base.BaseTest - Test finished | Thread: TestNG-test-Regression Tests-2 | Browser: chrome
+2026-08-31 13:39:41 [TestNG-test-Regression Tests-2] INFO  base.BaseTest - Trace saved: traces\chrome\verifyAyudJobsNavigation.zip
+2026-08-31 13:39:42 [TestNG-test-Regression Tests-2] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:39:42 [TestNG-test-Regression Tests-2] INFO  base.BaseTest - Test started | Thread: TestNG-test-Regression Tests-2 | Browser: chrome
+2026-08-31 13:39:42 [TestNG-test-Regression Tests-2] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:39:42 [TestNG-test-Regression Tests-2] INFO  base.BaseTest - Browser selected: chrome
+2026-08-31 13:39:43 [TestNG-test-Regression Tests-3] INFO  tests.HomeTest - Verified Ayud blog page
+2026-08-31 13:39:43 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Test finished | Thread: TestNG-test-Regression Tests-3 | Browser: chrome
+2026-08-31 13:39:44 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Trace saved: traces\chrome\verifyAyudBlog.zip
+2026-08-31 13:39:45 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:39:45 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Test started | Thread: TestNG-test-Regression Tests-3 | Browser: chrome
+2026-08-31 13:39:45 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:39:45 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Browser selected: chrome
+2026-08-31 13:39:48 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Launching browser: chrome
+2026-08-31 13:39:50 [TestNG-test-Regression Tests-2] INFO  base.BaseTest - Launching browser: chrome
+2026-08-31 13:39:54 [TestNG-test-Regression Tests-2] INFO  tests.HomeTest - Verified Services page
+2026-08-31 13:39:54 [TestNG-test-Regression Tests-2] INFO  base.BaseTest - Test finished | Thread: TestNG-test-Regression Tests-2 | Browser: chrome
+2026-08-31 13:39:54 [TestNG-test-Regression Tests-2] INFO  base.BaseTest - Trace saved: traces\chrome\verifyServices.zip
+2026-08-31 13:39:54 [TestNG-test-Regression Tests-2] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:39:54 [TestNG-test-Regression Tests-2] INFO  base.BaseTest - Test started | Thread: TestNG-test-Regression Tests-2 | Browser: chrome
+2026-08-31 13:39:54 [TestNG-test-Regression Tests-2] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:39:54 [TestNG-test-Regression Tests-2] INFO  base.BaseTest - Browser selected: chrome
+2026-08-31 13:39:55 [TestNG-test-Regression Tests-3] INFO  tests.HomeTest - Verified Ayud blog page
+2026-08-31 13:39:55 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Test finished | Thread: TestNG-test-Regression Tests-3 | Browser: chrome
+2026-08-31 13:39:56 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Trace saved: traces\chrome\verifyAyudBlog.zip
+2026-08-31 13:39:56 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:39:56 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Test started | Thread: TestNG-test-Regression Tests-3 | Browser: chrome
+2026-08-31 13:39:56 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:39:56 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Browser selected: chrome
+2026-08-31 13:39:57 [TestNG-test-Regression Tests-2] INFO  base.BaseTest - Launching browser: chrome
+2026-08-31 13:40:00 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Test finished | Thread: TestNG-test-Regression Tests-1 | Browser: chrome
+2026-08-31 13:40:00 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Launching browser: chrome
+2026-08-31 13:40:00 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Screenshot captured: screenshots\chrome\verifyCareerclaritypage.png
+2026-08-31 13:40:01 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Trace saved: traces\chrome\verifyCareerclaritypage.zip
+2026-08-31 13:40:01 [TestNG-test-Regression Tests-2] INFO  tests.HomeTest - Verified Services page
+2026-08-31 13:40:01 [TestNG-test-Regression Tests-2] INFO  base.BaseTest - Test finished | Thread: TestNG-test-Regression Tests-2 | Browser: chrome
+2026-08-31 13:40:01 [TestNG-test-Regression Tests-2] INFO  base.BaseTest - Trace saved: traces\chrome\verifyServices.zip
+2026-08-31 13:40:02 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:40:02 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Test started | Thread: TestNG-test-Regression Tests-1 | Browser: chrome
+2026-08-31 13:40:02 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:40:02 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Browser selected: chrome
+2026-08-31 13:40:02 [TestNG-test-Regression Tests-2] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:40:02 [TestNG-test-Regression Tests-2] INFO  base.BaseTest - Test started | Thread: TestNG-test-Regression Tests-2 | Browser: chrome
+2026-08-31 13:40:02 [TestNG-test-Regression Tests-2] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:40:02 [TestNG-test-Regression Tests-2] INFO  base.BaseTest - Browser selected: chrome
+2026-08-31 13:40:05 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Launching browser: chrome
+2026-08-31 13:40:05 [TestNG-test-Regression Tests-2] INFO  base.BaseTest - Launching browser: chrome
+2026-08-31 13:40:07 [TestNG-test-Regression Tests-3] INFO  tests.HomeTest - Verified Ayud blog page
+2026-08-31 13:40:08 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Test finished | Thread: TestNG-test-Regression Tests-3 | Browser: chrome
+2026-08-31 13:40:08 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Screenshot captured: screenshots\chrome\verifyAyudBlog.png
+2026-08-31 13:40:09 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Trace saved: traces\chrome\verifyAyudBlog.zip
+2026-08-31 13:40:09 [TestNG-test-Regression Tests-1] INFO  tests.HomeTest - Verified Workpage
+2026-08-31 13:40:09 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Test finished | Thread: TestNG-test-Regression Tests-1 | Browser: chrome
+2026-08-31 13:40:09 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:40:09 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Test started | Thread: TestNG-test-Regression Tests-3 | Browser: chrome
+2026-08-31 13:40:09 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:40:09 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Browser selected: chrome
+2026-08-31 13:40:09 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Trace saved: traces\chrome\verifyWork.zip
+2026-08-31 13:40:10 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:40:10 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Test started | Thread: TestNG-test-Regression Tests-1 | Browser: chrome
+2026-08-31 13:40:10 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:40:10 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Browser selected: chrome
+2026-08-31 13:40:12 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Launching browser: chrome
+2026-08-31 13:40:12 [TestNG-test-Regression Tests-2] INFO  tests.HomeTest - Verified Services page
+2026-08-31 13:40:13 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Launching browser: chrome
+2026-08-31 13:40:13 [TestNG-test-Regression Tests-2] INFO  base.BaseTest - Test finished | Thread: TestNG-test-Regression Tests-2 | Browser: chrome
+2026-08-31 13:40:14 [TestNG-test-Regression Tests-2] INFO  base.BaseTest - Screenshot captured: screenshots\chrome\verifyServices.png
+2026-08-31 13:40:14 [TestNG-test-Regression Tests-2] INFO  base.BaseTest - Trace saved: traces\chrome\verifyServices.zip
+2026-08-31 13:40:14 [TestNG-test-Regression Tests-2] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:40:16 [TestNG-test-Regression Tests-3] INFO  tests.HomeTest - Verified Advisory
+2026-08-31 13:40:16 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Test finished | Thread: TestNG-test-Regression Tests-3 | Browser: chrome
+2026-08-31 13:40:16 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Trace saved: traces\chrome\verifyAdvisory.zip
+2026-08-31 13:40:16 [TestNG-test-Regression Tests-1] INFO  tests.HomeTest - Verified Workpage
+2026-08-31 13:40:16 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Test finished | Thread: TestNG-test-Regression Tests-1 | Browser: chrome
+2026-08-31 13:40:16 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:40:16 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Test started | Thread: TestNG-test-Regression Tests-3 | Browser: chrome
+2026-08-31 13:40:16 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:40:16 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Browser selected: chrome
+2026-08-31 13:40:17 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Trace saved: traces\chrome\verifyWork.zip
+2026-08-31 13:40:17 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:40:17 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Test started | Thread: TestNG-test-Regression Tests-1 | Browser: chrome
+2026-08-31 13:40:17 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:40:17 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Browser selected: chrome
+2026-08-31 13:40:20 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Launching browser: chrome
+2026-08-31 13:40:20 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Launching browser: chrome
+2026-08-31 13:40:23 [TestNG-test-Regression Tests-3] INFO  tests.HomeTest - Verified Advisory
+2026-08-31 13:40:23 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Test finished | Thread: TestNG-test-Regression Tests-3 | Browser: chrome
+2026-08-31 13:40:23 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Trace saved: traces\chrome\verifyAdvisory.zip
+2026-08-31 13:40:24 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:40:24 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Test started | Thread: TestNG-test-Regression Tests-3 | Browser: chrome
+2026-08-31 13:40:24 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Creating Playwright instance
+2026-08-31 13:40:24 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Browser selected: chrome
+2026-08-31 13:40:24 [TestNG-test-Regression Tests-1] INFO  tests.HomeTest - Verified Workpage
+2026-08-31 13:40:24 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Test finished | Thread: TestNG-test-Regression Tests-1 | Browser: chrome
+2026-08-31 13:40:24 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Screenshot captured: screenshots\chrome\verifyWork.png
+2026-08-31 13:40:25 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Trace saved: traces\chrome\verifyWork.zip
+2026-08-31 13:40:25 [TestNG-test-Regression Tests-1] INFO  base.BaseTest - Browser closed successfully.
+2026-08-31 13:40:26 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Launching browser: chrome
+2026-08-31 13:40:32 [TestNG-test-Regression Tests-3] INFO  tests.HomeTest - Verified Advisory
+2026-08-31 13:40:32 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Test finished | Thread: TestNG-test-Regression Tests-3 | Browser: chrome
+2026-08-31 13:40:32 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Screenshot captured: screenshots\chrome\verifyAdvisory.png
+2026-08-31 13:40:33 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Trace saved: traces\chrome\verifyAdvisory.zip
+2026-08-31 13:40:33 [TestNG-test-Regression Tests-3] INFO  base.BaseTest - Browser closed successfully.
