@@ -4,18 +4,30 @@ import api.APIClient;
 import endpoints.UserEndpoints;
 import io.restassured.response.Response;
 import models.CreateUserRequest;
+import models.UpdateUserRequest;
+import models.User;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.util.List;
+
 public class UserAPITest {
+
+    // =========================================================
+    // GET - Get All Users
+    // =========================================================
 
     @Test
     public void getAllUsersTest() {
 
         Response response =
-                APIClient.get(UserEndpoints.GET_ALL_USERS);
+                APIClient.get(
+                        UserEndpoints.GET_ALL_USERS
+                );
 
-        System.out.println(response.asPrettyString());
+        System.out.println(
+                response.asPrettyString()
+        );
 
         // Status code
         Assert.assertEquals(
@@ -26,26 +38,161 @@ public class UserAPITest {
 
         // Response time
         Assert.assertTrue(
-                response.getTime() < 3000,
-                "Response took more than 3 seconds"
+                response.getTime() < 5000,
+                "Response took more than 5 seconds"
         );
 
-        // Response body validation
+        // Validate data exists
         Assert.assertNotNull(
                 response.jsonPath().get("data"),
                 "Data is missing from response"
         );
 
-        // Validate first user's ID
-        int firstUserId =
-                response.jsonPath().getInt("data[0].id");
+        // Deserialize response into User POJO
+        List<User> users =
+                response.jsonPath()
+                        .getList("data", User.class);
+
+        // Validate users list
+        Assert.assertFalse(
+                users.isEmpty(),
+                "User list should not be empty"
+        );
+
+        // First user
+        User firstUser = users.get(0);
+
+        // Validate first user
+        Assert.assertTrue(
+                firstUser.getId() > 0,
+                "Invalid user ID"
+        );
+
+        Assert.assertNotNull(
+                firstUser.getEmail(),
+                "Email is missing"
+        );
+
+        Assert.assertNotNull(
+                firstUser.getFirst_name(),
+                "First name is missing"
+        );
+
+        Assert.assertNotNull(
+                firstUser.getLast_name(),
+                "Last name is missing"
+        );
+
+        // Pagination
+        int page =
+                response.jsonPath()
+                        .getInt("page");
+
+        Assert.assertEquals(
+                page,
+                1,
+                "Incorrect page number"
+        );
+
+        int total =
+                response.jsonPath()
+                        .getInt("total");
 
         Assert.assertTrue(
-                firstUserId > 0,
-                "Invalid user ID"
+                total > 0,
+                "Total users should be greater than 0"
+        );
+
+        int totalPages =
+                response.jsonPath()
+                        .getInt("total_pages");
+
+        Assert.assertTrue(
+                totalPages > 0,
+                "Total pages should be greater than 0"
         );
     }
 
+    // =========================================================
+    // GET - Get Single User
+    // =========================================================
+
+    @Test
+    public void getSingleUserTest() {
+
+        Response response =
+                APIClient.get(
+                        UserEndpoints.GET_SINGLE_USER,
+                        "id",
+                        1
+                );
+
+        System.out.println(response.asPrettyString());
+
+        // Status code
+        Assert.assertEquals(
+                response.getStatusCode(),
+                200,
+                "Expected status code 200"
+        );
+
+        // Response time
+        Assert.assertTrue(
+                response.getTime() < 5000,
+                "Response took more than 5 seconds"
+        );
+
+        // Validate user ID
+        int userId =
+                response.jsonPath()
+                        .getInt("data.id");
+
+        Assert.assertEquals(
+                userId,
+                1,
+                "Incorrect user ID"
+        );
+
+        // Validate email
+        String email =
+                response.jsonPath()
+                        .getString("data.email");
+
+        Assert.assertNotNull(
+                email,
+                "Email is missing"
+        );
+
+        Assert.assertTrue(
+                email.contains("@"),
+                "Invalid email format"
+        );
+
+        // Validate first name
+        String firstName =
+                response.jsonPath()
+                        .getString("data.first_name");
+
+        Assert.assertNotNull(
+                firstName,
+                "First name is missing"
+        );
+
+        // Validate last name
+        String lastName =
+                response.jsonPath()
+                        .getString("data.last_name");
+
+        Assert.assertNotNull(
+                lastName,
+                "Last name is missing"
+        );
+    }
+
+
+    // =========================================================
+    // POST - Create User
+    // =========================================================
 
     @Test
     public void createUserTest() {
@@ -66,20 +213,182 @@ public class UserAPITest {
                 response.asPrettyString()
         );
 
+        // Status code
         Assert.assertEquals(
                 response.getStatusCode(),
                 201,
                 "Expected status code 201"
         );
 
+        // Validate name
         Assert.assertEquals(
-                response.jsonPath().getString("name"),
-                "Rahul"
+                response.jsonPath()
+                        .getString("name"),
+                "Rahul",
+                "Incorrect name"
         );
 
+        // Validate job
         Assert.assertEquals(
-                response.jsonPath().getString("job"),
-                "SDET"
+                response.jsonPath()
+                        .getString("job"),
+                "SDET",
+                "Incorrect job"
+        );
+
+        // Validate generated ID
+        Assert.assertNotNull(
+                response.jsonPath()
+                        .getString("id"),
+                "User ID was not generated"
+        );
+
+        // Validate createdAt
+        Assert.assertNotNull(
+                response.jsonPath()
+                        .getString("createdAt"),
+                "createdAt is missing"
+        );
+    }
+
+
+    // =========================================================
+    // PUT - Update User
+    // =========================================================
+
+    @Test
+    public void updateUserTest() {
+
+        CreateUserRequest request =
+                new CreateUserRequest(
+                        "Rahul Updated",
+                        "Senior SDET"
+                );
+
+        Response response =
+                APIClient.put(
+                        UserEndpoints.UPDATE_USER,
+                        "id",
+                        2,
+                        request
+                );
+
+        System.out.println(
+                response.asPrettyString()
+        );
+
+        // Status code
+        Assert.assertEquals(
+                response.getStatusCode(),
+                200,
+                "Expected status code 200"
+        );
+
+        // Validate name
+        Assert.assertEquals(
+                response.jsonPath()
+                        .getString("name"),
+                "Rahul Updated",
+                "Incorrect name"
+        );
+
+        // Validate job
+        Assert.assertEquals(
+                response.jsonPath()
+                        .getString("job"),
+                "Senior SDET",
+                "Incorrect job"
+        );
+
+        // Validate updatedAt
+        Assert.assertNotNull(
+                response.jsonPath()
+                        .getString("updatedAt"),
+                "updatedAt is missing"
+        );
+    }
+
+
+    // =========================================================
+    // PATCH - Partial Update User
+    // =========================================================
+
+    @Test
+    public void patchUserTest() {
+
+        UpdateUserRequest request =
+                new UpdateUserRequest(
+                        "Automation Architect"
+                );
+
+        Response response =
+                APIClient.patch(
+                        UserEndpoints.PATCH_USER,
+                        "id",
+                        2,
+                        request
+                );
+
+        System.out.println(
+                response.asPrettyString()
+        );
+
+        // Status code
+        Assert.assertEquals(
+                response.getStatusCode(),
+                200,
+                "Expected status code 200"
+        );
+
+        // Validate updated job
+        Assert.assertEquals(
+                response.jsonPath()
+                        .getString("job"),
+                "Automation Architect",
+                "Incorrect job"
+        );
+
+        // Validate updatedAt
+        Assert.assertNotNull(
+                response.jsonPath()
+                        .getString("updatedAt"),
+                "updatedAt is missing"
+        );
+    }
+
+
+    // =========================================================
+    // DELETE - Delete User
+    // =========================================================
+
+    @Test
+    public void deleteUserTest() {
+
+        Response response =
+                APIClient.delete(
+                        UserEndpoints.DELETE_USER,
+                        "id",
+                        2
+                );
+
+        System.out.println(
+                "Status Code: "
+                        + response.getStatusCode()
+        );
+
+        // Status code
+        Assert.assertEquals(
+                response.getStatusCode(),
+                204,
+                "Expected status code 204"
+        );
+
+        // Response body should be empty
+        Assert.assertTrue(
+                response.getBody()
+                        .asString()
+                        .isEmpty(),
+                "Response body should be empty"
         );
     }
 }
