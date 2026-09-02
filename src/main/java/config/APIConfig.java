@@ -2,57 +2,64 @@ package config;
 
 public class APIConfig {
 
-    // Base URL
-    private static final String BASE_URL = "https://reqres.in";
+    private static final String BASE_URL =
+            getProperty(
+                    "baseUrl",
+                    "https://reqres.in"
+            );
 
-    // API Token (will be used later)
-    private static final String TOKEN = "";
+    private static final String API_EMAIL =
+            getProperty(
+                    "api.email",
+                    ""
+            );
 
-    // Connection Timeout
-    private static final int CONNECTION_TIMEOUT = 30000;
+    private static final String API_PASSWORD =
+            getProperty(
+                    "api.password",
+                    ""
+            );
 
-    // Read Timeout
-    private static final int READ_TIMEOUT = 30000;
 
-    // Content Type
-    private static final String CONTENT_TYPE = "application/json";
-
-    // Accept Type
-    private static final String ACCEPT = "application/json";
-
-    // Get Base URL
+    /**
+     * Get Base URL
+     */
     public static String getBaseURL() {
         return BASE_URL;
     }
 
-    // Get Token
-    public static String getToken() {
-        return TOKEN;
+
+    /**
+     * Get API email
+     */
+    public static String getEmail() {
+        return API_EMAIL;
     }
 
-    // Get Connection Timeout
-    public static int getConnectionTimeout() {
-        return CONNECTION_TIMEOUT;
+
+    /**
+     * Get API password
+     */
+    public static String getPassword() {
+        return API_PASSWORD;
     }
 
-    // Get Read Timeout
-    public static int getReadTimeout() {
-        return READ_TIMEOUT;
-    }
 
-    // Get Content Type
-    public static String getContentType() {
-        return CONTENT_TYPE;
-    }
+    /**
+     * Get value from System Property.
+     * If not provided, return default value.
+     */
+    private static String getProperty(
+            String propertyName,
+            String defaultValue) {
 
-    // Get Accept Header
-    public static String getAccept() {
-        return ACCEPT;
-    }
+        String value =
+                System.getProperty(propertyName);
 
-    private static final String API_KEY = "";
+        if (value == null || value.isEmpty()) {
+            return defaultValue;
+        }
 
-    public static String getApiKey() {
-        return API_KEY;
+        return value;
     }
 }

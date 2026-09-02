@@ -2,6 +2,8 @@ package api;
 
 import io.restassured.response.Response;
 
+import java.util.Map;
+
 import static io.restassured.RestAssured.given;
 
 public class APIClient {
@@ -41,6 +43,9 @@ public class APIClient {
                 .response();
     }
 
+    /**
+     * GET Request - With Auth Parameter
+     */
     public static Response getWithAuth(String endpoint) {
 
         return given()
@@ -56,6 +61,40 @@ public class APIClient {
                 .response();
     }
 
+    /**
+     * GET Request - With Headers
+     */
+    public static Response get(
+            String endpoint,
+            Map<String, String> headers) {
+
+        return given()
+                .spec(BaseAPI.getRequestSpecification())
+                .headers(headers)
+                .when()
+                .get(endpoint)
+                .then()
+                .spec(BaseAPI.getResponseSpecification())
+                .extract()
+                .response();
+    }
+
+    /**
+     * GET Request - With Authentication
+     */
+    public static Response getWithAuth(
+            String endpoint,
+            Map<String, String> headers) {
+
+        return given()
+                .spec(BaseAPI.getRequestSpecification())
+                .headers(headers)
+                .when()
+                .get(endpoint)
+                .then()
+                .extract()
+                .response();
+    }
 
     /**
      * POST Request

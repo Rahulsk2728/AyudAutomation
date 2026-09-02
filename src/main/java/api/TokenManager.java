@@ -1,5 +1,6 @@
 package api;
 
+import config.APIConfig;
 import endpoints.UserEndpoints;
 import io.restassured.response.Response;
 import models.LoginRequest;
@@ -14,8 +15,8 @@ public class TokenManager {
 
             LoginRequest request =
                     new LoginRequest(
-                            "YOUR_VALID_TEST_EMAIL",
-                            "YOUR_VALID_TEST_PASSWORD"
+                            APIConfig.getEmail(),
+                            APIConfig.getPassword()
                     );
 
             Response response =

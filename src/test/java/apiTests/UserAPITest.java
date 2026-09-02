@@ -1,5 +1,6 @@
 package apiTests;
 
+import Headers.APIHeaders;
 import api.APIClient;
 import endpoints.UserEndpoints;
 import io.restassured.response.Response;
@@ -10,6 +11,11 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.util.List;
+import java.util.Map;
+
+import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
+
+import org.testng.annotations.DataProvider;
 
 public class UserAPITest {
 
@@ -111,6 +117,15 @@ public class UserAPITest {
                 totalPages > 0,
                 "Total pages should be greater than 0"
         );
+
+        // JSON Schema validation
+        response.then()
+                .assertThat()
+                .body(
+                        matchesJsonSchemaInClasspath(
+                                "schemas/users-schema.json"
+                        )
+                );
     }
 
     // =========================================================
@@ -189,6 +204,50 @@ public class UserAPITest {
         );
     }
 
+    @Test
+    public void getUsersWithHeadersTest() {
+
+        Map<String, String> headers =
+                APIHeaders.defaultHeaders();
+
+        Response response =
+                APIClient.get(
+                        UserEndpoints.GET_ALL_USERS,
+                        headers
+                );
+
+        Assert.assertEquals(
+                response.getStatusCode(),
+                200,
+                "Expected status code 200"
+        );
+    }
+
+    @Test
+    public void getSingleUserInvalidIdTest() {
+
+        Response response =
+                APIClient.get(
+                        UserEndpoints.GET_SINGLE_USER,
+                        "id",
+                        9999
+                );
+
+        System.out.println(
+                "Status Code: " +
+                        response.getStatusCode()
+        );
+
+        System.out.println(
+                response.asPrettyString()
+        );
+
+        Assert.assertEquals(
+                response.getStatusCode(),
+                404,
+                "Expected status code 404"
+        );
+    }
 
     // =========================================================
     // POST - Create User

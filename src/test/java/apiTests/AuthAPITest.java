@@ -5,6 +5,7 @@ import api.TokenManager;
 import endpoints.UserEndpoints;
 import io.restassured.response.Response;
 import models.LoginRequest;
+import models.RegisterRequest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -178,6 +179,72 @@ public class AuthAPITest {
                 response.getStatusCode(),
                 200,
                 "Authenticated GET failed"
+        );
+    }
+
+    @Test
+    public void registerWithoutPasswordTest() {
+
+        RegisterRequest request =
+                new RegisterRequest();
+
+        request.setEmail(
+                "sydney@fife"
+        );
+
+        Response response =
+                APIClient.post(
+                        UserEndpoints.REGISTER,
+                        request
+                );
+
+        System.out.println(
+                response.asPrettyString()
+        );
+
+        Assert.assertEquals(
+                response.getStatusCode(),
+                400,
+                "Expected status code 400"
+        );
+
+        Assert.assertNotNull(
+                response.jsonPath()
+                        .getString("error"),
+                "Error message is missing"
+        );
+    }
+
+    @Test
+    public void registerWithoutEmailTest() {
+
+        RegisterRequest request =
+                new RegisterRequest();
+
+        request.setPassword(
+                "pistol"
+        );
+
+        Response response =
+                APIClient.post(
+                        UserEndpoints.REGISTER,
+                        request
+                );
+
+        System.out.println(
+                response.asPrettyString()
+        );
+
+        Assert.assertEquals(
+                response.getStatusCode(),
+                400,
+                "Expected status code 400"
+        );
+
+        Assert.assertNotNull(
+                response.jsonPath()
+                        .getString("error"),
+                "Error message is missing"
         );
     }
 }
