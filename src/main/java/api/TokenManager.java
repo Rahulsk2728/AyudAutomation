@@ -25,6 +25,17 @@ public class TokenManager {
                             request
                     );
 
+            System.out.println(
+                    "Login Status: " +
+                            response.getStatusCode()
+            );
+
+            System.out.println(
+                    "Login Response: " +
+                            response.asPrettyString()
+            );
+
+
             if (response.getStatusCode() != 200) {
                 throw new RuntimeException(
                         "Login failed. Status code: "

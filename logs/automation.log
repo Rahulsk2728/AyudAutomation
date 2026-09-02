@@ -1231,3 +1231,520 @@ Call log:
 2026-08-31 14:06:01 [main] INFO  base.BaseTest - Test finished | Thread: main | Browser: chrome
 2026-08-31 14:06:02 [main] INFO  base.BaseTest - Trace saved: traces\chrome\verifyAyudJobsNavigation.zip
 2026-08-31 14:06:02 [main] INFO  base.BaseTest - Browser closed successfully.
+2026-09-02 16:36:26 [main] INFO  utils.APILoggingFilter - API Request | Method: GET | URL: https://reqres.in/api/users
+2026-09-02 16:36:26 [main] INFO  utils.APILoggingFilter - Request Headers: Accept=application/json
+Content-Type=application/json
+2026-09-02 16:36:27 [main] INFO  utils.APILoggingFilter - API Response | Status: 200 | Time: 1430 ms
+2026-09-02 16:36:27 [main] INFO  utils.APILoggingFilter - Response Headers: Date=Wed, 02 Sep 2026 11:06:27 GMT
+Content-Type=application/json; charset=utf-8
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Cache-Control=public, max-age=14400, s-maxage=60
+cdn-cache-control=max-age=60
+Cross-Origin-Opener-Policy=same-origin
+Cross-Origin-Resource-Policy=cross-origin
+etag=W/"5d5-xLH+VsLk/9l+7jMxEB67XJyVg6Q"
+Nel={"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+Origin-Agent-Cluster=?1
+Ratelimit-Limit=20
+Ratelimit-Policy=20;w=60
+Ratelimit-Remaining=19
+Ratelimit-Reset=60
+Referrer-Policy=strict-origin-when-cross-origin
+Report-To={"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=DnVARFs9YodA9o8LiM6763tTP3Iz92Q8Kqu7QF%2FwHC8%3D\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\u0026ts=1788346867"}],"max_age":3600}
+Reporting-Endpoints=heroku-nel="https://nel.heroku.com/reports?s=DnVARFs9YodA9o8LiM6763tTP3Iz92Q8Kqu7QF%2FwHC8%3D&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&ts=1788346867"
+Server=cloudflare
+Strict-Transport-Security=max-age=31536000; includeSubDomains
+Via=1.1 heroku-router
+X-Content-Type-Options=nosniff
+X-Dns-Prefetch-Control=off
+X-Download-Options=noopen
+X-Frame-Options=DENY
+X-Permitted-Cross-Domain-Policies=none
+X-Powered-By=ReqRes.in - Deploy backends in 30 seconds
+X-Ratelimit-Limit=250
+X-Ratelimit-Remaining=210
+X-Ratelimit-Reset=1788393600
+X-Reqres-Docs=https://reqres.in
+X-Reqres-Message=This API is powered by ReqRes. Deploy your own backend in 30 seconds!
+X-Reqres-Templates=https://app.reqres.in/templates
+X-Reqres-Tip=Generate a complete backend from a description - app.reqres.in/dashboard
+X-Reqres-Trial=true
+X-Reqres-Trial-Days-Remaining=0
+X-Reqres-Trial-Expires=2026-05-03T08:29:52.015Z
+X-Reqres-Upgrade=https://app.reqres.in/upgrade
+X-Request-Id=f2c40210-176a-a56e-7f4d-b0b8c77d9a01
+X-Robots-Tag=noindex, nofollow
+X-Xss-Protection=0
+cf-cache-status=REVALIDATED
+Content-Encoding=gzip
+CF-RAY=a34c0ba11edd8827-BOM
+2026-09-02 16:36:27 [main] INFO  utils.APILoggingFilter - Response Body:
+{
+    "page": 1,
+    "per_page": 6,
+    "total": 12,
+    "total_pages": 2,
+    "data": [
+        {
+            "id": 1,
+            "email": "george.bluth@reqres.in",
+            "first_name": "George",
+            "last_name": "Bluth",
+            "avatar": "https://reqres.in/img/faces/1-image.jpg"
+        },
+        {
+            "id": 2,
+            "email": "janet.weaver@reqres.in",
+            "first_name": "Janet",
+            "last_name": "Weaver",
+            "avatar": "https://reqres.in/img/faces/2-image.jpg"
+        },
+        {
+            "id": 3,
+            "email": "emma.wong@reqres.in",
+            "first_name": "Emma",
+            "last_name": "Wong",
+            "avatar": "https://reqres.in/img/faces/3-image.jpg"
+        },
+        {
+            "id": 4,
+            "email": "eve.holt@reqres.in",
+            "first_name": "Eve",
+            "last_name": "Holt",
+            "avatar": "https://reqres.in/img/faces/4-image.jpg"
+        },
+        {
+            "id": 5,
+            "email": "charles.morris@reqres.in",
+            "first_name": "Charles",
+            "last_name": "Morris",
+            "avatar": "https://reqres.in/img/faces/5-image.jpg"
+        },
+        {
+            "id": 6,
+            "email": "tracey.ramos@reqres.in",
+            "first_name": "Tracey",
+            "last_name": "Ramos",
+            "avatar": "https://reqres.in/img/faces/6-image.jpg"
+        }
+    ],
+    "support": {
+        "url": "https://benhowdle.im/first-cto-playbook?utm_source=reqres&utm_medium=json&utm_campaign=referral",
+        "text": "Become a better CTO. A playbook of painful stories and practical advice from a two-time startup CTO."
+    },
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Your data persists here. Add auth, logs, and custom schemas to build a real backend.",
+        "cta": {
+            "label": "See example app",
+            "url": "https://app.reqres.in/examples/notes-app"
+        },
+        "context": "legacy_success"
+    }
+}
+2026-09-02 16:37:55 [main] INFO  utils.APILoggingFilter - API Request | Method: POST | URL: https://reqres.in/api/users
+2026-09-02 16:37:55 [main] INFO  utils.APILoggingFilter - Request Headers: Accept=application/json
+Content-Type=application/json
+2026-09-02 16:37:55 [main] INFO  utils.APILoggingFilter - Request Body:
+{"name":"Rahul","job":"SDET"}
+2026-09-02 16:37:57 [main] INFO  utils.APILoggingFilter - API Response | Status: 201 | Time: 1771 ms
+2026-09-02 16:37:57 [main] INFO  utils.APILoggingFilter - Response Headers: Date=Wed, 02 Sep 2026 11:07:57 GMT
+Content-Type=application/json; charset=utf-8
+Content-Length=487
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Cache-Control=no-store
+Cross-Origin-Opener-Policy=same-origin
+Cross-Origin-Resource-Policy=cross-origin
+Etag=W/"1e7-iFlgdwSBkgsfkjg7UJr7QlUb5no"
+Nel={"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+Origin-Agent-Cluster=?1
+Ratelimit-Limit=20
+Ratelimit-Policy=20;w=60
+Ratelimit-Remaining=19
+Ratelimit-Reset=60
+Referrer-Policy=strict-origin-when-cross-origin
+Report-To={"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=fCoJUiIqGC2xF44RtUA7fD2j3wojxGnU6DKa4U30zgA%3D\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\u0026ts=1788347277"}],"max_age":3600}
+Reporting-Endpoints=heroku-nel="https://nel.heroku.com/reports?s=fCoJUiIqGC2xF44RtUA7fD2j3wojxGnU6DKa4U30zgA%3D&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&ts=1788347277"
+Server=cloudflare
+Strict-Transport-Security=max-age=31536000; includeSubDomains
+Via=1.1 heroku-router
+X-Content-Type-Options=nosniff
+X-Dns-Prefetch-Control=off
+X-Download-Options=noopen
+X-Frame-Options=DENY
+X-Permitted-Cross-Domain-Policies=none
+X-Powered-By=ReqRes.in - Deploy backends in 30 seconds
+X-Ratelimit-Limit=40
+X-Ratelimit-Remaining=16
+X-Ratelimit-Reset=1788393600
+X-Reqres-Docs=https://reqres.in
+X-Reqres-Message=This API is powered by ReqRes. Deploy your own backend in 30 seconds!
+X-Reqres-Templates=https://app.reqres.in/templates
+X-Reqres-Tip=Need more than /api/users? Build custom collections - app.reqres.in/dashboard
+X-Reqres-Upgrade=https://app.reqres.in/upgrade
+X-Request-Id=e5aac361-10d5-803a-7289-3477bf8a6751
+X-Robots-Tag=noindex, nofollow
+X-Xss-Protection=0
+cf-cache-status=DYNAMIC
+CF-RAY=a34c0dd1fba679e9-HYD
+2026-09-02 16:37:57 [main] INFO  utils.APILoggingFilter - Response Body:
+{
+    "name": "Rahul",
+    "job": "SDET",
+    "id": "433",
+    "createdAt": "2026-09-02T11:07:57.446Z",
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Your data persists here. Add auth, logs, and custom schemas to build a real backend.",
+        "cta": {
+            "label": "See example app",
+            "url": "https://app.reqres.in/examples/notes-app"
+        },
+        "context": "legacy_success"
+    }
+}
+2026-09-02 16:39:33 [main] INFO  utils.APILoggingFilter - API Request | Method: POST | URL: https://reqres.in/api/users
+2026-09-02 16:39:33 [main] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-02 16:39:33 [main] INFO  utils.APILoggingFilter - Request Body:
+{"name":"Rahul","job":"SDET"}
+2026-09-02 16:39:35 [main] INFO  utils.APILoggingFilter - API Response | Status: 201 | Time: 1716 ms
+2026-09-02 16:39:35 [main] INFO  utils.APILoggingFilter - Response Body:
+{
+    "name": "Rahul",
+    "job": "SDET",
+    "id": "564",
+    "createdAt": "2026-09-02T11:09:34.892Z",
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Your data persists here. Add auth, logs, and custom schemas to build a real backend.",
+        "cta": {
+            "label": "See example app",
+            "url": "https://app.reqres.in/examples/notes-app"
+        },
+        "context": "legacy_success"
+    }
+}
+2026-09-02 16:51:20 [main] INFO  utils.APILoggingFilter - API Request | Method: POST | URL: https://reqres.in/api/users
+2026-09-02 16:51:20 [main] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-02 16:51:20 [main] INFO  utils.APILoggingFilter - Request Body:
+{"name":"Rahul","job":"SDET"}
+2026-09-02 16:51:22 [main] INFO  utils.APILoggingFilter - API Response | Status: 201 | Time: 1778 ms
+2026-09-02 16:51:22 [main] INFO  utils.APILoggingFilter - Response Body:
+{
+    "name": "Rahul",
+    "job": "SDET",
+    "id": "532",
+    "createdAt": "2026-09-02T11:21:22.105Z",
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Your data persists here. Add auth, logs, and custom schemas to build a real backend.",
+        "cta": {
+            "label": "See example app",
+            "url": "https://app.reqres.in/examples/notes-app"
+        },
+        "context": "legacy_success"
+    }
+}
+2026-09-02 16:57:31 [main] INFO  utils.APILoggingFilter - API Request | Method: GET | URL: https://reqres.in/api/users/1
+2026-09-02 16:57:31 [main] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-02 16:57:33 [main] INFO  utils.APILoggingFilter - API Response | Status: 200 | Time: 2305 ms
+2026-09-02 16:57:33 [main] INFO  utils.APILoggingFilter - Response Body:
+{
+    "data": {
+        "id": 1,
+        "email": "george.bluth@reqres.in",
+        "first_name": "George",
+        "last_name": "Bluth",
+        "avatar": "https://reqres.in/img/faces/1-image.jpg"
+    },
+    "support": {
+        "url": "https://benhowdle.im/first-cto-playbook?utm_source=reqres&utm_medium=json&utm_campaign=referral",
+        "text": "Become a better CTO. A playbook of painful stories and practical advice from a two-time startup CTO."
+    },
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Your data persists here. Add auth, logs, and custom schemas to build a real backend.",
+        "cta": {
+            "label": "See example app",
+            "url": "https://app.reqres.in/examples/notes-app"
+        },
+        "context": "legacy_success"
+    }
+}
+2026-09-02 17:05:53 [main] INFO  utils.APILoggingFilter - API Request | Method: POST | URL: https://reqres.in/api/users
+2026-09-02 17:05:53 [main] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-02 17:05:53 [main] INFO  utils.APILoggingFilter - Request Body:
+{"name":"Rahul","job":"SDET"}
+2026-09-02 17:05:55 [main] INFO  utils.APILoggingFilter - API Response | Status: 201 | Time: 1738 ms
+2026-09-02 17:05:55 [main] INFO  utils.APILoggingFilter - Response Body:
+{
+    "name": "Rahul",
+    "job": "SDET",
+    "id": "418",
+    "createdAt": "2026-09-02T11:35:54.753Z",
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Your data persists here. Add auth, logs, and custom schemas to build a real backend.",
+        "cta": {
+            "label": "See example app",
+            "url": "https://app.reqres.in/examples/notes-app"
+        },
+        "context": "legacy_success"
+    }
+}
+2026-09-02 17:05:56 [main] INFO  utils.APILoggingFilter - API Request | Method: DELETE | URL: https://reqres.in/api/users/2
+2026-09-02 17:05:56 [main] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-02 17:05:56 [main] INFO  utils.APILoggingFilter - API Response | Status: 204 | Time: 400 ms
+2026-09-02 17:05:56 [main] INFO  utils.APILoggingFilter - API Request | Method: GET | URL: https://reqres.in/api/users
+2026-09-02 17:05:56 [main] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-02 17:05:57 [main] INFO  utils.APILoggingFilter - API Response | Status: 200 | Time: 643 ms
+2026-09-02 17:05:57 [main] INFO  utils.APILoggingFilter - Response Body:
+{
+    "page": 1,
+    "per_page": 6,
+    "total": 12,
+    "total_pages": 2,
+    "data": [
+        {
+            "id": 1,
+            "email": "george.bluth@reqres.in",
+            "first_name": "George",
+            "last_name": "Bluth",
+            "avatar": "https://reqres.in/img/faces/1-image.jpg"
+        },
+        {
+            "id": 2,
+            "email": "janet.weaver@reqres.in",
+            "first_name": "Janet",
+            "last_name": "Weaver",
+            "avatar": "https://reqres.in/img/faces/2-image.jpg"
+        },
+        {
+            "id": 3,
+            "email": "emma.wong@reqres.in",
+            "first_name": "Emma",
+            "last_name": "Wong",
+            "avatar": "https://reqres.in/img/faces/3-image.jpg"
+        },
+        {
+            "id": 4,
+            "email": "eve.holt@reqres.in",
+            "first_name": "Eve",
+            "last_name": "Holt",
+            "avatar": "https://reqres.in/img/faces/4-image.jpg"
+        },
+        {
+            "id": 5,
+            "email": "charles.morris@reqres.in",
+            "first_name": "Charles",
+            "last_name": "Morris",
+            "avatar": "https://reqres.in/img/faces/5-image.jpg"
+        },
+        {
+            "id": 6,
+            "email": "tracey.ramos@reqres.in",
+            "first_name": "Tracey",
+            "last_name": "Ramos",
+            "avatar": "https://reqres.in/img/faces/6-image.jpg"
+        }
+    ],
+    "support": {
+        "url": "https://benhowdle.im/first-cto-playbook?utm_source=reqres&utm_medium=json&utm_campaign=referral",
+        "text": "Become a better CTO. A playbook of painful stories and practical advice from a two-time startup CTO."
+    },
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Your data persists here. Add auth, logs, and custom schemas to build a real backend.",
+        "cta": {
+            "label": "See example app",
+            "url": "https://app.reqres.in/examples/notes-app"
+        },
+        "context": "legacy_success"
+    }
+}
+2026-09-02 17:05:58 [main] INFO  utils.APILoggingFilter - API Request | Method: GET | URL: https://reqres.in/api/users/9999
+2026-09-02 17:05:58 [main] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-02 17:05:58 [main] INFO  utils.APILoggingFilter - API Response | Status: 404 | Time: 329 ms
+2026-09-02 17:05:58 [main] INFO  utils.APILoggingFilter - Response Body:
+{
+    
+}
+2026-09-02 17:05:58 [main] INFO  utils.APILoggingFilter - API Request | Method: GET | URL: https://reqres.in/api/users/1
+2026-09-02 17:05:58 [main] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-02 17:05:58 [main] INFO  utils.APILoggingFilter - API Response | Status: 200 | Time: 420 ms
+2026-09-02 17:05:58 [main] INFO  utils.APILoggingFilter - Response Body:
+{
+    "data": {
+        "id": 1,
+        "email": "george.bluth@reqres.in",
+        "first_name": "George",
+        "last_name": "Bluth",
+        "avatar": "https://reqres.in/img/faces/1-image.jpg"
+    },
+    "support": {
+        "url": "https://benhowdle.im/first-cto-playbook?utm_source=reqres&utm_medium=json&utm_campaign=referral",
+        "text": "Become a better CTO. A playbook of painful stories and practical advice from a two-time startup CTO."
+    },
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Your data persists here. Add auth, logs, and custom schemas to build a real backend.",
+        "cta": {
+            "label": "See example app",
+            "url": "https://app.reqres.in/examples/notes-app"
+        },
+        "context": "legacy_success"
+    }
+}
+2026-09-02 17:05:58 [main] INFO  utils.APILoggingFilter - API Request | Method: GET | URL: https://reqres.in/api/users
+2026-09-02 17:05:58 [main] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-02 17:05:59 [main] INFO  utils.APILoggingFilter - API Response | Status: 200 | Time: 721 ms
+2026-09-02 17:05:59 [main] INFO  utils.APILoggingFilter - Response Body:
+{
+    "page": 1,
+    "per_page": 6,
+    "total": 12,
+    "total_pages": 2,
+    "data": [
+        {
+            "id": 1,
+            "email": "george.bluth@reqres.in",
+            "first_name": "George",
+            "last_name": "Bluth",
+            "avatar": "https://reqres.in/img/faces/1-image.jpg"
+        },
+        {
+            "id": 2,
+            "email": "janet.weaver@reqres.in",
+            "first_name": "Janet",
+            "last_name": "Weaver",
+            "avatar": "https://reqres.in/img/faces/2-image.jpg"
+        },
+        {
+            "id": 3,
+            "email": "emma.wong@reqres.in",
+            "first_name": "Emma",
+            "last_name": "Wong",
+            "avatar": "https://reqres.in/img/faces/3-image.jpg"
+        },
+        {
+            "id": 4,
+            "email": "eve.holt@reqres.in",
+            "first_name": "Eve",
+            "last_name": "Holt",
+            "avatar": "https://reqres.in/img/faces/4-image.jpg"
+        },
+        {
+            "id": 5,
+            "email": "charles.morris@reqres.in",
+            "first_name": "Charles",
+            "last_name": "Morris",
+            "avatar": "https://reqres.in/img/faces/5-image.jpg"
+        },
+        {
+            "id": 6,
+            "email": "tracey.ramos@reqres.in",
+            "first_name": "Tracey",
+            "last_name": "Ramos",
+            "avatar": "https://reqres.in/img/faces/6-image.jpg"
+        }
+    ],
+    "support": {
+        "url": "https://benhowdle.im/first-cto-playbook?utm_source=reqres&utm_medium=json&utm_campaign=referral",
+        "text": "Become a better CTO. A playbook of painful stories and practical advice from a two-time startup CTO."
+    },
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Your data persists here. Add auth, logs, and custom schemas to build a real backend.",
+        "cta": {
+            "label": "See example app",
+            "url": "https://app.reqres.in/examples/notes-app"
+        },
+        "context": "legacy_success"
+    }
+}
+2026-09-02 17:05:59 [main] INFO  utils.APILoggingFilter - API Request | Method: PATCH | URL: https://reqres.in/api/users/2
+2026-09-02 17:05:59 [main] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-02 17:05:59 [main] INFO  utils.APILoggingFilter - Request Body:
+{"job":"Automation Architect"}
+2026-09-02 17:06:00 [main] INFO  utils.APILoggingFilter - API Response | Status: 200 | Time: 348 ms
+2026-09-02 17:06:00 [main] INFO  utils.APILoggingFilter - Response Body:
+{
+    "job": "Automation Architect",
+    "updatedAt": "2026-09-02T11:35:59.908Z",
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Your data persists here. Add auth, logs, and custom schemas to build a real backend.",
+        "cta": {
+            "label": "See example app",
+            "url": "https://app.reqres.in/examples/notes-app"
+        },
+        "context": "legacy_success"
+    }
+}
+2026-09-02 17:06:00 [main] INFO  utils.APILoggingFilter - API Request | Method: PUT | URL: https://reqres.in/api/users/2
+2026-09-02 17:06:00 [main] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-02 17:06:00 [main] INFO  utils.APILoggingFilter - Request Body:
+{"name":"Rahul Updated","job":"Senior SDET"}
+2026-09-02 17:06:00 [main] INFO  utils.APILoggingFilter - API Response | Status: 200 | Time: 568 ms
+2026-09-02 17:06:00 [main] INFO  utils.APILoggingFilter - Response Body:
+{
+    "name": "Rahul Updated",
+    "job": "Senior SDET",
+    "updatedAt": "2026-09-02T11:36:00.537Z",
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Your data persists here. Add auth, logs, and custom schemas to build a real backend.",
+        "cta": {
+            "label": "See example app",
+            "url": "https://app.reqres.in/examples/notes-app"
+        },
+        "context": "legacy_success"
+    }
+}

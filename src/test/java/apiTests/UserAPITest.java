@@ -16,6 +16,7 @@ import java.util.Map;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 
 import org.testng.annotations.DataProvider;
+import utils.APIAssertions;
 
 public class UserAPITest {
 
@@ -145,62 +146,41 @@ public class UserAPITest {
         System.out.println(response.asPrettyString());
 
         // Status code
-        Assert.assertEquals(
-                response.getStatusCode(),
-                200,
-                "Expected status code 200"
+        APIAssertions.assertStatusCode(
+                response,
+                200
         );
 
         // Response time
-        Assert.assertTrue(
-                response.getTime() < 5000,
-                "Response took more than 5 seconds"
+        APIAssertions.assertResponseTime(
+                response,
+                5000
         );
 
         // Validate user ID
-        int userId =
-                response.jsonPath()
-                        .getInt("data.id");
-
-        Assert.assertEquals(
-                userId,
-                1,
-                "Incorrect user ID"
+        APIAssertions.assertFieldEquals(
+                response,
+                "data.id",
+                1
         );
 
         // Validate email
-        String email =
-                response.jsonPath()
-                        .getString("data.email");
-
-        Assert.assertNotNull(
-                email,
-                "Email is missing"
-        );
-
-        Assert.assertTrue(
-                email.contains("@"),
-                "Invalid email format"
+        APIAssertions.assertFieldNotNull(
+                response,
+                "data.email"
         );
 
         // Validate first name
-        String firstName =
-                response.jsonPath()
-                        .getString("data.first_name");
 
-        Assert.assertNotNull(
-                firstName,
-                "First name is missing"
+        APIAssertions.assertFieldNotNull(
+                response,
+                "data.first_name"
         );
 
         // Validate last name
-        String lastName =
-                response.jsonPath()
-                        .getString("data.last_name");
-
-        Assert.assertNotNull(
-                lastName,
-                "Last name is missing"
+        APIAssertions.assertFieldNotNull(
+                response,
+                "data.last_name"
         );
     }
 
@@ -273,18 +253,16 @@ public class UserAPITest {
         );
 
         // Status code
-        Assert.assertEquals(
-                response.getStatusCode(),
-                201,
-                "Expected status code 201"
+        APIAssertions.assertStatusCode(
+                response,
+                201
         );
 
         // Validate name
-        Assert.assertEquals(
-                response.jsonPath()
-                        .getString("name"),
-                "Rahul",
-                "Incorrect name"
+        APIAssertions.assertFieldEquals(
+                response,
+                "name",
+                "Rahul"
         );
 
         // Validate job
@@ -296,10 +274,9 @@ public class UserAPITest {
         );
 
         // Validate generated ID
-        Assert.assertNotNull(
-                response.jsonPath()
-                        .getString("id"),
-                "User ID was not generated"
+        APIAssertions.assertFieldNotNull(
+                response,
+                "id"
         );
 
         // Validate createdAt
@@ -337,33 +314,31 @@ public class UserAPITest {
         );
 
         // Status code
-        Assert.assertEquals(
-                response.getStatusCode(),
-                200,
-                "Expected status code 200"
+        APIAssertions.assertStatusCode(
+                response,
+                200
         );
 
         // Validate name
-        Assert.assertEquals(
-                response.jsonPath()
-                        .getString("name"),
-                "Rahul Updated",
-                "Incorrect name"
+        APIAssertions.assertFieldEquals(
+                response,
+                "name",
+                "Rahul Updated"
         );
 
         // Validate job
-        Assert.assertEquals(
-                response.jsonPath()
-                        .getString("job"),
-                "Senior SDET",
-                "Incorrect job"
+
+        APIAssertions.assertFieldEquals(
+                response,
+                "job",
+                "Senior SDET"
         );
 
         // Validate updatedAt
-        Assert.assertNotNull(
-                response.jsonPath()
-                        .getString("updatedAt"),
-                "updatedAt is missing"
+
+        APIAssertions.assertFieldNotNull(
+                response,
+                "updatedAt"
         );
     }
 
@@ -393,25 +368,23 @@ public class UserAPITest {
         );
 
         // Status code
-        Assert.assertEquals(
-                response.getStatusCode(),
-                200,
-                "Expected status code 200"
+        APIAssertions.assertStatusCode(
+                response,
+                200
         );
 
         // Validate updated job
-        Assert.assertEquals(
-                response.jsonPath()
-                        .getString("job"),
-                "Automation Architect",
-                "Incorrect job"
+
+        APIAssertions.assertFieldEquals(
+                response,
+                "job",
+                "Automation Architect"
         );
 
         // Validate updatedAt
-        Assert.assertNotNull(
-                response.jsonPath()
-                        .getString("updatedAt"),
-                "updatedAt is missing"
+        APIAssertions.assertFieldNotNull(
+                response,
+                "updatedAt"
         );
     }
 
@@ -436,10 +409,9 @@ public class UserAPITest {
         );
 
         // Status code
-        Assert.assertEquals(
-                response.getStatusCode(),
-                204,
-                "Expected status code 204"
+        APIAssertions.assertStatusCode(
+                response,
+                204
         );
 
         // Response body should be empty

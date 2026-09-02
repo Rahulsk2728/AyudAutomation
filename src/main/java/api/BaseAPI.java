@@ -7,6 +7,8 @@ import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 
+import utils.APILoggingFilter;
+
 public class BaseAPI {
 
     private static RequestSpecification requestSpec;
@@ -23,6 +25,7 @@ public class BaseAPI {
                     .setBaseUri(APIConfig.getBaseURL())
                     .setContentType(ContentType.JSON)
                     .addHeader("Accept", "application/json")
+                    .addFilter(new APILoggingFilter())
                     .build();
         }
 
