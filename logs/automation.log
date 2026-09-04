@@ -1748,3 +1748,403 @@ CF-RAY=a34c0dd1fba679e9-HYD
         "context": "legacy_success"
     }
 }
+2026-09-04 14:03:33 [main] INFO  utils.APILoggingFilter - API Request | Method: POST | URL: https://reqres.in/api/users
+2026-09-04 14:03:33 [main] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:03:33 [main] INFO  utils.APILoggingFilter - Request Body:
+{"name":"Rahul","job":"SDET"}
+2026-09-04 14:03:35 [main] INFO  utils.APILoggingFilter - API Response | Status: 201 | Time: 1865 ms
+2026-09-04 14:03:35 [main] INFO  utils.APILoggingFilter - Response Body:
+{
+    "name": "Rahul",
+    "job": "SDET",
+    "id": "15",
+    "createdAt": "2026-09-04T08:33:34.766Z",
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Your data persists here. Add auth, logs, and custom schemas to build a real backend.",
+        "cta": {
+            "label": "See example app",
+            "url": "https://app.reqres.in/examples/notes-app"
+        },
+        "context": "legacy_success"
+    }
+}
+2026-09-04 14:03:36 [main] INFO  utils.APILoggingFilter - API Request | Method: POST | URL: https://reqres.in/api/users
+2026-09-04 14:03:36 [main] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:03:36 [main] INFO  utils.APILoggingFilter - Request Body:
+{"name":"Amit","job":"QA Engineer"}
+2026-09-04 14:03:36 [main] INFO  utils.APILoggingFilter - API Response | Status: 201 | Time: 885 ms
+2026-09-04 14:03:36 [main] INFO  utils.APILoggingFilter - Response Body:
+{
+    "name": "Amit",
+    "job": "QA Engineer",
+    "id": "757",
+    "createdAt": "2026-09-04T08:33:36.767Z",
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Your data persists here. Add auth, logs, and custom schemas to build a real backend.",
+        "cta": {
+            "label": "See example app",
+            "url": "https://app.reqres.in/examples/notes-app"
+        },
+        "context": "legacy_success"
+    }
+}
+2026-09-04 14:03:37 [main] INFO  utils.APILoggingFilter - API Request | Method: POST | URL: https://reqres.in/api/users
+2026-09-04 14:03:37 [main] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:03:37 [main] INFO  utils.APILoggingFilter - Request Body:
+{"name":"John","job":"Automation Engineer"}
+2026-09-04 14:03:37 [main] INFO  utils.APILoggingFilter - API Response | Status: 201 | Time: 543 ms
+2026-09-04 14:03:37 [main] INFO  utils.APILoggingFilter - Response Body:
+{
+    "name": "John",
+    "job": "Automation Engineer",
+    "id": "23",
+    "createdAt": "2026-09-04T08:33:37.352Z",
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Your data persists here. Add auth, logs, and custom schemas to build a real backend.",
+        "cta": {
+            "label": "See example app",
+            "url": "https://app.reqres.in/examples/notes-app"
+        },
+        "context": "legacy_success"
+    }
+}
+2026-09-04 14:03:37 [main] INFO  utils.APILoggingFilter - API Request | Method: POST | URL: https://reqres.in/api/users
+2026-09-04 14:03:37 [main] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:03:37 [main] INFO  utils.APILoggingFilter - Request Body:
+{"name":"Priya","job":"Senior SDET"}
+2026-09-04 14:03:38 [main] INFO  utils.APILoggingFilter - API Response | Status: 201 | Time: 557 ms
+2026-09-04 14:03:38 [main] INFO  utils.APILoggingFilter - Response Body:
+{
+    "name": "Priya",
+    "job": "Senior SDET",
+    "id": "479",
+    "createdAt": "2026-09-04T08:33:37.980Z",
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Your data persists here. Add auth, logs, and custom schemas to build a real backend.",
+        "cta": {
+            "label": "See example app",
+            "url": "https://app.reqres.in/examples/notes-app"
+        },
+        "context": "legacy_success"
+    }
+}
+2026-09-04 14:03:38 [main] INFO  utils.APILoggingFilter - API Request | Method: POST | URL: https://reqres.in/api/users
+2026-09-04 14:03:38 [main] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:03:38 [main] INFO  utils.APILoggingFilter - Request Body:
+{"name":"Rohan","job":"Test Engineer"}
+2026-09-04 14:03:38 [main] INFO  utils.APILoggingFilter - API Response | Status: 201 | Time: 525 ms
+2026-09-04 14:03:38 [main] INFO  utils.APILoggingFilter - Response Body:
+{
+    "name": "Rohan",
+    "job": "Test Engineer",
+    "id": "70",
+    "createdAt": "2026-09-04T08:33:38.600Z",
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Your data persists here. Add auth, logs, and custom schemas to build a real backend.",
+        "cta": {
+            "label": "See example app",
+            "url": "https://app.reqres.in/examples/notes-app"
+        },
+        "context": "legacy_success"
+    }
+}
+2026-09-04 14:03:38 [main] INFO  utils.APILoggingFilter - API Request | Method: POST | URL: https://reqres.in/api/users
+2026-09-04 14:03:38 [main] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:03:38 [main] INFO  utils.APILoggingFilter - Request Body:
+{"name":"Sneha","job":"Automation Tester"}
+2026-09-04 14:03:39 [main] INFO  utils.APILoggingFilter - API Response | Status: 201 | Time: 554 ms
+2026-09-04 14:03:39 [main] INFO  utils.APILoggingFilter - Response Body:
+{
+    "name": "Sneha",
+    "job": "Automation Tester",
+    "id": "837",
+    "createdAt": "2026-09-04T08:33:39.202Z",
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Your data persists here. Add auth, logs, and custom schemas to build a real backend.",
+        "cta": {
+            "label": "See example app",
+            "url": "https://app.reqres.in/examples/notes-app"
+        },
+        "context": "legacy_success"
+    }
+}
+2026-09-04 14:03:39 [main] INFO  utils.APILoggingFilter - API Request | Method: POST | URL: https://reqres.in/api/users
+2026-09-04 14:03:39 [main] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:03:39 [main] INFO  utils.APILoggingFilter - Request Body:
+{"name":"Arjun","job":"QA Automation Engineer"}
+2026-09-04 14:03:40 [main] INFO  utils.APILoggingFilter - API Response | Status: 201 | Time: 880 ms
+2026-09-04 14:03:40 [main] INFO  utils.APILoggingFilter - Response Body:
+{
+    "name": "Arjun",
+    "job": "QA Automation Engineer",
+    "id": "618",
+    "createdAt": "2026-09-04T08:33:39.923Z",
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Your data persists here. Add auth, logs, and custom schemas to build a real backend.",
+        "cta": {
+            "label": "See example app",
+            "url": "https://app.reqres.in/examples/notes-app"
+        },
+        "context": "legacy_success"
+    }
+}
+2026-09-04 14:03:40 [main] INFO  utils.APILoggingFilter - API Request | Method: POST | URL: https://reqres.in/api/users
+2026-09-04 14:03:40 [main] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:03:40 [main] INFO  utils.APILoggingFilter - Request Body:
+{"name":"Neha","job":"SDET 2"}
+2026-09-04 14:03:40 [main] INFO  utils.APILoggingFilter - API Response | Status: 201 | Time: 528 ms
+2026-09-04 14:03:40 [main] INFO  utils.APILoggingFilter - Response Body:
+{
+    "name": "Neha",
+    "job": "SDET 2",
+    "id": "295",
+    "createdAt": "2026-09-04T08:33:40.745Z",
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Your data persists here. Add auth, logs, and custom schemas to build a real backend.",
+        "cta": {
+            "label": "See example app",
+            "url": "https://app.reqres.in/examples/notes-app"
+        },
+        "context": "legacy_success"
+    }
+}
+2026-09-04 14:09:40 [main] INFO  utils.APILoggingFilter - API Request | Method: POST | URL: https://reqres.in/api/users
+2026-09-04 14:09:40 [main] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:09:40 [main] INFO  utils.APILoggingFilter - Request Body:
+{"name":"Rahul","job":"SDET"}
+2026-09-04 14:09:42 [main] INFO  utils.APILoggingFilter - API Response | Status: 201 | Time: 2092 ms
+2026-09-04 14:09:42 [main] INFO  utils.APILoggingFilter - Response Body:
+{
+    "name": "Rahul",
+    "job": "SDET",
+    "id": "130",
+    "createdAt": "2026-09-04T08:39:41.536Z",
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Your data persists here. Add auth, logs, and custom schemas to build a real backend.",
+        "cta": {
+            "label": "See example app",
+            "url": "https://app.reqres.in/examples/notes-app"
+        },
+        "context": "legacy_success"
+    }
+}
+2026-09-04 14:09:43 [main] INFO  utils.APILoggingFilter - API Request | Method: POST | URL: https://reqres.in/api/users
+2026-09-04 14:09:43 [main] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:09:43 [main] INFO  utils.APILoggingFilter - Request Body:
+{"name":"Amit","job":"QA Engineer"}
+2026-09-04 14:09:43 [main] INFO  utils.APILoggingFilter - API Response | Status: 201 | Time: 769 ms
+2026-09-04 14:09:43 [main] INFO  utils.APILoggingFilter - Response Body:
+{
+    "name": "Amit",
+    "job": "QA Engineer",
+    "id": "462",
+    "createdAt": "2026-09-04T08:39:43.743Z",
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Your data persists here. Add auth, logs, and custom schemas to build a real backend.",
+        "cta": {
+            "label": "See example app",
+            "url": "https://app.reqres.in/examples/notes-app"
+        },
+        "context": "legacy_success"
+    }
+}
+2026-09-04 14:09:44 [main] INFO  utils.APILoggingFilter - API Request | Method: POST | URL: https://reqres.in/api/users
+2026-09-04 14:09:44 [main] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:09:44 [main] INFO  utils.APILoggingFilter - Request Body:
+{"name":"John","job":"Automation Engineer"}
+2026-09-04 14:09:44 [main] INFO  utils.APILoggingFilter - API Response | Status: 201 | Time: 744 ms
+2026-09-04 14:09:44 [main] INFO  utils.APILoggingFilter - Response Body:
+{
+    "name": "John",
+    "job": "Automation Engineer",
+    "id": "497",
+    "createdAt": "2026-09-04T08:39:44.555Z",
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Your data persists here. Add auth, logs, and custom schemas to build a real backend.",
+        "cta": {
+            "label": "See example app",
+            "url": "https://app.reqres.in/examples/notes-app"
+        },
+        "context": "legacy_success"
+    }
+}
+2026-09-04 14:09:44 [main] INFO  utils.APILoggingFilter - API Request | Method: POST | URL: https://reqres.in/api/users
+2026-09-04 14:09:44 [main] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:09:44 [main] INFO  utils.APILoggingFilter - Request Body:
+{"name":"Priya","job":"Senior SDET"}
+2026-09-04 14:09:45 [main] INFO  utils.APILoggingFilter - API Response | Status: 201 | Time: 1057 ms
+2026-09-04 14:09:45 [main] INFO  utils.APILoggingFilter - Response Body:
+{
+    "name": "Priya",
+    "job": "Senior SDET",
+    "id": "703",
+    "createdAt": "2026-09-04T08:39:45.569Z",
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Your data persists here. Add auth, logs, and custom schemas to build a real backend.",
+        "cta": {
+            "label": "See example app",
+            "url": "https://app.reqres.in/examples/notes-app"
+        },
+        "context": "legacy_success"
+    }
+}
+2026-09-04 14:09:45 [main] INFO  utils.APILoggingFilter - API Request | Method: POST | URL: https://reqres.in/api/users
+2026-09-04 14:09:45 [main] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:09:45 [main] INFO  utils.APILoggingFilter - Request Body:
+{"name":"Rohan","job":"Test Engineer"}
+2026-09-04 14:09:46 [main] INFO  utils.APILoggingFilter - API Response | Status: 201 | Time: 553 ms
+2026-09-04 14:09:46 [main] INFO  utils.APILoggingFilter - Response Body:
+{
+    "name": "Rohan",
+    "job": "Test Engineer",
+    "id": "531",
+    "createdAt": "2026-09-04T08:39:46.315Z",
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Your data persists here. Add auth, logs, and custom schemas to build a real backend.",
+        "cta": {
+            "label": "See example app",
+            "url": "https://app.reqres.in/examples/notes-app"
+        },
+        "context": "legacy_success"
+    }
+}
+2026-09-04 14:09:46 [main] INFO  utils.APILoggingFilter - API Request | Method: POST | URL: https://reqres.in/api/users
+2026-09-04 14:09:46 [main] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:09:46 [main] INFO  utils.APILoggingFilter - Request Body:
+{"name":"Sneha","job":"Automation Tester"}
+2026-09-04 14:09:47 [main] INFO  utils.APILoggingFilter - API Response | Status: 201 | Time: 554 ms
+2026-09-04 14:09:47 [main] INFO  utils.APILoggingFilter - Response Body:
+{
+    "name": "Sneha",
+    "job": "Automation Tester",
+    "id": "74",
+    "createdAt": "2026-09-04T08:39:46.924Z",
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Your data persists here. Add auth, logs, and custom schemas to build a real backend.",
+        "cta": {
+            "label": "See example app",
+            "url": "https://app.reqres.in/examples/notes-app"
+        },
+        "context": "legacy_success"
+    }
+}
+2026-09-04 14:09:47 [main] INFO  utils.APILoggingFilter - API Request | Method: POST | URL: https://reqres.in/api/users
+2026-09-04 14:09:47 [main] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:09:47 [main] INFO  utils.APILoggingFilter - Request Body:
+{"name":"Arjun","job":"QA Automation Engineer"}
+2026-09-04 14:09:47 [main] INFO  utils.APILoggingFilter - API Response | Status: 201 | Time: 723 ms
+2026-09-04 14:09:47 [main] INFO  utils.APILoggingFilter - Response Body:
+{
+    "name": "Arjun",
+    "job": "QA Automation Engineer",
+    "id": "86",
+    "createdAt": "2026-09-04T08:39:47.750Z",
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Your data persists here. Add auth, logs, and custom schemas to build a real backend.",
+        "cta": {
+            "label": "See example app",
+            "url": "https://app.reqres.in/examples/notes-app"
+        },
+        "context": "legacy_success"
+    }
+}
+2026-09-04 14:09:48 [main] INFO  utils.APILoggingFilter - API Request | Method: POST | URL: https://reqres.in/api/users
+2026-09-04 14:09:48 [main] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:09:48 [main] INFO  utils.APILoggingFilter - Request Body:
+{"name":"Neha","job":"SDET 2"}
+2026-09-04 14:09:48 [main] INFO  utils.APILoggingFilter - API Response | Status: 201 | Time: 577 ms
+2026-09-04 14:09:48 [main] INFO  utils.APILoggingFilter - Response Body:
+{
+    "name": "Neha",
+    "job": "SDET 2",
+    "id": "804",
+    "createdAt": "2026-09-04T08:39:48.421Z",
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Your data persists here. Add auth, logs, and custom schemas to build a real backend.",
+        "cta": {
+            "label": "See example app",
+            "url": "https://app.reqres.in/examples/notes-app"
+        },
+        "context": "legacy_success"
+    }
+}

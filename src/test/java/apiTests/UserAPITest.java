@@ -2,6 +2,7 @@ package apiTests;
 
 import Headers.APIHeaders;
 import api.APIClient;
+import dataproviders.UserDataProvider;
 import endpoints.UserEndpoints;
 import io.restassured.response.Response;
 import models.CreateUserRequest;
@@ -285,6 +286,32 @@ public class UserAPITest {
                         .getString("createdAt"),
                 "createdAt is missing"
         );
+    }
+
+    @Test(
+            dataProvider = "userData",
+            dataProviderClass = UserDataProvider.class
+    )
+    public void createMultipleUsersTest(String name, String job) {
+
+        CreateUserRequest request =
+                new CreateUserRequest(name, job);
+
+        Response response =
+                APIClient.post(
+                        UserEndpoints.CREATE_USER,
+                        request
+                );
+
+        System.out.println("Name: " + name);
+        System.out.println("Job: " + job);
+        System.out.println(response.asPrettyString());
+
+        APIAssertions.assertStatusCode(response, 201);
+        APIAssertions.assertFieldEquals(response, "name", name);
+        APIAssertions.assertFieldEquals(response, "job", job);
+        APIAssertions.assertFieldNotNull(response, "id");
+        APIAssertions.assertFieldNotNull(response, "createdAt");
     }
 
 

@@ -14,13 +14,15 @@ public class LoginDataProvider{
 
         int rowCount = excel.getRowCount();
 
-        Object[][] data = new Object[rowCount][2];
+        Object[][] data = new Object[rowCount - 1][2];
 
-        for (int i = 1; i <= rowCount; i++) {
+        for (int i = 1; i < rowCount; i++) {
 
-            data[i - 1][0] = excel.getCellData(i, 0);
-            data[i - 1][1] = excel.getCellData(i, 1);
+            data[i - 1][0] =
+                    excel.getCellData(i, 0);
 
+            data[i - 1][1] =
+                    excel.getCellData(i, 1);
         }
 
         excel.closeWorkbook();
