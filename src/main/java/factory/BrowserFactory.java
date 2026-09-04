@@ -6,33 +6,101 @@ import com.microsoft.playwright.Playwright;
 
 public class BrowserFactory {
 
-    public static Browser launchBrowser(Playwright playwright, String browserName, boolean headless) {
+    public static Browser launchBrowser(
+            Playwright playwright,
+            String browserName,
+            boolean headless) {
 
-        BrowserType.LaunchOptions options = new BrowserType.LaunchOptions()
-                .setHeadless(headless);
+        String docker =
+                System.getProperty("docker", "false");
 
-        switch (browserName.trim().toLowerCase()) {
+        boolean isDocker =
+                Boolean.parseBoolean(docker);
 
-            case "chrome":
-                return playwright.chromium().launch(
-                        options.setChannel("chrome")
-                );
+        browserName =
+                browserName.trim().toLowerCase();
 
-            case "edge":
-                return playwright.chromium().launch(
-                        options.setChannel("msedge")
-                );
+        System.out.println(
+                "Launching browser: "
+                        + browserName
+                        + " | Docker: "
+                        + isDocker
+                        + " | Headless: "
+                        + headless
+        );
 
-            case "chromium":
-                return playwright.chromium().launch(options);
+        /*
+         * Docker execution
+         *
+         * Playwright Docker image contains
+         * Playwright-managed browsers.
+         *
+         * Do not use Windows-installed Chrome/Edge
+         * channels inside Docker.
+         */
+        if (isDocker) {
 
-            case "firefox":
-                return playwright.firefox().launch(options);
+            return switch (browserName) {
 
-            default:
-                throw new IllegalArgumentException(
-                        "Unsupported browser: " + browserName
-                );
+                case "chrome", "chromium" ->
+                        playwright.chromium().launch(
+                                new BrowserType.LaunchOptions()
+                                        .setHeadless(headless)
+                        );
+
+                case "firefox" ->
+                        playwright.firefox().launch(
+                                new BrowserType.LaunchOptions()
+                                        .setHeadless(headless)
+                        );
+
+                default ->
+                        throw new IllegalArgumentException(
+                                "Unsupported Docker browser: "
+                                        + browserName
+                        );
+            };
         }
+
+        /*
+         * Local execution
+         *
+         * Chrome and Edge use their installed
+         * browser channels.
+         */
+        return switch (browserName) {
+
+            case "chrome" ->
+                    playwright.chromium().launch(
+                            new BrowserType.LaunchOptions()
+                                    .setChannel("chrome")
+                                    .setHeadless(headless)
+                    );
+
+            case "edge" ->
+                    playwright.chromium().launch(
+                            new BrowserType.LaunchOptions()
+                                    .setChannel("msedge")
+                                    .setHeadless(headless)
+                    );
+
+            case "chromium" ->
+                    playwright.chromium().launch(
+                            new BrowserType.LaunchOptions()
+                                    .setHeadless(headless)
+                    );
+
+            case "firefox" ->
+                    playwright.firefox().launch(
+                            new BrowserType.LaunchOptions()
+                                    .setHeadless(headless)
+                    );
+
+            default ->
+                    throw new IllegalArgumentException(
+                            "Unsupported browser: "
+                                    + browserName
+                    );
+        };
     }
 }

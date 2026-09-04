@@ -2867,3 +2867,759 @@ CF-RAY=a34c0dd1fba679e9-HYD
         "context": "rate_limited"
     }
 }
+2026-09-04 14:28:35 [TestNG-test-API Tests-3] INFO  utils.APILoggingFilter - API Request | Method: DELETE | URL: https://reqres.in/api/users/2
+2026-09-04 14:28:35 [TestNG-test-API Tests-4] INFO  utils.APILoggingFilter - API Request | Method: GET | URL: https://reqres.in/api/users
+2026-09-04 14:28:35 [TestNG-test-API Tests-3] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:28:35 [TestNG-test-API Tests-4] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:28:35 [TestNG-test-API Tests-2] INFO  utils.APILoggingFilter - API Request | Method: POST | URL: https://reqres.in/api/users
+2026-09-04 14:28:35 [TestNG-test-API Tests-2] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:28:35 [TestNG-test-API Tests-2] INFO  utils.APILoggingFilter - Request Body:
+{"name":"Rahul","job":"SDET"}
+2026-09-04 14:28:35 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - API Request | Method: POST | URL: https://reqres.in/api/users
+2026-09-04 14:28:35 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:28:35 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - Request Body:
+{"name":"Rahul","job":"SDET"}
+2026-09-04 14:28:37 [TestNG-test-API Tests-3] INFO  utils.APILoggingFilter - API Response | Status: 429 | Time: 2104 ms
+2026-09-04 14:28:37 [TestNG-test-API Tests-2] INFO  utils.APILoggingFilter - API Response | Status: 429 | Time: 1912 ms
+2026-09-04 14:28:37 [TestNG-test-API Tests-4] INFO  utils.APILoggingFilter - API Response | Status: 429 | Time: 2104 ms
+2026-09-04 14:28:37 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - API Response | Status: 429 | Time: 1648 ms
+2026-09-04 14:28:37 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - Response Body:
+{
+    "error": "rate_limit_exceeded",
+    "message": "You've hit the anonymous demo limit of 40 requests/day from this IP.",
+    "signup": {
+        "message": "Create a free account for a higher daily limit, your own API key, persistent collections, and auth.",
+        "url": "https://app.reqres.in/sign-up?source=demo_rate_limit"
+    },
+    "limit": 40,
+    "remaining": 0,
+    "reset_at": 1788566400,
+    "resets_in": "15h 1m",
+    "reset_explanation": "Limits reset daily at midnight UTC",
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Rate limited to keep ReqRes free. Projects unlock higher limits + logs.",
+        "cta": {
+            "label": "Upgrade",
+            "url": "https://app.reqres.in/upgrade"
+        },
+        "context": "rate_limited"
+    }
+}
+2026-09-04 14:28:37 [TestNG-test-API Tests-4] INFO  utils.APILoggingFilter - Response Body:
+{
+    "error": "rate_limit_exceeded",
+    "message": "You've hit the anonymous demo limit of 40 requests/day from this IP.",
+    "signup": {
+        "message": "Create a free account for a higher daily limit, your own API key, persistent collections, and auth.",
+        "url": "https://app.reqres.in/sign-up?source=demo_rate_limit"
+    },
+    "limit": 40,
+    "remaining": 0,
+    "reset_at": 1788566400,
+    "resets_in": "15h 1m",
+    "reset_explanation": "Limits reset daily at midnight UTC",
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Rate limited to keep ReqRes free. Projects unlock higher limits + logs.",
+        "cta": {
+            "label": "Upgrade",
+            "url": "https://app.reqres.in/upgrade"
+        },
+        "context": "rate_limited"
+    }
+}
+2026-09-04 14:28:37 [TestNG-test-API Tests-3] INFO  utils.APILoggingFilter - Response Body:
+{
+    "error": "rate_limit_exceeded",
+    "message": "You've hit the anonymous demo limit of 40 requests/day from this IP.",
+    "signup": {
+        "message": "Create a free account for a higher daily limit, your own API key, persistent collections, and auth.",
+        "url": "https://app.reqres.in/sign-up?source=demo_rate_limit"
+    },
+    "limit": 40,
+    "remaining": 0,
+    "reset_at": 1788566400,
+    "resets_in": "15h 1m",
+    "reset_explanation": "Limits reset daily at midnight UTC",
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Rate limited to keep ReqRes free. Projects unlock higher limits + logs.",
+        "cta": {
+            "label": "Upgrade",
+            "url": "https://app.reqres.in/upgrade"
+        },
+        "context": "rate_limited"
+    }
+}
+2026-09-04 14:28:37 [TestNG-test-API Tests-2] INFO  utils.APILoggingFilter - Response Body:
+{
+    "error": "rate_limit_exceeded",
+    "message": "You've hit the anonymous demo limit of 40 requests/day from this IP.",
+    "signup": {
+        "message": "Create a free account for a higher daily limit, your own API key, persistent collections, and auth.",
+        "url": "https://app.reqres.in/sign-up?source=demo_rate_limit"
+    },
+    "limit": 40,
+    "remaining": 0,
+    "reset_at": 1788566400,
+    "resets_in": "15h 1m",
+    "reset_explanation": "Limits reset daily at midnight UTC",
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Rate limited to keep ReqRes free. Projects unlock higher limits + logs.",
+        "cta": {
+            "label": "Upgrade",
+            "url": "https://app.reqres.in/upgrade"
+        },
+        "context": "rate_limited"
+    }
+}
+2026-09-04 14:28:37 [TestNG-test-API Tests-4] INFO  utils.APILoggingFilter - API Request | Method: GET | URL: https://reqres.in/api/users/9999
+2026-09-04 14:28:37 [TestNG-test-API Tests-3] INFO  utils.APILoggingFilter - API Request | Method: GET | URL: https://reqres.in/api/users/1
+2026-09-04 14:28:37 [TestNG-test-API Tests-4] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:28:37 [TestNG-test-API Tests-3] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:28:37 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - API Request | Method: POST | URL: https://reqres.in/api/users
+2026-09-04 14:28:37 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:28:37 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - Request Body:
+{"name":"Amit","job":"QA Engineer"}
+2026-09-04 14:28:37 [TestNG-test-API Tests-2] INFO  utils.APILoggingFilter - API Request | Method: GET | URL: https://reqres.in/api/users
+2026-09-04 14:28:37 [TestNG-test-API Tests-2] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:28:38 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - API Response | Status: 429 | Time: 516 ms
+2026-09-04 14:28:38 [TestNG-test-API Tests-4] INFO  utils.APILoggingFilter - API Response | Status: 429 | Time: 517 ms
+2026-09-04 14:28:38 [TestNG-test-API Tests-4] INFO  utils.APILoggingFilter - Response Body:
+{
+    "error": "rate_limit_exceeded",
+    "message": "You've hit the anonymous demo limit of 40 requests/day from this IP.",
+    "signup": {
+        "message": "Create a free account for a higher daily limit, your own API key, persistent collections, and auth.",
+        "url": "https://app.reqres.in/sign-up?source=demo_rate_limit"
+    },
+    "limit": 40,
+    "remaining": 0,
+    "reset_at": 1788566400,
+    "resets_in": "15h 1m",
+    "reset_explanation": "Limits reset daily at midnight UTC",
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Rate limited to keep ReqRes free. Projects unlock higher limits + logs.",
+        "cta": {
+            "label": "Upgrade",
+            "url": "https://app.reqres.in/upgrade"
+        },
+        "context": "rate_limited"
+    }
+}
+2026-09-04 14:28:38 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - Response Body:
+{
+    "error": "rate_limit_exceeded",
+    "message": "You've hit the anonymous demo limit of 40 requests/day from this IP.",
+    "signup": {
+        "message": "Create a free account for a higher daily limit, your own API key, persistent collections, and auth.",
+        "url": "https://app.reqres.in/sign-up?source=demo_rate_limit"
+    },
+    "limit": 40,
+    "remaining": 0,
+    "reset_at": 1788566400,
+    "resets_in": "15h 1m",
+    "reset_explanation": "Limits reset daily at midnight UTC",
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Rate limited to keep ReqRes free. Projects unlock higher limits + logs.",
+        "cta": {
+            "label": "Upgrade",
+            "url": "https://app.reqres.in/upgrade"
+        },
+        "context": "rate_limited"
+    }
+}
+2026-09-04 14:28:38 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - API Request | Method: POST | URL: https://reqres.in/api/users
+2026-09-04 14:28:38 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:28:38 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - Request Body:
+{"name":"John","job":"Automation Engineer"}
+2026-09-04 14:28:38 [TestNG-test-API Tests-4] INFO  utils.APILoggingFilter - API Request | Method: PATCH | URL: https://reqres.in/api/users/2
+2026-09-04 14:28:38 [TestNG-test-API Tests-4] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:28:38 [TestNG-test-API Tests-4] INFO  utils.APILoggingFilter - Request Body:
+{"job":"Automation Architect"}
+2026-09-04 14:28:38 [TestNG-test-API Tests-3] INFO  utils.APILoggingFilter - API Response | Status: 429 | Time: 662 ms
+2026-09-04 14:28:38 [TestNG-test-API Tests-3] INFO  utils.APILoggingFilter - Response Body:
+{
+    "error": "rate_limit_exceeded",
+    "message": "You've hit the anonymous demo limit of 40 requests/day from this IP.",
+    "signup": {
+        "message": "Create a free account for a higher daily limit, your own API key, persistent collections, and auth.",
+        "url": "https://app.reqres.in/sign-up?source=demo_rate_limit"
+    },
+    "limit": 40,
+    "remaining": 0,
+    "reset_at": 1788566400,
+    "resets_in": "15h 1m",
+    "reset_explanation": "Limits reset daily at midnight UTC",
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Rate limited to keep ReqRes free. Projects unlock higher limits + logs.",
+        "cta": {
+            "label": "Upgrade",
+            "url": "https://app.reqres.in/upgrade"
+        },
+        "context": "rate_limited"
+    }
+}
+2026-09-04 14:28:38 [TestNG-test-API Tests-3] INFO  utils.APILoggingFilter - API Request | Method: PUT | URL: https://reqres.in/api/users/2
+2026-09-04 14:28:38 [TestNG-test-API Tests-3] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:28:38 [TestNG-test-API Tests-3] INFO  utils.APILoggingFilter - Request Body:
+{"name":"Rahul Updated","job":"Senior SDET"}
+2026-09-04 14:28:38 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - API Response | Status: 429 | Time: 328 ms
+2026-09-04 14:28:38 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - Response Body:
+{
+    "error": "rate_limit_exceeded",
+    "message": "You've hit the anonymous demo limit of 40 requests/day from this IP.",
+    "signup": {
+        "message": "Create a free account for a higher daily limit, your own API key, persistent collections, and auth.",
+        "url": "https://app.reqres.in/sign-up?source=demo_rate_limit"
+    },
+    "limit": 40,
+    "remaining": 0,
+    "reset_at": 1788566400,
+    "resets_in": "15h 1m",
+    "reset_explanation": "Limits reset daily at midnight UTC",
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Rate limited to keep ReqRes free. Projects unlock higher limits + logs.",
+        "cta": {
+            "label": "Upgrade",
+            "url": "https://app.reqres.in/upgrade"
+        },
+        "context": "rate_limited"
+    }
+}
+2026-09-04 14:28:38 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - API Request | Method: POST | URL: https://reqres.in/api/users
+2026-09-04 14:28:38 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:28:38 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - Request Body:
+{"name":"Priya","job":"Senior SDET"}
+2026-09-04 14:28:38 [TestNG-test-API Tests-2] INFO  utils.APILoggingFilter - API Response | Status: 429 | Time: 922 ms
+2026-09-04 14:28:38 [TestNG-test-API Tests-2] INFO  utils.APILoggingFilter - Response Body:
+{
+    "error": "rate_limit_exceeded",
+    "message": "You've hit the anonymous demo limit of 40 requests/day from this IP.",
+    "signup": {
+        "message": "Create a free account for a higher daily limit, your own API key, persistent collections, and auth.",
+        "url": "https://app.reqres.in/sign-up?source=demo_rate_limit"
+    },
+    "limit": 40,
+    "remaining": 0,
+    "reset_at": 1788566400,
+    "resets_in": "15h 1m",
+    "reset_explanation": "Limits reset daily at midnight UTC",
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Rate limited to keep ReqRes free. Projects unlock higher limits + logs.",
+        "cta": {
+            "label": "Upgrade",
+            "url": "https://app.reqres.in/upgrade"
+        },
+        "context": "rate_limited"
+    }
+}
+2026-09-04 14:28:38 [TestNG-test-API Tests-2] INFO  utils.APILoggingFilter - API Request | Method: POST | URL: https://reqres.in/api/login
+2026-09-04 14:28:38 [TestNG-test-API Tests-2] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:28:38 [TestNG-test-API Tests-2] INFO  utils.APILoggingFilter - Request Body:
+{"email":"","password":""}
+2026-09-04 14:28:38 [TestNG-test-API Tests-4] INFO  utils.APILoggingFilter - API Response | Status: 429 | Time: 560 ms
+2026-09-04 14:28:38 [TestNG-test-API Tests-4] INFO  utils.APILoggingFilter - Response Body:
+{
+    "error": "rate_limit_exceeded",
+    "message": "You've hit the anonymous demo limit of 40 requests/day from this IP.",
+    "signup": {
+        "message": "Create a free account for a higher daily limit, your own API key, persistent collections, and auth.",
+        "url": "https://app.reqres.in/sign-up?source=demo_rate_limit"
+    },
+    "limit": 40,
+    "remaining": 0,
+    "reset_at": 1788566400,
+    "resets_in": "15h 1m",
+    "reset_explanation": "Limits reset daily at midnight UTC",
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Rate limited to keep ReqRes free. Projects unlock higher limits + logs.",
+        "cta": {
+            "label": "Upgrade",
+            "url": "https://app.reqres.in/upgrade"
+        },
+        "context": "rate_limited"
+    }
+}
+2026-09-04 14:28:38 [TestNG-test-API Tests-4] INFO  utils.APILoggingFilter - API Request | Method: POST | URL: https://reqres.in/api/login
+2026-09-04 14:28:38 [TestNG-test-API Tests-4] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:28:38 [TestNG-test-API Tests-4] INFO  utils.APILoggingFilter - Request Body:
+{"email":"YOUR_VALID_TEST_EMAIL","password":"YOUR_VALID_TEST_PASSWORD"}
+2026-09-04 14:28:39 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - API Response | Status: 429 | Time: 330 ms
+2026-09-04 14:28:39 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - Response Body:
+{
+    "error": "rate_limit_exceeded",
+    "message": "You've hit the anonymous demo limit of 40 requests/day from this IP.",
+    "signup": {
+        "message": "Create a free account for a higher daily limit, your own API key, persistent collections, and auth.",
+        "url": "https://app.reqres.in/sign-up?source=demo_rate_limit"
+    },
+    "limit": 40,
+    "remaining": 0,
+    "reset_at": 1788566400,
+    "resets_in": "15h 1m",
+    "reset_explanation": "Limits reset daily at midnight UTC",
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Rate limited to keep ReqRes free. Projects unlock higher limits + logs.",
+        "cta": {
+            "label": "Upgrade",
+            "url": "https://app.reqres.in/upgrade"
+        },
+        "context": "rate_limited"
+    }
+}
+2026-09-04 14:28:39 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - API Request | Method: POST | URL: https://reqres.in/api/users
+2026-09-04 14:28:39 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:28:39 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - Request Body:
+{"name":"Rohan","job":"Test Engineer"}
+2026-09-04 14:28:39 [TestNG-test-API Tests-2] INFO  utils.APILoggingFilter - API Response | Status: 429 | Time: 324 ms
+2026-09-04 14:28:39 [TestNG-test-API Tests-2] INFO  utils.APILoggingFilter - Response Body:
+{
+    "error": "rate_limit_exceeded",
+    "message": "You've hit the anonymous demo limit of 40 requests/day from this IP.",
+    "signup": {
+        "message": "Create a free account for a higher daily limit, your own API key, persistent collections, and auth.",
+        "url": "https://app.reqres.in/sign-up?source=demo_rate_limit"
+    },
+    "limit": 40,
+    "remaining": 0,
+    "reset_at": 1788566400,
+    "resets_in": "15h 1m",
+    "reset_explanation": "Limits reset daily at midnight UTC",
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Rate limited to keep ReqRes free. Projects unlock higher limits + logs.",
+        "cta": {
+            "label": "Upgrade",
+            "url": "https://app.reqres.in/upgrade"
+        },
+        "context": "rate_limited"
+    }
+}
+2026-09-04 14:28:39 [TestNG-test-API Tests-2] INFO  utils.APILoggingFilter - API Request | Method: POST | URL: https://reqres.in/api/login
+2026-09-04 14:28:39 [TestNG-test-API Tests-2] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:28:39 [TestNG-test-API Tests-2] INFO  utils.APILoggingFilter - Request Body:
+{"email":"YOUR_VALID_TEST_EMAIL","password":"wrongpassword"}
+2026-09-04 14:28:39 [TestNG-test-API Tests-3] INFO  utils.APILoggingFilter - API Response | Status: 429 | Time: 637 ms
+2026-09-04 14:28:39 [TestNG-test-API Tests-3] INFO  utils.APILoggingFilter - Response Body:
+{
+    "error": "rate_limit_exceeded",
+    "message": "You've hit the anonymous demo limit of 40 requests/day from this IP.",
+    "signup": {
+        "message": "Create a free account for a higher daily limit, your own API key, persistent collections, and auth.",
+        "url": "https://app.reqres.in/sign-up?source=demo_rate_limit"
+    },
+    "limit": 40,
+    "remaining": 0,
+    "reset_at": 1788566400,
+    "resets_in": "15h 1m",
+    "reset_explanation": "Limits reset daily at midnight UTC",
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Rate limited to keep ReqRes free. Projects unlock higher limits + logs.",
+        "cta": {
+            "label": "Upgrade",
+            "url": "https://app.reqres.in/upgrade"
+        },
+        "context": "rate_limited"
+    }
+}
+2026-09-04 14:28:39 [TestNG-test-API Tests-3] INFO  utils.APILoggingFilter - API Request | Method: POST | URL: https://reqres.in/api/login
+2026-09-04 14:28:39 [TestNG-test-API Tests-3] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:28:39 [TestNG-test-API Tests-3] INFO  utils.APILoggingFilter - Request Body:
+{"email":"","password":"YOUR_VALID_TEST_PASSWORD"}
+2026-09-04 14:28:39 [TestNG-test-API Tests-4] INFO  utils.APILoggingFilter - API Response | Status: 429 | Time: 323 ms
+2026-09-04 14:28:39 [TestNG-test-API Tests-4] INFO  utils.APILoggingFilter - Response Body:
+{
+    "error": "rate_limit_exceeded",
+    "message": "You've hit the anonymous demo limit of 40 requests/day from this IP.",
+    "signup": {
+        "message": "Create a free account for a higher daily limit, your own API key, persistent collections, and auth.",
+        "url": "https://app.reqres.in/sign-up?source=demo_rate_limit"
+    },
+    "limit": 40,
+    "remaining": 0,
+    "reset_at": 1788566400,
+    "resets_in": "15h 1m",
+    "reset_explanation": "Limits reset daily at midnight UTC",
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Rate limited to keep ReqRes free. Projects unlock higher limits + logs.",
+        "cta": {
+            "label": "Upgrade",
+            "url": "https://app.reqres.in/upgrade"
+        },
+        "context": "rate_limited"
+    }
+}
+2026-09-04 14:28:39 [TestNG-test-API Tests-4] INFO  utils.APILoggingFilter - API Request | Method: POST | URL: https://reqres.in/api/login
+2026-09-04 14:28:39 [TestNG-test-API Tests-4] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:28:39 [TestNG-test-API Tests-4] INFO  utils.APILoggingFilter - Request Body:
+{"email":"YOUR_VALID_TEST_EMAIL","password":""}
+2026-09-04 14:28:39 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - API Response | Status: 429 | Time: 382 ms
+2026-09-04 14:28:39 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - Response Body:
+{
+    "error": "rate_limit_exceeded",
+    "message": "You've hit the anonymous demo limit of 40 requests/day from this IP.",
+    "signup": {
+        "message": "Create a free account for a higher daily limit, your own API key, persistent collections, and auth.",
+        "url": "https://app.reqres.in/sign-up?source=demo_rate_limit"
+    },
+    "limit": 40,
+    "remaining": 0,
+    "reset_at": 1788566400,
+    "resets_in": "15h 1m",
+    "reset_explanation": "Limits reset daily at midnight UTC",
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Rate limited to keep ReqRes free. Projects unlock higher limits + logs.",
+        "cta": {
+            "label": "Upgrade",
+            "url": "https://app.reqres.in/upgrade"
+        },
+        "context": "rate_limited"
+    }
+}
+2026-09-04 14:28:39 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - API Request | Method: POST | URL: https://reqres.in/api/users
+2026-09-04 14:28:39 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:28:39 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - Request Body:
+{"name":"Sneha","job":"Automation Tester"}
+2026-09-04 14:28:39 [TestNG-test-API Tests-3] INFO  utils.APILoggingFilter - API Response | Status: 429 | Time: 322 ms
+2026-09-04 14:28:39 [TestNG-test-API Tests-3] INFO  utils.APILoggingFilter - Response Body:
+{
+    "error": "rate_limit_exceeded",
+    "message": "You've hit the anonymous demo limit of 40 requests/day from this IP.",
+    "signup": {
+        "message": "Create a free account for a higher daily limit, your own API key, persistent collections, and auth.",
+        "url": "https://app.reqres.in/sign-up?source=demo_rate_limit"
+    },
+    "limit": 40,
+    "remaining": 0,
+    "reset_at": 1788566400,
+    "resets_in": "15h 1m",
+    "reset_explanation": "Limits reset daily at midnight UTC",
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Rate limited to keep ReqRes free. Projects unlock higher limits + logs.",
+        "cta": {
+            "label": "Upgrade",
+            "url": "https://app.reqres.in/upgrade"
+        },
+        "context": "rate_limited"
+    }
+}
+2026-09-04 14:28:39 [TestNG-test-API Tests-3] INFO  utils.APILoggingFilter - API Request | Method: POST | URL: https://reqres.in/api/register
+2026-09-04 14:28:39 [TestNG-test-API Tests-3] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:28:39 [TestNG-test-API Tests-3] INFO  utils.APILoggingFilter - Request Body:
+{"email":null,"password":"pistol"}
+2026-09-04 14:28:39 [TestNG-test-API Tests-4] INFO  utils.APILoggingFilter - API Response | Status: 429 | Time: 370 ms
+2026-09-04 14:28:39 [TestNG-test-API Tests-4] INFO  utils.APILoggingFilter - Response Body:
+{
+    "error": "rate_limit_exceeded",
+    "message": "You've hit the anonymous demo limit of 40 requests/day from this IP.",
+    "signup": {
+        "message": "Create a free account for a higher daily limit, your own API key, persistent collections, and auth.",
+        "url": "https://app.reqres.in/sign-up?source=demo_rate_limit"
+    },
+    "limit": 40,
+    "remaining": 0,
+    "reset_at": 1788566400,
+    "resets_in": "15h 1m",
+    "reset_explanation": "Limits reset daily at midnight UTC",
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Rate limited to keep ReqRes free. Projects unlock higher limits + logs.",
+        "cta": {
+            "label": "Upgrade",
+            "url": "https://app.reqres.in/upgrade"
+        },
+        "context": "rate_limited"
+    }
+}
+2026-09-04 14:28:39 [TestNG-test-API Tests-2] INFO  utils.APILoggingFilter - API Response | Status: 429 | Time: 554 ms
+2026-09-04 14:28:39 [TestNG-test-API Tests-2] INFO  utils.APILoggingFilter - Response Body:
+{
+    "error": "rate_limit_exceeded",
+    "message": "You've hit the anonymous demo limit of 40 requests/day from this IP.",
+    "signup": {
+        "message": "Create a free account for a higher daily limit, your own API key, persistent collections, and auth.",
+        "url": "https://app.reqres.in/sign-up?source=demo_rate_limit"
+    },
+    "limit": 40,
+    "remaining": 0,
+    "reset_at": 1788566400,
+    "resets_in": "15h 1m",
+    "reset_explanation": "Limits reset daily at midnight UTC",
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Rate limited to keep ReqRes free. Projects unlock higher limits + logs.",
+        "cta": {
+            "label": "Upgrade",
+            "url": "https://app.reqres.in/upgrade"
+        },
+        "context": "rate_limited"
+    }
+}
+2026-09-04 14:28:39 [TestNG-test-API Tests-4] INFO  utils.APILoggingFilter - API Request | Method: POST | URL: https://reqres.in/api/register
+2026-09-04 14:28:39 [TestNG-test-API Tests-4] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:28:39 [TestNG-test-API Tests-4] INFO  utils.APILoggingFilter - Request Body:
+{"email":"sydney@fife","password":null}
+2026-09-04 14:28:39 [TestNG-test-API Tests-2] INFO  utils.APILoggingFilter - API Request | Method: GET | URL: https://reqres.in/api/users
+2026-09-04 14:28:39 [TestNG-test-API Tests-2] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:28:39 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - API Response | Status: 429 | Time: 330 ms
+2026-09-04 14:28:39 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - Response Body:
+{
+    "error": "rate_limit_exceeded",
+    "message": "You've hit the anonymous demo limit of 40 requests/day from this IP.",
+    "signup": {
+        "message": "Create a free account for a higher daily limit, your own API key, persistent collections, and auth.",
+        "url": "https://app.reqres.in/sign-up?source=demo_rate_limit"
+    },
+    "limit": 40,
+    "remaining": 0,
+    "reset_at": 1788566400,
+    "resets_in": "15h 1m",
+    "reset_explanation": "Limits reset daily at midnight UTC",
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Rate limited to keep ReqRes free. Projects unlock higher limits + logs.",
+        "cta": {
+            "label": "Upgrade",
+            "url": "https://app.reqres.in/upgrade"
+        },
+        "context": "rate_limited"
+    }
+}
+2026-09-04 14:28:39 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - API Request | Method: POST | URL: https://reqres.in/api/users
+2026-09-04 14:28:39 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:28:39 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - Request Body:
+{"name":"Arjun","job":"QA Automation Engineer"}
+2026-09-04 14:28:39 [TestNG-test-API Tests-3] INFO  utils.APILoggingFilter - API Response | Status: 429 | Time: 344 ms
+2026-09-04 14:28:39 [TestNG-test-API Tests-3] INFO  utils.APILoggingFilter - Response Body:
+{
+    "error": "rate_limit_exceeded",
+    "message": "You've hit the anonymous demo limit of 40 requests/day from this IP.",
+    "signup": {
+        "message": "Create a free account for a higher daily limit, your own API key, persistent collections, and auth.",
+        "url": "https://app.reqres.in/sign-up?source=demo_rate_limit"
+    },
+    "limit": 40,
+    "remaining": 0,
+    "reset_at": 1788566400,
+    "resets_in": "15h 1m",
+    "reset_explanation": "Limits reset daily at midnight UTC",
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Rate limited to keep ReqRes free. Projects unlock higher limits + logs.",
+        "cta": {
+            "label": "Upgrade",
+            "url": "https://app.reqres.in/upgrade"
+        },
+        "context": "rate_limited"
+    }
+}
+2026-09-04 14:28:40 [TestNG-test-API Tests-2] INFO  utils.APILoggingFilter - API Response | Status: 429 | Time: 312 ms
+2026-09-04 14:28:40 [TestNG-test-API Tests-4] INFO  utils.APILoggingFilter - API Response | Status: 429 | Time: 319 ms
+2026-09-04 14:28:40 [TestNG-test-API Tests-2] INFO  utils.APILoggingFilter - Response Body:
+{
+    "error": "rate_limit_exceeded",
+    "message": "You've hit the anonymous demo limit of 40 requests/day from this IP.",
+    "signup": {
+        "message": "Create a free account for a higher daily limit, your own API key, persistent collections, and auth.",
+        "url": "https://app.reqres.in/sign-up?source=demo_rate_limit"
+    },
+    "limit": 40,
+    "remaining": 0,
+    "reset_at": 1788566400,
+    "resets_in": "15h 1m",
+    "reset_explanation": "Limits reset daily at midnight UTC",
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Rate limited to keep ReqRes free. Projects unlock higher limits + logs.",
+        "cta": {
+            "label": "Upgrade",
+            "url": "https://app.reqres.in/upgrade"
+        },
+        "context": "rate_limited"
+    }
+}
+2026-09-04 14:28:40 [TestNG-test-API Tests-4] INFO  utils.APILoggingFilter - Response Body:
+{
+    "error": "rate_limit_exceeded",
+    "message": "You've hit the anonymous demo limit of 40 requests/day from this IP.",
+    "signup": {
+        "message": "Create a free account for a higher daily limit, your own API key, persistent collections, and auth.",
+        "url": "https://app.reqres.in/sign-up?source=demo_rate_limit"
+    },
+    "limit": 40,
+    "remaining": 0,
+    "reset_at": 1788566400,
+    "resets_in": "15h 1m",
+    "reset_explanation": "Limits reset daily at midnight UTC",
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Rate limited to keep ReqRes free. Projects unlock higher limits + logs.",
+        "cta": {
+            "label": "Upgrade",
+            "url": "https://app.reqres.in/upgrade"
+        },
+        "context": "rate_limited"
+    }
+}
+2026-09-04 14:28:40 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - API Response | Status: 429 | Time: 337 ms
+2026-09-04 14:28:40 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - Response Body:
+{
+    "error": "rate_limit_exceeded",
+    "message": "You've hit the anonymous demo limit of 40 requests/day from this IP.",
+    "signup": {
+        "message": "Create a free account for a higher daily limit, your own API key, persistent collections, and auth.",
+        "url": "https://app.reqres.in/sign-up?source=demo_rate_limit"
+    },
+    "limit": 40,
+    "remaining": 0,
+    "reset_at": 1788566400,
+    "resets_in": "15h 1m",
+    "reset_explanation": "Limits reset daily at midnight UTC",
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Rate limited to keep ReqRes free. Projects unlock higher limits + logs.",
+        "cta": {
+            "label": "Upgrade",
+            "url": "https://app.reqres.in/upgrade"
+        },
+        "context": "rate_limited"
+    }
+}
+2026-09-04 14:28:40 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - API Request | Method: POST | URL: https://reqres.in/api/users
+2026-09-04 14:28:40 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:28:40 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - Request Body:
+{"name":"Neha","job":"SDET 2"}
+2026-09-04 14:28:40 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - API Response | Status: 429 | Time: 358 ms
+2026-09-04 14:28:40 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - Response Body:
+{
+    "error": "rate_limit_exceeded",
+    "message": "You've hit the anonymous demo limit of 40 requests/day from this IP.",
+    "signup": {
+        "message": "Create a free account for a higher daily limit, your own API key, persistent collections, and auth.",
+        "url": "https://app.reqres.in/sign-up?source=demo_rate_limit"
+    },
+    "limit": 40,
+    "remaining": 0,
+    "reset_at": 1788566400,
+    "resets_in": "15h 1m",
+    "reset_explanation": "Limits reset daily at midnight UTC",
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Rate limited to keep ReqRes free. Projects unlock higher limits + logs.",
+        "cta": {
+            "label": "Upgrade",
+            "url": "https://app.reqres.in/upgrade"
+        },
+        "context": "rate_limited"
+    }
+}
