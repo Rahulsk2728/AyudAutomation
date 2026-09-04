@@ -2148,3 +2148,722 @@ CF-RAY=a34c0dd1fba679e9-HYD
         "context": "legacy_success"
     }
 }
+2026-09-04 14:15:14 [main] INFO  utils.APILoggingFilter - API Request | Method: GET | URL: https://reqres.in/api/users
+2026-09-04 14:15:14 [main] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:15:16 [main] INFO  utils.APILoggingFilter - API Response | Status: 200 | Time: 1785 ms
+2026-09-04 14:15:16 [main] INFO  utils.APILoggingFilter - Response Body:
+{
+    "page": 1,
+    "per_page": 6,
+    "total": 12,
+    "total_pages": 2,
+    "data": [
+        {
+            "id": 1,
+            "email": "george.bluth@reqres.in",
+            "first_name": "George",
+            "last_name": "Bluth",
+            "avatar": "https://reqres.in/img/faces/1-image.jpg"
+        },
+        {
+            "id": 2,
+            "email": "janet.weaver@reqres.in",
+            "first_name": "Janet",
+            "last_name": "Weaver",
+            "avatar": "https://reqres.in/img/faces/2-image.jpg"
+        },
+        {
+            "id": 3,
+            "email": "emma.wong@reqres.in",
+            "first_name": "Emma",
+            "last_name": "Wong",
+            "avatar": "https://reqres.in/img/faces/3-image.jpg"
+        },
+        {
+            "id": 4,
+            "email": "eve.holt@reqres.in",
+            "first_name": "Eve",
+            "last_name": "Holt",
+            "avatar": "https://reqres.in/img/faces/4-image.jpg"
+        },
+        {
+            "id": 5,
+            "email": "charles.morris@reqres.in",
+            "first_name": "Charles",
+            "last_name": "Morris",
+            "avatar": "https://reqres.in/img/faces/5-image.jpg"
+        },
+        {
+            "id": 6,
+            "email": "tracey.ramos@reqres.in",
+            "first_name": "Tracey",
+            "last_name": "Ramos",
+            "avatar": "https://reqres.in/img/faces/6-image.jpg"
+        }
+    ],
+    "support": {
+        "url": "https://benhowdle.im/first-cto-playbook?utm_source=reqres&utm_medium=json&utm_campaign=referral",
+        "text": "Become a better CTO. A playbook of painful stories and practical advice from a two-time startup CTO."
+    },
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Your data persists here. Add auth, logs, and custom schemas to build a real backend.",
+        "cta": {
+            "label": "See example app",
+            "url": "https://app.reqres.in/examples/notes-app"
+        },
+        "context": "legacy_success"
+    }
+}
+2026-09-04 14:15:17 [main] INFO  utils.APILoggingFilter - API Request | Method: GET | URL: https://reqres.in/api/users/1
+2026-09-04 14:15:17 [main] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:15:18 [main] INFO  utils.APILoggingFilter - API Response | Status: 200 | Time: 859 ms
+2026-09-04 14:15:18 [main] INFO  utils.APILoggingFilter - Response Body:
+{
+    "data": {
+        "id": 1,
+        "email": "george.bluth@reqres.in",
+        "first_name": "George",
+        "last_name": "Bluth",
+        "avatar": "https://reqres.in/img/faces/1-image.jpg"
+    },
+    "support": {
+        "url": "https://benhowdle.im/first-cto-playbook?utm_source=reqres&utm_medium=json&utm_campaign=referral",
+        "text": "Become a better CTO. A playbook of painful stories and practical advice from a two-time startup CTO."
+    },
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Your data persists here. Add auth, logs, and custom schemas to build a real backend.",
+        "cta": {
+            "label": "See example app",
+            "url": "https://app.reqres.in/examples/notes-app"
+        },
+        "context": "legacy_success"
+    }
+}
+2026-09-04 14:15:18 [main] INFO  utils.APILoggingFilter - API Request | Method: PUT | URL: https://reqres.in/api/users/1
+2026-09-04 14:15:18 [main] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:15:18 [main] INFO  utils.APILoggingFilter - Request Body:
+{"name":"Rahul Chained","job":"Senior SDET"}
+2026-09-04 14:15:19 [main] INFO  utils.APILoggingFilter - API Response | Status: 200 | Time: 767 ms
+2026-09-04 14:15:19 [main] INFO  utils.APILoggingFilter - Response Body:
+{
+    "name": "Rahul Chained",
+    "job": "Senior SDET",
+    "updatedAt": "2026-09-04T08:45:19.459Z",
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Your data persists here. Add auth, logs, and custom schemas to build a real backend.",
+        "cta": {
+            "label": "See example app",
+            "url": "https://app.reqres.in/examples/notes-app"
+        },
+        "context": "legacy_success"
+    }
+}
+2026-09-04 14:15:19 [main] INFO  utils.APILoggingFilter - API Request | Method: PATCH | URL: https://reqres.in/api/users/1
+2026-09-04 14:15:19 [main] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:15:19 [main] INFO  utils.APILoggingFilter - Request Body:
+{"job":"Automation Architect"}
+2026-09-04 14:15:20 [main] INFO  utils.APILoggingFilter - API Response | Status: 200 | Time: 581 ms
+2026-09-04 14:15:20 [main] INFO  utils.APILoggingFilter - Response Body:
+{
+    "job": "Automation Architect",
+    "updatedAt": "2026-09-04T08:45:20.085Z",
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Your data persists here. Add auth, logs, and custom schemas to build a real backend.",
+        "cta": {
+            "label": "See example app",
+            "url": "https://app.reqres.in/examples/notes-app"
+        },
+        "context": "legacy_success"
+    }
+}
+2026-09-04 14:15:20 [main] INFO  utils.APILoggingFilter - API Request | Method: DELETE | URL: https://reqres.in/api/users/1
+2026-09-04 14:15:20 [main] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:15:21 [main] INFO  utils.APILoggingFilter - API Response | Status: 204 | Time: 1163 ms
+2026-09-04 14:20:59 [TestNG-test-API Tests-4] INFO  utils.APILoggingFilter - API Request | Method: GET | URL: https://reqres.in/api/users
+2026-09-04 14:20:59 [TestNG-test-API Tests-3] INFO  utils.APILoggingFilter - API Request | Method: DELETE | URL: https://reqres.in/api/users/2
+2026-09-04 14:20:59 [TestNG-test-API Tests-3] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:20:59 [TestNG-test-API Tests-4] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:20:59 [TestNG-test-API Tests-2] INFO  utils.APILoggingFilter - API Request | Method: POST | URL: https://reqres.in/api/users
+2026-09-04 14:20:59 [TestNG-test-API Tests-2] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:20:59 [TestNG-test-API Tests-2] INFO  utils.APILoggingFilter - Request Body:
+{"name":"Rahul","job":"SDET"}
+2026-09-04 14:21:00 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - API Request | Method: POST | URL: https://reqres.in/api/users
+2026-09-04 14:21:00 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:21:00 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - Request Body:
+{"name":"Rahul","job":"SDET"}
+2026-09-04 14:21:01 [TestNG-test-API Tests-3] INFO  utils.APILoggingFilter - API Response | Status: 204 | Time: 1796 ms
+2026-09-04 14:21:01 [TestNG-test-API Tests-2] INFO  utils.APILoggingFilter - API Response | Status: 201 | Time: 1578 ms
+2026-09-04 14:21:01 [TestNG-test-API Tests-4] INFO  utils.APILoggingFilter - API Response | Status: 200 | Time: 1796 ms
+2026-09-04 14:21:01 [TestNG-test-API Tests-2] INFO  utils.APILoggingFilter - Response Body:
+{
+    "name": "Rahul",
+    "job": "SDET",
+    "id": "50",
+    "createdAt": "2026-09-04T08:51:01.301Z",
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Your data persists here. Add auth, logs, and custom schemas to build a real backend.",
+        "cta": {
+            "label": "See example app",
+            "url": "https://app.reqres.in/examples/notes-app"
+        },
+        "context": "legacy_success"
+    }
+}
+2026-09-04 14:21:01 [TestNG-test-API Tests-4] INFO  utils.APILoggingFilter - Response Body:
+{
+    "page": 1,
+    "per_page": 6,
+    "total": 12,
+    "total_pages": 2,
+    "data": [
+        {
+            "id": 1,
+            "email": "george.bluth@reqres.in",
+            "first_name": "George",
+            "last_name": "Bluth",
+            "avatar": "https://reqres.in/img/faces/1-image.jpg"
+        },
+        {
+            "id": 2,
+            "email": "janet.weaver@reqres.in",
+            "first_name": "Janet",
+            "last_name": "Weaver",
+            "avatar": "https://reqres.in/img/faces/2-image.jpg"
+        },
+        {
+            "id": 3,
+            "email": "emma.wong@reqres.in",
+            "first_name": "Emma",
+            "last_name": "Wong",
+            "avatar": "https://reqres.in/img/faces/3-image.jpg"
+        },
+        {
+            "id": 4,
+            "email": "eve.holt@reqres.in",
+            "first_name": "Eve",
+            "last_name": "Holt",
+            "avatar": "https://reqres.in/img/faces/4-image.jpg"
+        },
+        {
+            "id": 5,
+            "email": "charles.morris@reqres.in",
+            "first_name": "Charles",
+            "last_name": "Morris",
+            "avatar": "https://reqres.in/img/faces/5-image.jpg"
+        },
+        {
+            "id": 6,
+            "email": "tracey.ramos@reqres.in",
+            "first_name": "Tracey",
+            "last_name": "Ramos",
+            "avatar": "https://reqres.in/img/faces/6-image.jpg"
+        }
+    ],
+    "support": {
+        "url": "https://benhowdle.im/first-cto-playbook?utm_source=reqres&utm_medium=json&utm_campaign=referral",
+        "text": "Become a better CTO. A playbook of painful stories and practical advice from a two-time startup CTO."
+    },
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Your data persists here. Add auth, logs, and custom schemas to build a real backend.",
+        "cta": {
+            "label": "See example app",
+            "url": "https://app.reqres.in/examples/notes-app"
+        },
+        "context": "legacy_success"
+    }
+}
+2026-09-04 14:21:01 [TestNG-test-API Tests-3] INFO  utils.APILoggingFilter - API Request | Method: GET | URL: https://reqres.in/api/users/9999
+2026-09-04 14:21:01 [TestNG-test-API Tests-3] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:21:01 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - API Response | Status: 201 | Time: 1522 ms
+2026-09-04 14:21:01 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - Response Body:
+{
+    "name": "Rahul",
+    "job": "SDET",
+    "id": "14",
+    "createdAt": "2026-09-04T08:51:01.478Z",
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Your data persists here. Add auth, logs, and custom schemas to build a real backend.",
+        "cta": {
+            "label": "See example app",
+            "url": "https://app.reqres.in/examples/notes-app"
+        },
+        "context": "legacy_success"
+    }
+}
+2026-09-04 14:21:02 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - API Request | Method: POST | URL: https://reqres.in/api/users
+2026-09-04 14:21:02 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:21:02 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - Request Body:
+{"name":"Amit","job":"QA Engineer"}
+2026-09-04 14:21:02 [TestNG-test-API Tests-2] INFO  utils.APILoggingFilter - API Request | Method: GET | URL: https://reqres.in/api/users/1
+2026-09-04 14:21:02 [TestNG-test-API Tests-2] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:21:03 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - API Response | Status: 201 | Time: 415 ms
+2026-09-04 14:21:03 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - Response Body:
+{
+    "name": "Amit",
+    "job": "QA Engineer",
+    "id": "418",
+    "createdAt": "2026-09-04T08:51:02.864Z",
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Your data persists here. Add auth, logs, and custom schemas to build a real backend.",
+        "cta": {
+            "label": "See example app",
+            "url": "https://app.reqres.in/examples/notes-app"
+        },
+        "context": "legacy_success"
+    }
+}
+2026-09-04 14:21:03 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - API Request | Method: POST | URL: https://reqres.in/api/users
+2026-09-04 14:21:03 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:21:03 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - Request Body:
+{"name":"John","job":"Automation Engineer"}
+2026-09-04 14:21:03 [TestNG-test-API Tests-2] INFO  utils.APILoggingFilter - API Response | Status: 200 | Time: 659 ms
+2026-09-04 14:21:03 [TestNG-test-API Tests-2] INFO  utils.APILoggingFilter - Response Body:
+{
+    "data": {
+        "id": 1,
+        "email": "george.bluth@reqres.in",
+        "first_name": "George",
+        "last_name": "Bluth",
+        "avatar": "https://reqres.in/img/faces/1-image.jpg"
+    },
+    "support": {
+        "url": "https://benhowdle.im/first-cto-playbook?utm_source=reqres&utm_medium=json&utm_campaign=referral",
+        "text": "Become a better CTO. A playbook of painful stories and practical advice from a two-time startup CTO."
+    },
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Your data persists here. Add auth, logs, and custom schemas to build a real backend.",
+        "cta": {
+            "label": "See example app",
+            "url": "https://app.reqres.in/examples/notes-app"
+        },
+        "context": "legacy_success"
+    }
+}
+2026-09-04 14:21:03 [TestNG-test-API Tests-3] INFO  utils.APILoggingFilter - API Response | Status: 404 | Time: 1738 ms
+2026-09-04 14:21:03 [TestNG-test-API Tests-3] INFO  utils.APILoggingFilter - Response Body:
+{
+    
+}
+2026-09-04 14:21:03 [TestNG-test-API Tests-4] INFO  utils.APILoggingFilter - API Request | Method: GET | URL: https://reqres.in/api/users
+2026-09-04 14:21:03 [TestNG-test-API Tests-4] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:21:03 [TestNG-test-API Tests-2] INFO  utils.APILoggingFilter - API Request | Method: PUT | URL: https://reqres.in/api/users/2
+2026-09-04 14:21:03 [TestNG-test-API Tests-2] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:21:03 [TestNG-test-API Tests-2] INFO  utils.APILoggingFilter - Request Body:
+{"name":"Rahul Updated","job":"Senior SDET"}
+2026-09-04 14:21:03 [TestNG-test-API Tests-3] INFO  utils.APILoggingFilter - API Request | Method: PATCH | URL: https://reqres.in/api/users/2
+2026-09-04 14:21:03 [TestNG-test-API Tests-3] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:21:03 [TestNG-test-API Tests-3] INFO  utils.APILoggingFilter - Request Body:
+{"job":"Automation Architect"}
+2026-09-04 14:21:03 [TestNG-test-API Tests-4] INFO  utils.APILoggingFilter - API Response | Status: 200 | Time: 221 ms
+2026-09-04 14:21:03 [TestNG-test-API Tests-4] INFO  utils.APILoggingFilter - Response Body:
+{
+    "page": 1,
+    "per_page": 6,
+    "total": 12,
+    "total_pages": 2,
+    "data": [
+        {
+            "id": 1,
+            "email": "george.bluth@reqres.in",
+            "first_name": "George",
+            "last_name": "Bluth",
+            "avatar": "https://reqres.in/img/faces/1-image.jpg"
+        },
+        {
+            "id": 2,
+            "email": "janet.weaver@reqres.in",
+            "first_name": "Janet",
+            "last_name": "Weaver",
+            "avatar": "https://reqres.in/img/faces/2-image.jpg"
+        },
+        {
+            "id": 3,
+            "email": "emma.wong@reqres.in",
+            "first_name": "Emma",
+            "last_name": "Wong",
+            "avatar": "https://reqres.in/img/faces/3-image.jpg"
+        },
+        {
+            "id": 4,
+            "email": "eve.holt@reqres.in",
+            "first_name": "Eve",
+            "last_name": "Holt",
+            "avatar": "https://reqres.in/img/faces/4-image.jpg"
+        },
+        {
+            "id": 5,
+            "email": "charles.morris@reqres.in",
+            "first_name": "Charles",
+            "last_name": "Morris",
+            "avatar": "https://reqres.in/img/faces/5-image.jpg"
+        },
+        {
+            "id": 6,
+            "email": "tracey.ramos@reqres.in",
+            "first_name": "Tracey",
+            "last_name": "Ramos",
+            "avatar": "https://reqres.in/img/faces/6-image.jpg"
+        }
+    ],
+    "support": {
+        "url": "https://benhowdle.im/first-cto-playbook?utm_source=reqres&utm_medium=json&utm_campaign=referral",
+        "text": "Become a better CTO. A playbook of painful stories and practical advice from a two-time startup CTO."
+    },
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Your data persists here. Add auth, logs, and custom schemas to build a real backend.",
+        "cta": {
+            "label": "See example app",
+            "url": "https://app.reqres.in/examples/notes-app"
+        },
+        "context": "legacy_success"
+    }
+}
+2026-09-04 14:21:03 [TestNG-test-API Tests-4] INFO  utils.APILoggingFilter - API Request | Method: POST | URL: https://reqres.in/api/login
+2026-09-04 14:21:03 [TestNG-test-API Tests-4] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:21:03 [TestNG-test-API Tests-4] INFO  utils.APILoggingFilter - Request Body:
+{"email":"","password":""}
+2026-09-04 14:21:03 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - API Response | Status: 201 | Time: 633 ms
+2026-09-04 14:21:03 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - Response Body:
+{
+    "name": "John",
+    "job": "Automation Engineer",
+    "id": "562",
+    "createdAt": "2026-09-04T08:51:03.546Z",
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Your data persists here. Add auth, logs, and custom schemas to build a real backend.",
+        "cta": {
+            "label": "See example app",
+            "url": "https://app.reqres.in/examples/notes-app"
+        },
+        "context": "legacy_success"
+    }
+}
+2026-09-04 14:21:03 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - API Request | Method: POST | URL: https://reqres.in/api/users
+2026-09-04 14:21:03 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:21:03 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - Request Body:
+{"name":"Priya","job":"Senior SDET"}
+2026-09-04 14:21:04 [TestNG-test-API Tests-4] INFO  utils.APILoggingFilter - API Response | Status: 400 | Time: 378 ms
+2026-09-04 14:21:04 [TestNG-test-API Tests-4] INFO  utils.APILoggingFilter - Response Body:
+{
+    "error": "Missing email or username"
+}
+2026-09-04 14:21:04 [TestNG-test-API Tests-4] INFO  utils.APILoggingFilter - API Request | Method: POST | URL: https://reqres.in/api/login
+2026-09-04 14:21:04 [TestNG-test-API Tests-4] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:21:04 [TestNG-test-API Tests-4] INFO  utils.APILoggingFilter - Request Body:
+{"email":"YOUR_VALID_TEST_EMAIL","password":"YOUR_VALID_TEST_PASSWORD"}
+2026-09-04 14:21:04 [TestNG-test-API Tests-3] INFO  utils.APILoggingFilter - API Response | Status: 200 | Time: 659 ms
+2026-09-04 14:21:04 [TestNG-test-API Tests-3] INFO  utils.APILoggingFilter - Response Body:
+{
+    "job": "Automation Architect",
+    "updatedAt": "2026-09-04T08:51:03.897Z",
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Your data persists here. Add auth, logs, and custom schemas to build a real backend.",
+        "cta": {
+            "label": "See example app",
+            "url": "https://app.reqres.in/examples/notes-app"
+        },
+        "context": "legacy_success"
+    }
+}
+2026-09-04 14:21:04 [TestNG-test-API Tests-3] INFO  utils.APILoggingFilter - API Request | Method: POST | URL: https://reqres.in/api/login
+2026-09-04 14:21:04 [TestNG-test-API Tests-3] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:21:04 [TestNG-test-API Tests-3] INFO  utils.APILoggingFilter - Request Body:
+{"email":"YOUR_VALID_TEST_EMAIL","password":"wrongpassword"}
+2026-09-04 14:21:04 [TestNG-test-API Tests-2] INFO  utils.APILoggingFilter - API Response | Status: 200 | Time: 740 ms
+2026-09-04 14:21:04 [TestNG-test-API Tests-2] INFO  utils.APILoggingFilter - Response Body:
+{
+    "name": "Rahul Updated",
+    "job": "Senior SDET",
+    "updatedAt": "2026-09-04T08:51:03.976Z",
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Your data persists here. Add auth, logs, and custom schemas to build a real backend.",
+        "cta": {
+            "label": "See example app",
+            "url": "https://app.reqres.in/examples/notes-app"
+        },
+        "context": "legacy_success"
+    }
+}
+2026-09-04 14:21:04 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - API Response | Status: 201 | Time: 343 ms
+2026-09-04 14:21:04 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - Response Body:
+{
+    "name": "Priya",
+    "job": "Senior SDET",
+    "id": "372",
+    "createdAt": "2026-09-04T08:51:04.003Z",
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Your data persists here. Add auth, logs, and custom schemas to build a real backend.",
+        "cta": {
+            "label": "See example app",
+            "url": "https://app.reqres.in/examples/notes-app"
+        },
+        "context": "legacy_success"
+    }
+}
+2026-09-04 14:21:04 [TestNG-test-API Tests-2] INFO  utils.APILoggingFilter - API Request | Method: POST | URL: https://reqres.in/api/login
+2026-09-04 14:21:04 [TestNG-test-API Tests-2] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:21:04 [TestNG-test-API Tests-2] INFO  utils.APILoggingFilter - Request Body:
+{"email":"","password":"YOUR_VALID_TEST_PASSWORD"}
+2026-09-04 14:21:04 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - API Request | Method: POST | URL: https://reqres.in/api/users
+2026-09-04 14:21:04 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:21:04 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - Request Body:
+{"name":"Rohan","job":"Test Engineer"}
+2026-09-04 14:21:04 [TestNG-test-API Tests-4] INFO  utils.APILoggingFilter - API Response | Status: 400 | Time: 386 ms
+2026-09-04 14:21:04 [TestNG-test-API Tests-4] INFO  utils.APILoggingFilter - Response Body:
+{
+    "error": "user not found"
+}
+2026-09-04 14:21:04 [TestNG-test-API Tests-4] INFO  utils.APILoggingFilter - API Request | Method: POST | URL: https://reqres.in/api/login
+2026-09-04 14:21:04 [TestNG-test-API Tests-4] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:21:04 [TestNG-test-API Tests-4] INFO  utils.APILoggingFilter - Request Body:
+{"email":"YOUR_VALID_TEST_EMAIL","password":""}
+2026-09-04 14:21:04 [TestNG-test-API Tests-3] INFO  utils.APILoggingFilter - API Response | Status: 400 | Time: 447 ms
+2026-09-04 14:21:04 [TestNG-test-API Tests-3] INFO  utils.APILoggingFilter - Response Body:
+{
+    "error": "user not found"
+}
+2026-09-04 14:21:04 [TestNG-test-API Tests-3] INFO  utils.APILoggingFilter - API Request | Method: POST | URL: https://reqres.in/api/register
+2026-09-04 14:21:04 [TestNG-test-API Tests-3] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:21:04 [TestNG-test-API Tests-3] INFO  utils.APILoggingFilter - Request Body:
+{"email":null,"password":"pistol"}
+2026-09-04 14:21:04 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - API Response | Status: 201 | Time: 436 ms
+2026-09-04 14:21:04 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - Response Body:
+{
+    "name": "Rohan",
+    "job": "Test Engineer",
+    "id": "878",
+    "createdAt": "2026-09-04T08:51:04.508Z",
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Your data persists here. Add auth, logs, and custom schemas to build a real backend.",
+        "cta": {
+            "label": "See example app",
+            "url": "https://app.reqres.in/examples/notes-app"
+        },
+        "context": "legacy_success"
+    }
+}
+2026-09-04 14:21:04 [TestNG-test-API Tests-2] INFO  utils.APILoggingFilter - API Response | Status: 400 | Time: 469 ms
+2026-09-04 14:21:04 [TestNG-test-API Tests-2] INFO  utils.APILoggingFilter - Response Body:
+{
+    "error": "Missing email or username"
+}
+2026-09-04 14:21:04 [TestNG-test-API Tests-2] INFO  utils.APILoggingFilter - API Request | Method: POST | URL: https://reqres.in/api/register
+2026-09-04 14:21:04 [TestNG-test-API Tests-2] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:21:04 [TestNG-test-API Tests-2] INFO  utils.APILoggingFilter - Request Body:
+{"email":"sydney@fife","password":null}
+2026-09-04 14:21:04 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - API Request | Method: POST | URL: https://reqres.in/api/users
+2026-09-04 14:21:04 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:21:04 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - Request Body:
+{"name":"Sneha","job":"Automation Tester"}
+2026-09-04 14:21:04 [TestNG-test-API Tests-4] INFO  utils.APILoggingFilter - API Response | Status: 400 | Time: 377 ms
+2026-09-04 14:21:04 [TestNG-test-API Tests-4] INFO  utils.APILoggingFilter - Response Body:
+{
+    "error": "Missing password"
+}
+2026-09-04 14:21:04 [TestNG-test-API Tests-4] INFO  utils.APILoggingFilter - API Request | Method: GET | URL: https://reqres.in/api/users
+2026-09-04 14:21:04 [TestNG-test-API Tests-4] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:21:04 [TestNG-test-API Tests-3] INFO  utils.APILoggingFilter - API Response | Status: 400 | Time: 377 ms
+2026-09-04 14:21:04 [TestNG-test-API Tests-3] INFO  utils.APILoggingFilter - Response Body:
+{
+    "error": "Missing email or username"
+}
+2026-09-04 14:21:05 [TestNG-test-API Tests-2] INFO  utils.APILoggingFilter - API Response | Status: 400 | Time: 314 ms
+2026-09-04 14:21:05 [TestNG-test-API Tests-2] INFO  utils.APILoggingFilter - Response Body:
+{
+    "error": "Missing password"
+}
+2026-09-04 14:21:05 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - API Response | Status: 429 | Time: 344 ms
+2026-09-04 14:21:05 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - Response Body:
+{
+    "error": "rate_limit_exceeded",
+    "message": "You've hit the anonymous demo limit of 40 requests/day from this IP.",
+    "signup": {
+        "message": "Create a free account for a higher daily limit, your own API key, persistent collections, and auth.",
+        "url": "https://app.reqres.in/sign-up?source=demo_rate_limit"
+    },
+    "limit": 40,
+    "remaining": 0,
+    "reset_at": 1788566400,
+    "resets_in": "15h 8m",
+    "reset_explanation": "Limits reset daily at midnight UTC",
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Rate limited to keep ReqRes free. Projects unlock higher limits + logs.",
+        "cta": {
+            "label": "Upgrade",
+            "url": "https://app.reqres.in/upgrade"
+        },
+        "context": "rate_limited"
+    }
+}
+2026-09-04 14:21:05 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - API Request | Method: POST | URL: https://reqres.in/api/users
+2026-09-04 14:21:05 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:21:05 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - Request Body:
+{"name":"Arjun","job":"QA Automation Engineer"}
+2026-09-04 14:21:05 [TestNG-test-API Tests-4] INFO  utils.APILoggingFilter - API Response | Status: 429 | Time: 612 ms
+2026-09-04 14:21:05 [TestNG-test-API Tests-4] INFO  utils.APILoggingFilter - Response Body:
+{
+    "error": "rate_limit_exceeded",
+    "message": "You've hit the anonymous demo limit of 40 requests/day from this IP.",
+    "signup": {
+        "message": "Create a free account for a higher daily limit, your own API key, persistent collections, and auth.",
+        "url": "https://app.reqres.in/sign-up?source=demo_rate_limit"
+    },
+    "limit": 40,
+    "remaining": 0,
+    "reset_at": 1788566400,
+    "resets_in": "15h 8m",
+    "reset_explanation": "Limits reset daily at midnight UTC",
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Rate limited to keep ReqRes free. Projects unlock higher limits + logs.",
+        "cta": {
+            "label": "Upgrade",
+            "url": "https://app.reqres.in/upgrade"
+        },
+        "context": "rate_limited"
+    }
+}
+2026-09-04 14:21:05 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - API Response | Status: 429 | Time: 403 ms
+2026-09-04 14:21:05 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - Response Body:
+{
+    "error": "rate_limit_exceeded",
+    "message": "You've hit the anonymous demo limit of 40 requests/day from this IP.",
+    "signup": {
+        "message": "Create a free account for a higher daily limit, your own API key, persistent collections, and auth.",
+        "url": "https://app.reqres.in/sign-up?source=demo_rate_limit"
+    },
+    "limit": 40,
+    "remaining": 0,
+    "reset_at": 1788566400,
+    "resets_in": "15h 8m",
+    "reset_explanation": "Limits reset daily at midnight UTC",
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Rate limited to keep ReqRes free. Projects unlock higher limits + logs.",
+        "cta": {
+            "label": "Upgrade",
+            "url": "https://app.reqres.in/upgrade"
+        },
+        "context": "rate_limited"
+    }
+}
+2026-09-04 14:21:05 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - API Request | Method: POST | URL: https://reqres.in/api/users
+2026-09-04 14:21:05 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - Request Headers: {Accept=application/json, Content-Type=application/json}
+2026-09-04 14:21:05 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - Request Body:
+{"name":"Neha","job":"SDET 2"}
+2026-09-04 14:21:05 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - API Response | Status: 429 | Time: 384 ms
+2026-09-04 14:21:05 [TestNG-test-API Tests-1] INFO  utils.APILoggingFilter - Response Body:
+{
+    "error": "rate_limit_exceeded",
+    "message": "You've hit the anonymous demo limit of 40 requests/day from this IP.",
+    "signup": {
+        "message": "Create a free account for a higher daily limit, your own API key, persistent collections, and auth.",
+        "url": "https://app.reqres.in/sign-up?source=demo_rate_limit"
+    },
+    "limit": 40,
+    "remaining": 0,
+    "reset_at": 1788566400,
+    "resets_in": "15h 8m",
+    "reset_explanation": "Limits reset daily at midnight UTC",
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Rate limited to keep ReqRes free. Projects unlock higher limits + logs.",
+        "cta": {
+            "label": "Upgrade",
+            "url": "https://app.reqres.in/upgrade"
+        },
+        "context": "rate_limited"
+    }
+}

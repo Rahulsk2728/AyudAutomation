@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
-        <suite name="API Test Suite" parallel="methods" thread-count="4">
+<suite name="API Test Suite" parallel="methods" thread-count="4">
 
-        <test name="API Tests">
+    <test name="API Tests">
 
         <classes>
-
-        <class name="apiTests.UserAPITest"/>
-
-        <class name="apiTests.AuthAPITest"/>
-
-        <class name="apiTests.APIChainingTest"/>
-
+            <class name="apiTests.UserAPITest"/>
+            <class name="apiTests.AuthAPITest"/>
+            <class name="apiTests.APIChainingTest"/>
         </classes>
 
-        </test>
+    </test>
 
-        </suite>
+</suite>
