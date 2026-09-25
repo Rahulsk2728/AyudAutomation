@@ -163,7 +163,7 @@ public class HomeTest extends BaseTest {
 
         logger.info("Verified Services page" );
 
-        Assert.assertEquals(homePage.isServicesSectionDisplayed(),"Services section is not displayed");
+        Assert.assertTrue(homePage.isServicesSectionDisplayed(),"Services section is not displayed");
     }
 
     @Test(priority = 8)
@@ -175,7 +175,7 @@ public class HomeTest extends BaseTest {
 
         logger.info("Verified Workpage" );
 
-        Assert.assertEquals(homePage.isWorkSectionDisplayed(),"work section is not displayed");
+        Assert.assertTrue(homePage.isWorkSectionDisplayed(),"work section is not displayed");
     }
 
     @Test(priority = 9)
@@ -187,7 +187,7 @@ public class HomeTest extends BaseTest {
 
         logger.info("Verified Advisory" );
 
-        Assert.assertEquals(homePage.isAdvisorySectionDisplayed(),"advisory section is not displayed");
+        Assert.assertTrue(homePage.isAdvisorySectionDisplayed(),"advisory section is not displayed");
     }
 
 

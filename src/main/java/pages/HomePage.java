@@ -7,6 +7,7 @@ import com.microsoft.playwright.Page;
 
 import java.util.List;
 
+import com.microsoft.playwright.options.WaitForSelectorState;
 import io.qameta.allure.Step;
 import utils.WaitUtils;
 
@@ -70,6 +71,12 @@ public class HomePage extends BasePage {
     // Verify Home Page
     @Step("Wait for Home Page to load")
     public boolean isHomePageDisplayed() {
+
+        homeLogo.waitFor(
+                new Locator.WaitForOptions()
+                        .setState(WaitForSelectorState.VISIBLE)
+                        .setTimeout(10000)
+        );
         return isVisible(homeLogo);
     }
 
@@ -96,7 +103,14 @@ public class HomePage extends BasePage {
 
     //Check service heading
     public boolean isServicesSectionDisplayed() {
-        return servicesHeading.isVisible();
+
+        servicesHeading.waitFor(
+                new Locator.WaitForOptions()
+                        .setState(WaitForSelectorState.VISIBLE)
+                        .setTimeout(10000)
+        );
+
+        return isVisible(servicesHeading);
     }
 
     //Check work heading
@@ -106,7 +120,13 @@ public class HomePage extends BasePage {
 
     //Check advisory heading
     public boolean isAdvisorySectionDisplayed() {
-        return advisoryHeading.isVisible();
+
+        advisoryHeading.waitFor(
+                new Locator.WaitForOptions()
+                        .setState(WaitForSelectorState.VISIBLE)
+                        .setTimeout(10000)
+        );
+        return isVisible(advisoryHeading);
     }
 
 
@@ -146,7 +166,9 @@ public class HomePage extends BasePage {
     }
 
     //Advisory
-    public void clickAdvisory(){ advisory.click();}
+    public void clickAdvisory(){
+        advisory.click();
+    }
 
 
 

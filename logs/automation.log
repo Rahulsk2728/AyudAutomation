@@ -3623,3 +3623,96 @@ CF-RAY=a34c0dd1fba679e9-HYD
         "context": "rate_limited"
     }
 }
+2026-09-23 11:41:26 [main] INFO  base.BaseTest - Test started | Thread: main | Browser: chrome
+2026-09-23 11:41:26 [main] INFO  base.BaseTest - Creating Playwright instance
+2026-09-23 11:41:28 [main] INFO  base.BaseTest - Browser selected: chrome
+2026-09-23 11:41:31 [main] INFO  base.BaseTest - Launching browser: chrome
+2026-09-23 11:41:31 [main] INFO  base.BaseTest - Test finished | Thread: main | Browser: chrome
+2026-09-23 11:41:31 [main] INFO  base.BaseTest - Screenshot captured: screenshots\chrome\verifyHomePageDisplayed.png
+2026-09-23 11:41:31 [main] INFO  base.BaseTest - Trace saved: traces\chrome\verifyHomePageDisplayed.zip
+2026-09-23 11:41:31 [main] INFO  base.BaseTest - Browser closed successfully.
+2026-09-23 11:43:56 [main] INFO  base.BaseTest - Test started | Thread: main | Browser: chrome
+2026-09-23 11:43:56 [main] INFO  base.BaseTest - Creating Playwright instance
+2026-09-23 11:43:59 [main] INFO  base.BaseTest - Browser selected: chrome
+2026-09-23 11:44:06 [main] INFO  base.BaseTest - Launching browser: chrome
+2026-09-23 11:44:06 [main] INFO  base.BaseTest - Test finished | Thread: main | Browser: chrome
+2026-09-23 11:44:06 [main] INFO  base.BaseTest - Screenshot captured: screenshots\chrome\verifyHomePageDisplayed.png
+2026-09-23 11:44:06 [main] INFO  base.BaseTest - Trace saved: traces\chrome\verifyHomePageDisplayed.zip
+2026-09-23 11:44:07 [main] INFO  base.BaseTest - Browser closed successfully.
+2026-09-23 11:45:24 [main] INFO  base.BaseTest - Test started | Thread: main | Browser: chrome
+2026-09-23 11:45:24 [main] INFO  base.BaseTest - Creating Playwright instance
+2026-09-23 11:45:27 [main] INFO  base.BaseTest - Browser selected: chrome
+2026-09-23 11:45:30 [main] INFO  base.BaseTest - Launching browser: chrome
+2026-09-23 11:45:35 [main] INFO  base.BaseTest - Test finished | Thread: main | Browser: chrome
+2026-09-23 11:45:35 [main] INFO  base.BaseTest - Trace saved: traces\chrome\verifyHomePageDisplayed.zip
+2026-09-23 11:45:35 [main] INFO  base.BaseTest - Browser closed successfully.
+2026-09-23 11:45:45 [main] INFO  base.BaseTest - Test started | Thread: main | Browser: chrome
+2026-09-23 11:45:45 [main] INFO  base.BaseTest - Creating Playwright instance
+2026-09-23 11:45:48 [main] INFO  base.BaseTest - Browser selected: chrome
+2026-09-23 11:45:50 [main] INFO  base.BaseTest - Launching browser: chrome
+2026-09-23 11:45:54 [main] INFO  tests.HomeTest - Verified Advisory
+2026-09-23 11:45:54 [main] INFO  base.BaseTest - Test finished | Thread: main | Browser: chrome
+2026-09-23 11:45:57 [main] INFO  base.BaseTest - Screenshot captured: screenshots\chrome\verifyAdvisory.png
+2026-09-23 11:45:58 [main] INFO  base.BaseTest - Trace saved: traces\chrome\verifyAdvisory.zip
+2026-09-23 11:45:58 [main] INFO  base.BaseTest - Browser closed successfully.
+2026-09-23 11:47:01 [main] INFO  base.BaseTest - Test started | Thread: main | Browser: chrome
+2026-09-23 11:47:01 [main] INFO  base.BaseTest - Creating Playwright instance
+2026-09-23 11:47:04 [main] INFO  base.BaseTest - Browser selected: chrome
+2026-09-23 11:47:06 [main] INFO  base.BaseTest - Launching browser: chrome
+2026-09-23 11:47:12 [main] INFO  tests.HomeTest - Verified Advisory
+2026-09-23 11:47:12 [main] INFO  base.BaseTest - Test finished | Thread: main | Browser: chrome
+2026-09-23 11:47:13 [main] INFO  base.BaseTest - Screenshot captured: screenshots\chrome\verifyAdvisory.png
+2026-09-23 11:47:14 [main] INFO  base.BaseTest - Trace saved: traces\chrome\verifyAdvisory.zip
+2026-09-23 11:47:14 [main] INFO  base.BaseTest - Browser closed successfully.
+2026-09-23 11:48:14 [main] INFO  base.BaseTest - Test started | Thread: main | Browser: chrome
+2026-09-23 11:48:14 [main] INFO  base.BaseTest - Creating Playwright instance
+2026-09-23 11:48:16 [main] INFO  base.BaseTest - Browser selected: chrome
+2026-09-23 11:48:18 [main] INFO  base.BaseTest - Launching browser: chrome
+2026-09-23 11:48:22 [main] INFO  tests.HomeTest - Verified Advisory
+2026-09-23 11:48:22 [main] INFO  base.BaseTest - Test finished | Thread: main | Browser: chrome
+2026-09-23 11:48:22 [main] INFO  base.BaseTest - Screenshot captured: screenshots\chrome\verifyAdvisory.png
+2026-09-23 11:48:22 [main] INFO  base.BaseTest - Trace saved: traces\chrome\verifyAdvisory.zip
+2026-09-23 11:48:22 [main] INFO  base.BaseTest - Browser closed successfully.
+2026-09-23 11:49:24 [main] INFO  base.BaseTest - Test started | Thread: main | Browser: chrome
+2026-09-23 11:49:24 [main] INFO  base.BaseTest - Creating Playwright instance
+2026-09-23 11:49:27 [main] INFO  base.BaseTest - Browser selected: chrome
+2026-09-23 11:49:28 [main] INFO  base.BaseTest - Launching browser: chrome
+2026-09-23 11:49:32 [main] INFO  tests.HomeTest - Verified Advisory
+2026-09-23 11:49:32 [main] INFO  base.BaseTest - Test finished | Thread: main | Browser: chrome
+2026-09-23 11:49:32 [main] INFO  base.BaseTest - Screenshot captured: screenshots\chrome\verifyAdvisory.png
+2026-09-23 11:49:32 [main] INFO  base.BaseTest - Trace saved: traces\chrome\verifyAdvisory.zip
+2026-09-23 11:49:32 [main] INFO  base.BaseTest - Browser closed successfully.
+2026-09-23 11:50:19 [main] INFO  base.BaseTest - Test started | Thread: main | Browser: chrome
+2026-09-23 11:50:19 [main] INFO  base.BaseTest - Creating Playwright instance
+2026-09-23 11:50:21 [main] INFO  base.BaseTest - Browser selected: chrome
+2026-09-23 11:50:23 [main] INFO  base.BaseTest - Launching browser: chrome
+2026-09-23 11:50:27 [main] INFO  tests.HomeTest - Verified Services page
+2026-09-23 11:50:27 [main] INFO  base.BaseTest - Test finished | Thread: main | Browser: chrome
+2026-09-23 11:50:27 [main] INFO  base.BaseTest - Screenshot captured: screenshots\chrome\verifyServices.png
+2026-09-23 11:50:28 [main] INFO  base.BaseTest - Trace saved: traces\chrome\verifyServices.zip
+2026-09-23 11:50:28 [main] INFO  base.BaseTest - Browser closed successfully.
+2026-09-23 11:51:09 [main] INFO  base.BaseTest - Test started | Thread: main | Browser: chrome
+2026-09-23 11:51:09 [main] INFO  base.BaseTest - Creating Playwright instance
+2026-09-23 11:51:11 [main] INFO  base.BaseTest - Browser selected: chrome
+2026-09-23 11:51:13 [main] INFO  base.BaseTest - Launching browser: chrome
+2026-09-23 11:51:16 [main] INFO  tests.HomeTest - Verified Services page
+2026-09-23 11:51:16 [main] INFO  base.BaseTest - Test finished | Thread: main | Browser: chrome
+2026-09-23 11:51:16 [main] INFO  base.BaseTest - Screenshot captured: screenshots\chrome\verifyServices.png
+2026-09-23 11:51:16 [main] INFO  base.BaseTest - Trace saved: traces\chrome\verifyServices.zip
+2026-09-23 11:51:17 [main] INFO  base.BaseTest - Browser closed successfully.
+2026-09-23 11:52:56 [main] INFO  base.BaseTest - Test started | Thread: main | Browser: chrome
+2026-09-23 11:52:56 [main] INFO  base.BaseTest - Creating Playwright instance
+2026-09-23 11:52:58 [main] INFO  base.BaseTest - Browser selected: chrome
+2026-09-23 11:53:00 [main] INFO  base.BaseTest - Launching browser: chrome
+2026-09-23 11:53:03 [main] INFO  tests.HomeTest - Verified Services page
+2026-09-23 11:53:03 [main] INFO  base.BaseTest - Test finished | Thread: main | Browser: chrome
+2026-09-23 11:53:03 [main] INFO  base.BaseTest - Trace saved: traces\chrome\verifyServices.zip
+2026-09-23 11:53:04 [main] INFO  base.BaseTest - Browser closed successfully.
+2026-09-23 11:53:10 [main] INFO  base.BaseTest - Test started | Thread: main | Browser: chrome
+2026-09-23 11:53:10 [main] INFO  base.BaseTest - Creating Playwright instance
+2026-09-23 11:53:12 [main] INFO  base.BaseTest - Browser selected: chrome
+2026-09-23 11:53:14 [main] INFO  base.BaseTest - Launching browser: chrome
+2026-09-23 11:53:16 [main] INFO  tests.HomeTest - Verified Advisory
+2026-09-23 11:53:16 [main] INFO  base.BaseTest - Test finished | Thread: main | Browser: chrome
+2026-09-23 11:53:17 [main] INFO  base.BaseTest - Trace saved: traces\chrome\verifyAdvisory.zip
+2026-09-23 11:53:17 [main] INFO  base.BaseTest - Browser closed successfully.
